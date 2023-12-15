@@ -10,4 +10,6 @@ These may well be questions you are asking yourself, so it's just as well you ha
 
 This site aims to answer those questions (and more) by showcasing the band's music, videos and various photographs (some posed, some action shots from the stage) and make you care about a band who never reached the dizzy heights they were (according to some very generous reviewers), destined for.
 
+Thorough testing process and implementation guide to follow.
+
 
