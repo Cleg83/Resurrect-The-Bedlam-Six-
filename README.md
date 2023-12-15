@@ -2,9 +2,9 @@
 
 Welcome,
 
-This is a page dedicated to bringing back the greatest band you've probably never heard of.................Louis Barabbas & THe Bedlam Six.
+This is a page dedicated to bringing back the greatest band you've probably never heard of.....................................................Louis Barabbas & The Bedlam Six.
 
-Who are they and What do they sound like? 
+Who are they and what do they sound like? 
 
 These may well be questions you are asking yourself, so it's just as well you have found yourself here.
 
