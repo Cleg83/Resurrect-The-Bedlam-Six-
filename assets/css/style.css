@@ -12,7 +12,16 @@
 
 /*Home Page-------------------------------------------------------Home page*/ 
 
+.name-heading {
+    color: #fafafa;
+}
+
 .member-section {
+    background-image: url("../images/bedlam-stage-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     font-family: "Bitter", sans-serif;
 }
 
@@ -26,13 +35,14 @@
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
+    color: #fafafa;
 }
 
 hr {
     height: 7.5px;
     width: 150px;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #fafafa;
     border-radius: 0.75rem;
 }
 
