@@ -10,6 +10,24 @@
     display: inline-block;
 }
 
+/*Colors-------------------------------------------------------------Colors*/
+
+.link-icon:hover {
+    color: #a10f05;
+}
+
+.footer-menu-link:hover {
+    color: #a10f05;
+}
+
+.nav-link:hover {
+    color: #a10f05;
+}
+
+.bg-color-footer {
+    background-color: #f1f2df;
+}
+
 /*Navbar-------------------------------------------------------------Navbar*/
 
 .bg-navbar {
@@ -18,10 +36,10 @@
 
 .navbar {
     font-family: "Bitter", sans-serif;
-    ;
+    
 }
 
-/*Home Page-------------------------------------------------------Home page*/ 
+/*Home Page-------------------------------------------------------Home page*/
 
 .name-heading {
     color: #fcfcf5;
@@ -59,18 +77,75 @@ hr {
     border-radius: 0.75rem;
 }
 
+/* Footer------------------------------------------------------------Footer*/
+
+footer {
+    min-height: 80px;
+    margin: 0;
+    font-family: "Bitter", sans-serif;
+}
+
+.footer-wrapper {
+    height: 100%;
+}
+
+.footer-menu {
+    padding-left: 1rem;
+    height: 100%;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 1rem;
+    margin-top: 2rem;
+    color: #000;
+}
+
+.copy-container {
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.copy {
+    font-weight: 200;
+    margin-top: 4rem;
+    color: #000;
+}
+
+
+.social {
+    height: 100%;
+    text-align: right;
+    padding-top: 2rem;
+}
+
+.social-links {
+    font-size: 1.5rem;
+    width: 24px;
+    height: 24px;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    color: #000;
+}
+
+.social-links:last-child {
+    margin-right: 1rem;
+}
+
 /*Gallery-----------------------------------------------------------Gallery*/
 
 .bg-gallery-page {
     background-image: url("../images/bedlam-stage-background.jpg");
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
 }
 
 .image-gallery {
     padding-top: 125px;
 }
-
