@@ -10,25 +10,38 @@
     display: inline-block;
 }
 
+/*Navbar-------------------------------------------------------------Navbar*/
+
+.bg-navbar {
+    background-color: #fcfcf5;
+}
+
+.navbar {
+    font-family: "Bitter", sans-serif;
+    ;
+}
+
 /*Home Page-------------------------------------------------------Home page*/ 
 
 .name-heading {
-    color: #fafafa;
+    color: #fcfcf5;
+    padding-top: 125px;
 }
 
 .member-section {
     background-image: url("../images/bedlam-stage-background.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
+    z-index: -1;
     font-family: "Bitter", sans-serif;
 }
 
 .member-photo {
-    min-height: 400px;
+    min-height: 300px;
     border-radius: 12px;
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .member-info {
@@ -44,5 +57,20 @@ hr {
     margin: 0 auto;
     background-color: #fafafa;
     border-radius: 0.75rem;
+}
+
+/*Gallery-----------------------------------------------------------Gallery*/
+
+.bg-gallery-page {
+    background-image: url("../images/bedlam-stage-background.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+}
+
+.image-gallery {
+    padding-top: 125px;
 }
 
