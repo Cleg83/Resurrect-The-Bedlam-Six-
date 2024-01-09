@@ -10,6 +10,14 @@
     display: inline-block;
 }
 
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
 /*Colors-------------------------------------------------------------Colors*/
 
 .link-icon:hover {
@@ -36,7 +44,6 @@
 
 .navbar {
     font-family: "Bitter", sans-serif;
-    
 }
 
 /*Home Page-------------------------------------------------------Home page*/
@@ -148,4 +155,66 @@ footer {
 
 .image-gallery {
     padding-top: 125px;
+}
+
+/*Contact page--------------------------------------------------Contact page*/
+
+.bg-contact-page {
+    background-image: url("../images/bedlam-stage-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contact-section {
+    padding-bottom: 2rem;
+}
+
+.contact-heading {
+    margin-top: 100px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: "Bitter", sans-serif;
+    color: #fcfcf5;
+}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: "Bitter", sans-serif;
+    color: #000;
+    background-color: #fafafa;
+    opacity: 95%;
+    border-radius: 12px;
+}
+
+.form-heading {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.bg-input-fields {
+    background: transparent;
+    color: #fcfcf5;
+}
+
+.contact-text-area {
+    padding-top: 1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.text-area-heading {
+    padding-bottom: 1rem;
+}
+
+.form-button {
+    color: #f0eede;
+    background-color: #752929;
+    margin-bottom: 1rem;
 }
