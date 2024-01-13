@@ -55,18 +55,8 @@
 
 .question-heading {
     color: #fcfcf5;
-    padding-top: 400px;
+    padding-top: 450px;
 }
-
-.disable-scrollbars::-webkit-scrollbar {
-    background: transparent; /* Chrome/Safari/Webkit */
-    width: 0px;
-  }
-      
-  .disable-scrollbars {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
-  }
 
 .member-section {
     background-image: url("../images/bedlam-stage-background.jpg");
@@ -78,45 +68,61 @@
     font-family: "Bitter", sans-serif;
 }
 
+.page-content-wrapper {
+    padding-top: 3rem;
+}
+
 .bandcamp-player {
     margin-top: 2rem;
+    border-radius: 12px;
 }
 
 .member-col {
     overflow-y: scroll;
     height:500px; 
+    margin-top: 1rem;
     margin-left: 150px;
 }
+
+
+.member-col::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .member-col::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 12px;
+  }
+  
+  /* Handle */
+  .member-col::-webkit-scrollbar-thumb {
+    background: #a10f05;
+    border-radius: 12px;
+  } 
 
 .member-info {
     width: 75%;
     margin-top: 0.5rem;
-    margin-bottom: 25px;
+    margin-bottom: 3rem;
     padding-right: 0px;
     color: #000;
     overflow: hidden; 
     background-color: #fcfad6;
     opacity: 80%;
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 .member-photo {
-    min-width: 150px;
+    max-width: 200px;
     max-height: 200px;
     border-radius: 12px;
     margin-bottom: 1.5rem;
 }
 
-.member-bio {
-
-}
-
-hr {
-    height: 7.5px;
-    width: 150px;
-    margin: 0 auto;
-    background-color: #fafafa;
-    border-radius: 0.75rem;
+.member-name {
+padding-top: 1.5rem;
+padding-bottom: 1.25rem;
 }
 
 /* Footer------------------------------------------------------------Footer*/
@@ -279,4 +285,43 @@ footer {
 .video-size {
     height: 275px;
     width: 100%;
+}
+
+/*Media Queries----------------------------------------------------------Media Queries*/
+
+/*Home Page---------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .member-col {
+        margin-left: 80px;
+    }
+    .disable-scrollbars::-webkit-scrollbar {
+    background: transparent; 
+    width: 0px;
+  }
+      
+  .disable-scrollbars {
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+  }
+  .question-heading {
+    padding-top: 50px;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+.question-heading {
+    padding-top: 50px;
+    }
+} */
+
+/*Contact Page-----------------------*/
+
+@media screen and (max-width: 768px) {
+    .sm-text-align-center {
+        text-align: center;
+    }
+    .contact-text-area {
+        width: 95%;
+    }
 }
