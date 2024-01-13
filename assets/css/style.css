@@ -53,6 +53,21 @@
     padding-top: 125px;
 }
 
+.question-heading {
+    color: #fcfcf5;
+    padding-top: 400px;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    background: transparent; /* Chrome/Safari/Webkit */
+    width: 0px;
+  }
+      
+  .disable-scrollbars {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+
 .member-section {
     background-image: url("../images/bedlam-stage-background.jpg");
     background-position: center;
@@ -63,17 +78,37 @@
     font-family: "Bitter", sans-serif;
 }
 
+.bandcamp-player {
+    margin-top: 2rem;
+}
+
+.member-col {
+    overflow-y: scroll;
+    height:500px; 
+    margin-left: 150px;
+}
+
+.member-info {
+    width: 75%;
+    margin-top: 0.5rem;
+    margin-bottom: 25px;
+    padding-right: 0px;
+    color: #000;
+    overflow: hidden; 
+    background-color: #fcfad6;
+    opacity: 80%;
+    border-radius: 12px;
+}
+
 .member-photo {
-    min-height: 300px;
+    min-width: 150px;
+    max-height: 200px;
     border-radius: 12px;
     margin-bottom: 1.5rem;
 }
 
-.member-info {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    text-align: center;
-    color: #fafafa;
+.member-bio {
+
 }
 
 hr {
