@@ -74,41 +74,51 @@
 
 .bandcamp-player {
     margin-top: 2rem;
-    border-radius: 12px;
 }
 
 .member-col {
     overflow-y: scroll;
-    height:500px; 
-    margin-top: 1rem;
-    margin-left: 150px;
+    height: 400px;
+    margin-top: 2rem;
+    padding-left: 150px;
 }
 
 
-.member-col::-webkit-scrollbar {
+/* .member-col::-webkit-scrollbar {
     width: 10px;
-  }
+  } */
   
   /* Track */
-  .member-col::-webkit-scrollbar-track {
+  /* .member-col::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 12px;
   }
-  
+   */
   /* Handle */
-  .member-col::-webkit-scrollbar-thumb {
+  /* .member-col::-webkit-scrollbar-thumb {
     background: #a10f05;
     border-radius: 12px;
-  } 
+  }  */
+
+   .disable-scrollbars::-webkit-scrollbar {
+        background: transparent; 
+        width: 0px;
+  } */
+      
+    .disable-scrollbars {
+        scrollbar-width: none;
+        -ms-overflow-style: none;  
+  }
+
 
 .member-info {
-    width: 75%;
+    /* width: 75%; */
     margin-top: 0.5rem;
     margin-bottom: 3rem;
     padding-right: 0px;
     color: #000;
     overflow: hidden; 
-    background-color: #fcfad6;
+    background-color: #fcfcf5;
     opacity: 80%;
     /* border-radius: 12px; */
 }
@@ -121,14 +131,14 @@
 }
 
 .member-name {
-padding-top: 1.5rem;
-padding-bottom: 1.25rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.25rem;
 }
 
 /* Footer------------------------------------------------------------Footer*/
 
 footer {
-    min-height: 80px;
+    min-height: 60px;
     margin: 0;
     font-family: "Bitter", sans-serif;
 }
@@ -146,20 +156,25 @@ footer {
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
-    padding-right: 1rem;
-    margin-top: 2rem;
+    padding-right: 0.75rem;
+    margin-top: 1.25rem;
     color: #000;
+}
+
+.footer-menu li a:nth-of-type(5){
+    padding-right: 0px;
 }
 
 .copy-container {
     text-align: center;
     height: 100%;
-    margin: 0;
+    margin: 0px;
 }
 
 .copy {
     font-weight: 200;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
     color: #000;
 }
 
@@ -167,13 +182,11 @@ footer {
 .social {
     height: 100%;
     text-align: right;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .social-links {
-    font-size: 1.5rem;
-    width: 24px;
-    height: 24px;
+    font-size: 20px;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     color: #000;
@@ -292,35 +305,75 @@ footer {
 /*Home Page---------------------------*/
 
 @media screen and (max-width: 1000px) {
+    .question-heading {
+        padding-top: 50px;
+    }
     .member-col {
-        margin-left: 80px;
+        padding-top: 50px;
+        padding-left: 10%;
     }
-    .disable-scrollbars::-webkit-scrollbar {
-    background: transparent; 
-    width: 0px;
-  }
+    .member-info {
+        margin-right: 50px;
+    }
+    
+    /* .disable-scrollbars::-webkit-scrollbar {
+        background: transparent; 
+        width: 0px;
+  } */
       
-  .disable-scrollbars {
-    scrollbar-width: none;
-    -ms-overflow-style: none;  
-  }
-  .question-heading {
-    padding-top: 50px;
-    }
+    /* .disable-scrollbars {
+        scrollbar-width: none;
+        -ms-overflow-style: none;  
+  } */
+ 
 }
 
-/* @media screen and (max-width: 768px) {
-.question-heading {
-    padding-top: 50px;
+@media screen and (max-width: 767px) {
+    .bandcamp-player {
+        margin-right: 0px;
     }
-} */
+    .member-col {
+        padding-left: 15%;
+    }
+    .member-info {
+        margin-right: 25px;
+    }
+    .footer-menu {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    .social {
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0.5rem;
+    }
+    .social-links:last-child {
+        margin-right: 0px;
+    }
+    .footer-menu {
+        padding-left: 0px;
+}
+}
+
 
 /*Contact Page-----------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    .form-container {
+        width: 75%;
+}
+}
+
+@media screen and (max-width: 767px) {
     .sm-text-align-center {
         text-align: center;
     }
+    .form-container {
+        width: 80%;
+    }
+    
     .contact-text-area {
         width: 95%;
     }
