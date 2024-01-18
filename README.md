@@ -247,7 +247,7 @@ To clone the repository:
 
 ## Testing
 
-Please refer to [TESTING.md](TESTING.md) for detailed testing information.
+Please refer to [testing.md](testing.md) for detailed testing information.
 
 ### Solved Bugs
 
