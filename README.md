@@ -97,7 +97,7 @@ As the website is dedicated to bringing back a band few have heard of, I have ch
 
 Google Fonts was used to import the chosen fonts for use in the site.
 
-* Throughout most of the site I have used the google font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
+* Throughout all of the site I have used the google font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
 
 ![Bitter font example](documents\google-fonts-bitter-example.png)
 
@@ -105,10 +105,21 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 Wireframes were created for mobile, tablet and desktop using Justinmind.
 
-![Home Page](documents/home-page-wireframe.png)
-![Gallery Page](documents/gallery-wireframe.png)
-![Video Page](documents/video-page-wireframe.png)
-![Contact Page](documents/contact-page-wireframe.png)
+#### Home page 
+
+![Home page](documents/wireframes/home-page-wireframe.png)
+
+#### Video page
+
+![Video Page](documents/wireframes/video-page-wireframe.png)
+
+#### Gallery page
+
+![Gallery Page](documents/wireframes/gallery-page-wireframe.png)
+
+#### Contact page
+
+![Contact Page](documents/wireframes/contact-page-wireframe.png)
 
 ### Features
 
