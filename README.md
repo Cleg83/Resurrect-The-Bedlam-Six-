@@ -209,9 +209,11 @@ HTML, CSS
 
 ### Frameworks, Libraries & Programs
 
-![Bootstrap CDN]()
-![Font Awesome]()
-![Hover CSS]()
+Bootstrap CDN (https://getbootstrap.com/)
+
+Font awesome (https://fontawesome.com/)
+
+Hover CSS (https://cdnjs.com/libraries/hover.css)
 
 - - -
 
