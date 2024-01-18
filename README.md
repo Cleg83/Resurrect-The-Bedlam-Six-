@@ -125,9 +125,11 @@ Wireframes were created for mobile, tablet and desktop using Justinmind.
 
 The website makes use of Bootstrap framework for grid layouts and intuitive responsiveness.
 
+Custom CSS was written for styling and media queries utilised for further responsiveness.
+
 The website is comprised of a home page, a gallery page, a video page, a contact page and a link to the band's Bandcamp store.
 
-#### The Home Page
+#### The Home Page - Still not completely happy with design / layout
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
 
