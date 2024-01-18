@@ -265,28 +265,27 @@ Please refer to [TESTING.md](TESTING.md) for detailed testing information.
 
 #### Image copyright
 
-Background image for all pages - 
-Gallery image 1 - 
-Gallery image 2 - 
-Gallery image 3 - 
-Gallery image 4 - 
-Gallery image 5 - 
-Gallery image 6  - 
-Gallery image 7 - 
-Gallery image 8 - 
-Gallery image 9  - 
-Gallery image 10 - 
-Gallery image 11 - 
-Gallery image 12 - 
-Louis bio image - 
-Cleg bio image - 
-Tom bio image - 
-Fran bio image - 
-Biff bio image - 
-Dan bio image - 
-
-
-
+| Website image | Copyright owner |
+| --- | --- |
+Background image for all pages | © Andrew AB Photography (http://andrewab.photography) |
+Louis bio image | © Stefan Gnad 2013 |
+Cleg bio image |  © Andrew AB Photography (http://andrewab.photography) |
+Tom bio image | © Christine Keating 2016 |
+Fran bio image | © Andrew AB Photography (http://andrewab.photography) |
+Biff bio image | © Ben Robins Photography (https://www.benrobinsphoto.com) 
+Dan bio image | © Andrew AB Photography (http://andrewab.photography) |
+Gallery image 1 | © Werner Gensmantel 2013 |
+Gallery image 2 | © Simon Heaton |
+Gallery image 3 | © Christine Keating 2012 |
+Gallery image 4 | © Werner Gensmantel 2013 |
+Gallery image 5 | © Christine Keating 2012 |
+Gallery image 6 | © Andrew AB Photography (http://andrewab.photography)|
+Gallery image 7 | © Christine Keating 2016|
+Gallery image 8 | © Christine Keating 2015 |
+Gallery image 9 | © Martine Nie? |
+Gallery image 10 | © Debt Records |
+Gallery image 11 | © Andrew AB Photography (http://andrewab.photography) |
+Gallery image 12 | © Debt Records |
 
 
 
