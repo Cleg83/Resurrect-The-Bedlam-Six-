@@ -97,9 +97,9 @@ As the website is dedicated to bringing back a band few have heard of, I have ch
 
 Google Fonts was used to import the chosen fonts for use in the site.
 
-* Throughout all of the site I have used the google font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
+* Throughout all of the site I have used the google font ![Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
 
-![Bitter font example](documents\google-fonts-bitter-example.png)
+![Bitter font example](documents/google-fonts-bitter-example.png)
 
 ### Wireframes
 
