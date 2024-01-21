@@ -300,6 +300,40 @@ footer {
     width: 100%;
 }
 
+/* Submit response-----------------------------------------------------Submit response*/
+
+.bg-submit-response {
+    background-image: url("../images/bedlam-stage-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    min-height: 750px;
+}
+
+.response-wrapper {
+    padding-top: 375px;
+}
+
+.response-box {
+    margin: 0 auto;
+    width:80%;
+    background-color: #fcfcf5;
+    opacity: 80%;
+    border-radius: 12px;
+    font-family: "Bitter", sans-serif;
+}
+
+.response-text {
+    min-height: 100px;
+    padding-top: 1.5rem;
+}
+
+#response-home-link {
+    color: #752929;
+}
+
 /*Media Queries----------------------------------------------------------Media Queries*/
 
 /*Home Page---------------------------*/
