@@ -93,7 +93,6 @@
     -ms-overflow-style: none;  
 }
 
-
 .member-info {
     margin-top: 0.5rem;
     margin-bottom: 3rem;
@@ -158,7 +157,6 @@ footer {
     margin-bottom: 0;
     color: #000;
 }
-
 
 .social {
     height: 100%;
@@ -330,17 +328,6 @@ footer {
     .member-info {
         margin-right: 50px;
     }
-    
-    /* .disable-scrollbars::-webkit-scrollbar {
-        background: transparent; 
-        width: 0px;
-  } */
-      
-    /* .disable-scrollbars {
-        scrollbar-width: none;
-        -ms-overflow-style: none;  
-  } */
- 
 }
 
 @media screen and (max-width: 767px) {
@@ -371,7 +358,6 @@ footer {
         padding-left: 0px;
 }
 }
-
 
 /*Contact Page-----------------------*/
 
