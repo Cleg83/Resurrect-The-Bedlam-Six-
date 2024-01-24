@@ -52,11 +52,12 @@
 .name-heading {
     color: #fcfcf5;
     padding-top: 125px;
+    font-size: 3rem;
 }
 
 .question-heading {
     color: #fcfcf5;
-    padding-top: 450px;
+    padding-top: 475px;
 }
 
 .member-section {
@@ -82,13 +83,13 @@
     overflow-y: scroll;
     height: 420px;
     margin-top: 2rem;
-    padding-left: 150px;
+    padding-left: 175px;
 }
 
 .disable-scrollbars::-webkit-scrollbar {
     background: transparent; 
     width: 0px;
-  } */
+  } 
       
 .disable-scrollbars {
     scrollbar-width: none;
@@ -100,7 +101,6 @@
     margin-bottom: 3rem;
     padding-right: 0px;
     color: #000;
-    overflow: hidden; 
     background-color: #fafafa;
     opacity: 95%;
 }
@@ -115,6 +115,10 @@
 .member-name {
     padding-top: 1.5rem;
     padding-bottom: 1.25rem;
+}
+
+.member-col > .member-info:nth-child(6) {
+    margin-bottom: 0;
 }
 
 /* Footer-----------------------------*/
@@ -136,7 +140,6 @@ footer {
 
 .footer-menu li a {
     text-decoration: none;
-    font-size: 16px;
     font-weight: 400;
     padding-right: 0.75rem;
     margin-top: 1.25rem;
@@ -167,7 +170,7 @@ footer {
 }
 
 .social-links {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     color: #000;
@@ -177,7 +180,35 @@ footer {
     margin-right: 1rem;
 }
 
-/*Gallery--------------------------*/
+/*Video Page-----------------------*/
+
+.bg-video-page {
+    background-image: url("../images/bedlam-stage-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.video-gallery {
+    padding-top: 125px;
+    padding-bottom: 2rem;
+}
+
+.video-box {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 5px solid #fcfcf5;
+    border-radius: 12px;
+}
+
+.video-size {
+    height: 275px;
+    width: 100%;
+}
+
+/*Gallery Page--------------------------*/
 
 .bg-gallery-page {
     background-image: url("../images/bedlam-stage-background.jpg");
@@ -189,7 +220,8 @@ footer {
 }
 
 .image-gallery {
-    padding-top: 125px;
+    padding-top: 150px;
+    padding-bottom: 2rem;
 }
 
 /*Contact page----------------------------*/
@@ -259,33 +291,6 @@ footer {
     background-color: #000;
 }
 
-/*Video Page-----------------------*/
-
-.bg-video-page {
-    background-image: url("../images/bedlam-stage-background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
-.video-gallery {
-    padding-top: 125px;
-}
-
-.video-box {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 5px solid #fcfcf5;
-    border-radius: 12px;
-}
-
-.video-size {
-    height: 275px;
-    width: 100%;
-}
-
 /* Submit response-------------------*/
 
 .bg-submit-response {
@@ -304,7 +309,7 @@ footer {
 
 .response-box {
     margin: 0 auto;
-    width:80%;
+    width: 80%;
     background-color: #fcfcf5;
     opacity: 80%;
     border-radius: 12px;
@@ -328,24 +333,33 @@ footer {
     .question-heading {
         padding-top: 50px;
     }
+    .bandcamp-player {
+        margin-bottom: 1rem;
+    }
     .member-col {
-        padding-top: 50px;
+        padding-top: 0.75rem;
         padding-left: 10%;
     }
     .member-info {
         margin-right: 50px;
     }
+    .member-col > .member-info:nth-child(6) {
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .name-heading {
+        font-size: 2.5rem;
+    }
     .bandcamp-player {
         margin-right: 0px;
     }
     .member-col {
-        padding-left: 15%;
+        padding-left: 7.5%;
     }
     .member-info {
-        margin-right: 25px;
+        margin-right: 1.5rem;
     }
     .footer-menu {
         text-align: center;
@@ -381,7 +395,6 @@ footer {
     .form-container {
         width: 80%;
     }
-    
     .contact-text-area {
         width: 95%;
     }
