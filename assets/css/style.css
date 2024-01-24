@@ -247,9 +247,14 @@ footer {
 }
 
 .form-button {
-    color: #f0eede;
-    background-color: #752929;
+    color: #fcfcf5;
+    background-color: #a10f05;
     margin-bottom: 1rem;
+}
+
+.form-button:hover {
+    color: #fcfcf5;
+    background-color: #000;
 }
 
 /*Video Page--------------------------------------------------------------------Video Page*/
