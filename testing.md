@@ -7,6 +7,20 @@
 
 ## Automated testing
 
+### W3C Validator
+
+[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
+
+* [index.html](!!!) - Passed.
+* [contact.html](!!!) - Passed.
+* [gallery.html](!!!) - Passed.
+* [video.html](!!!) - Passed.
+* [contact.html](!!!) - Passed.
+* [submit.html](!!!) - Passed.
+* [style.css](!!!) - Passed.
+
+- - -
+
 ### To be added when site is deployed
 Lighthouse tests show all scores as 90-100 with the exception of performance. However, this is likely due to it not yet being a live site and the tests being performed on the in-progresss site, running on a live server.
 
@@ -48,6 +62,8 @@ Lighthouse tests show all scores as 90-100 with the exception of performance. Ho
 | Instagram icon link | Directs the user to external Instagram page | Opens external Instagram page in new tab | Link changed color | Pass |
 | Youtube icon link | Directs the user to external Youtube page | Opens external Youtube page in new tab | Link changed color | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page | Opens external Bandcamp page in new tab | Link changed color | Pass |
+
+---
 
 
 ### Video page
@@ -97,6 +113,7 @@ Lighthouse tests show all scores as 90-100 with the exception of performance. Ho
 | Youtube icon link | Directs the user to external Youtube page | Opens external Youtube page in new tab | Link changed color | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page | Opens external Bandcamp page in new tab | Link changed color | Pass |
 
+---
 
 ### Gallery page
 
@@ -145,6 +162,7 @@ Lighthouse tests show all scores as 90-100 with the exception of performance. Ho
 | Youtube icon link | Directs the user to external Youtube page | Opens external Youtube page in new tab | Link changed color | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page | Opens external Bandcamp page in new tab | Link changed color | Pass |
 
+---
 
 ### Contact page
 
@@ -171,6 +189,7 @@ Submit button | Only allows users to submit if all input fields are completed | 
 Submit button | Only allows users to submit if all input fields are completed | Click submit button without completing Email address field | Button wouldn't allow form submission | Pass |
 Submit button | Only allows users to submit if all input fields are completed | Click submit button without inputting any text into text area | Button wouldn't allow form submission | Pass |
 Submit button | Only allows users to submit if all input fields are completed | Click submit button with all fields complete| Form submitted | Pass |
+Submit button | Loads submission response page when clicked | Click submit button with all fields complete| Submission response page loads | Pass |
 
 ##### Footer 
 
@@ -188,3 +207,40 @@ Submit button | Only allows users to submit if all input fields are completed | 
 | Youtube icon link | Directs the user to external Youtube page | Opens external Youtube page in new tab | Link changed color | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page | Opens external Bandcamp page in new tab | Link changed color | Pass |
 
+---
+
+### Form sumission page
+
+##### Header / Navbar 
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Band name link | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
+| Home page link | Link directs user back to the home page | Clicked on link | Home page reloads | Pass |
+| Gallery link | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
+| Video link | Directs the user to the video page | Clicked on link | Video page opens | Pass |
+| Shop link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
+| Contact link | Directs users to contact page | Clicked on link | Contact page opens| Pass |
+| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
+
+##### Form submission page content
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+Cleck here to return home link | Directs user to the home page | Clicked on link | Home page opens | Pass
+
+##### Footer 
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home page link | Link directs user back to the home page | Clicked on link | Home page reloads | Pass |
+| Gallery link | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
+| Video link | Directs the user to the video page | Clicked on link | Video page opened | Pass |
+| Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
+| Contact link | Directs users to contact page | Clicked on link | Contact page opened | Pass |
+| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
+| Facebook icon link | Directs the user to external Facebook page page | Opens external Facebook page in new tab | Link changed color | Pass |
+| Twitter / X icon link | Directs the user to external Twitter / X page | Opens external Twitter / X page in new tab | Link changed color | Pass |
+| Instagram icon link | Directs the user to external Instagram page | Opens external Instagram page in new tab | Link changed color | Pass |
+| Youtube icon link | Directs the user to external Youtube page | Opens external Youtube page in new tab | Link changed color | Pass |
+| Bandcamp icon link | Directs the user to external Bandcamp page | Opens external Bandcamp page in new tab | Link changed color | Pass |
