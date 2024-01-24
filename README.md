@@ -84,9 +84,11 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
 All the pages of the site use the same background image so I wanted to chose a color scheme that contrasted with the image in a visually pleasing and coherent manner.
 
 * I have used `#fcfcf51` as the text color when the background is dark & `#000000` for the text color when the background is light.
-* I have used `#a10f05` as the hover color and the color of the scrollbar handle for the scrollable band member section of the home page.
+* I have used `#a10f05` as the hover color and the color of the form submit buttons.
+* I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile.
+* `#f1f2df` was used for the footer to match the header / navbar color. 
 
-  <!-- ![Resurrect Louis Barabbas & The Bedlam Six](documents/color-scheme-ss1.png) -->
+  ![Color scheme](documents/rtb6-color-scheme.png)
 
 ### Background image
 

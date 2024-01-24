@@ -275,7 +275,7 @@ footer {
 .video-box {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    border: 2px solid #fcfcf5;
+    border: 5px solid #fcfcf5;
     border-radius: 12px;
 }
 
@@ -315,7 +315,7 @@ footer {
 }
 
 #response-home-link {
-    color: #752929;
+    color: #a10f05;
 }
 
 /*Media Queries----------------------------------------------------------Media Queries*/
@@ -335,7 +335,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .bandcamp-player {
         margin-right: 0px;
     }
@@ -372,7 +372,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .sm-text-align-center {
         text-align: center;
     }
@@ -384,3 +384,25 @@ footer {
         width: 95%;
     }
 }
+
+/*Gallery Page---------------------------*/
+
+/* @media screen and (max-width: 1000px) {
+    .image-gallery > div:nth-of-type(9) {
+        order:10;
+    }
+    .image-gallery > div:nth-of-type(10) {
+        order:9;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-gallery > div:nth-of-type(9) {
+        order:9;
+    }
+    .image-gallery > div:nth-of-type(10) {
+        order:10;
+    }
+} */
+    
+
