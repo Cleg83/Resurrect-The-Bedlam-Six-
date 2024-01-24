@@ -86,6 +86,9 @@
     padding-left: 175px;
 }
 
+/* Disable scrollbar functionality taken from this forum thread 
+https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll) */
+
 .disable-scrollbars::-webkit-scrollbar {
     background: transparent; 
     width: 0px;
