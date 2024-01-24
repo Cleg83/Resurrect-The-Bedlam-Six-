@@ -23,8 +23,9 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [Wireframes](#wireframes)
   * [Features](#features)
     * [The Home Page](#the-home-page)
-    * [The Gallery Page](#the-gallery-page)
     * [The Video Page](#the-video-page)
+    * [The Gallery Page](#the-gallery-page)
+    * [The Contact Page](#the-contact-page)
     * [Shop - external link to Bandcamp](#the-shop-page)
     * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
@@ -150,16 +151,6 @@ On devices with displays of !!!px and smaller, the Bandcamp player is centered a
 
 ![Home page image 3](documents/home-page-ss3-placeholder.png)
 
-#### The gallery page
-
-The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
-
-![Image of the gallery page](documents/gallery-page-ss1.png)
-
-All images open in a new browser tab when clicked. 
-
-![Image of new browser tab with full-size image](documents/gallery-page-ss2.png)
-
 #### The Video Page
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
@@ -173,6 +164,16 @@ On medium devices they are displayed as a 2x3 grid.
 On smaller devices, the videos are displayed in a 1x6 grid.
 
 ![Image of large screen video page](documents/video-page-ss3.png)
+
+#### The gallery page
+
+The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
+
+![Image of the gallery page](documents/gallery-page-ss1.png)
+
+All images open in a new browser tab when clicked. 
+
+![Image of new browser tab with full-size image](documents/gallery-page-ss2.png)
 
 #### The Contact Page
 
@@ -216,11 +217,27 @@ HTML, CSS
 
 ### Frameworks, Libraries & Programs
 
-Bootstrap CDN (https://getbootstrap.com/)
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
-Font awesome (https://fontawesome.com/)
+* [Bootstrap](https://getbootstrap.com/) - For the layout of most pages.
 
-Hover CSS (https://cdnjs.com/libraries/hover.css)
+* [Favicon.io](https://favicon.io/) To create favicon.
+
+* [Font Awesome](https://fontawesome.com/) For social media icons.
+
+* [Git](https://git-scm.com/) - For version control.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [Shields.io](https://shields.io/) To add badges to the README.
+
+* [Visual Studio Code](https://code.visualstudio.com/) The IDE used to create this site.
+
+* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 - - -
 
@@ -273,13 +290,17 @@ Please refer to [testing.md](testing.md) for detailed testing information.
 
 ### External code
 
-* The grid layout for gallery page was taken from this page (https://startbootstrap.com/snippets/thumbnail-gallery)
+* The grid layout for the gallery page was taken from this page (https://startbootstrap.com/snippets/thumbnail-gallery)
 
 * I found the solution to hiding the scrollbars on the band member section on this useful forum page (https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
 
+* Bootstrap documentation and examples for the navbar: (https://getbootstrap.com/docs/5.3/components/navbar/)
+and contact form:
+(https://getbootstrap.com/docs/5.3/forms/overview/) have been incredibly useful to use as a blueprint.
+
 ### Site content
 
-* Band member info /bios were taken from the band's existing (but outdated) ![website](https://bedlamsix.com/). I have updated any outdated information.
+* Band member info /bios were taken from the band's existing (but outdated) [website](https://bedlamsix.com/). I have updated any outdated information.
 
 * All page headings etc. were written by myself.
 
