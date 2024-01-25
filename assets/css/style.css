@@ -339,9 +339,9 @@ footer {
 
 /*Home Page---------------------------*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-height: 1000px) {
     .question-heading {
-        padding-top: 650px;
+        padding-top: 700px;
     }
 }
 
