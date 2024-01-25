@@ -2,7 +2,7 @@
 
 ![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
 
-Visit the deployed site here: (link to active site goes here).
+Visit the deployed site here: [Ressurect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
 
 Louis Barabbas & The Bedlam Six were a gloriously cacophanous musical ensemble who ceased playing live shows in 2016. This website asks the question "Is it time to bring back the greatest band you've probably never heard of?" 
 
@@ -267,6 +267,8 @@ HTML, CSS
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [Shields.io](https://shields.io/) To add badges to the README.
+
+* [TinyPNG](https://tinypng.com/) To compress home page images
 
 * [Visual Studio Code](https://code.visualstudio.com/) The IDE used to create this site.
 
