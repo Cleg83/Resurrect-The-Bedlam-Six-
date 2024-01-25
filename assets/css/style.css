@@ -463,25 +463,5 @@ footer {
         width: 95%;
     }
 }
-
-/*Gallery Page---------------------------*/
-
-/* @media screen and (max-width: 1000px) {
-    .image-gallery > div:nth-of-type(9) {
-        order:10;
-    }
-    .image-gallery > div:nth-of-type(10) {
-        order:9;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .image-gallery > div:nth-of-type(9) {
-        order:9;
-    }
-    .image-gallery > div:nth-of-type(10) {
-        order:10;
-    }
-} */
     
 
