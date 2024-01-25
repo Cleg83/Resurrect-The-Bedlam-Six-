@@ -22,7 +22,9 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [Typography](#typography)
   * [Wireframes](#wireframes)
   * [Features](#features)
+    * [The Navbar](#the-navbar)
     * [The Home Page](#the-home-page)
+    * [The Footer](#the-footer)
     * [The Video Page](#the-video-page)
     * [The Gallery Page](#the-gallery-page)
     * [The Contact Page](#the-contact-page)
@@ -84,10 +86,10 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
 
 All the pages of the site use the same background image so I wanted to chose a color scheme that contrasted with the image in a visually pleasing and coherent manner.
 
-* I have used `#fcfcf51` as the text color when the background is dark & `#000000` for the text color when the background is light.
+* I have used `#fcfcf5` as the text color when the background is dark & `#000000` for the text color when the background is light.
+* I have also used `fcfcf5` as the color for the navbar and the footer.
 * I have used `#a10f05` as the hover color and the color of the form submit buttons.
-* I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile.
-* `#f1f2df` was used for the footer to match the header / navbar color. 
+* I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile. The difference is subtle but works more effectively than using `fcfcf5` for these sections.
 
   ![Color scheme](documents/rtb6-color-scheme.png)
 
@@ -139,7 +141,7 @@ All pages are fully responsive and feature a favicon icon in the browser tab:
 
 - - -
 
-#### The Nav Bar
+#### The Navbar
 
 I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
 
@@ -167,11 +169,20 @@ When you scroll down the home page you encounter a smaller heading directin you 
 
 ![Home page image 2](documents/home-page-ss2-placeholder.png)
 
-On devices with displays of !!!px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
+On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
 ![Home page image 3](documents/home-page-ss3-placeholder.png)
 
 #### The Footer
+
+I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. Only on larger screens is the copyright displayed.
+
+![Footer image 1](documents/footer-ss1.png)
+
+On mobile devices I wanted the links and icons to display on top of one another, rather than inline. This was achieved by making the columns full width on smaller devices using Bootstrap's class naming system.
+
+![Footer image 2](documents/footer-ss2.png)
+
 
 #### The Video Page
 
