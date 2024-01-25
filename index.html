@@ -13,6 +13,10 @@
 </head>
 <body>
 <header>
+<!--
+    Navbar layout used an example from this Boostrap Ducmentation page 
+    (https://getbootstrap.com/docs/5.3/components/navbar/) as a blueprint to build on and customise
+-->
     <nav class="navbar navbar-expand-md bg-color-navbar fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand text-center" href="index.html">Louis Barabbas<br>& The Bedlam Six</a>
@@ -42,6 +46,9 @@
         </div>
     </nav>
 </header>
+<!--
+    Home page content
+-->
     <section id="band-members" class="member-section bg-member-section">
         <div class="container-fluid">
             <div class="col-12">
@@ -52,12 +59,21 @@
             </div>
         </div>
         <div class="container-fluid page-content-wrapper justify-content-center">
+<!--
+    Embedded Bandcamp player - kept the inline style attributes of border, height and width.
+    Additional styling added using CSS
+-->
             <div class="row">
                 <div class="col-md-12 col-lg-4 bandcamp-player text-center">
                     <iframe style="border: 0; width: 315px; height: 427px;" 
                     src="https://bandcamp.com/EmbeddedPlayer/album=3728589527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/">
                     </iframe>
                 </div>
+<!-- 
+    Band member bio section below. This section scrolls independently of the main page and I wanted 
+    the scroll bars to be hidden. The code used for this functionality was taken from this forum thread 
+    (https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll)
+-->
                 <div class="col-md-12 col-lg-6 member-col disable-scrollbars">
                     <div class="row member-info text-center">
                         <div class="col-12 member-name">
@@ -68,7 +84,11 @@
                                 alt="Close up of Louis Barabbas playing the guitar on stage while looking at the camera, copyright Stefan Gnad 2013"
                                 class="member-photo">
                         </div>
-                        <div class="col-12 member-bio">
+<!--
+    The format of using "Role" and "Also" was taken from the band's existing,
+    but outdated website (https://bedlamsix.com/). Content was updated where needed.
+-->
+                        <div class="col-12 member-bio">    
                             <p>
                                 ROLE: Songwriter, lead vocals, rhythm guitar, occasional spoons
                             </p>
@@ -186,6 +206,10 @@
             </div>
         </div>
     </section>
+<!-- 
+    The footer utilises Bootstrap grid layout but needed quite a lot of custom CSS to size and 
+    position icons and links
+-->
     <footer class="container-fluid bg-color-footer">
         <div class="row footer-wrapper">
             <div class="col-sm-12 col-md-6 col-lg-4">
