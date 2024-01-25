@@ -49,6 +49,16 @@
 
 /*Home Page------------------------------*/
 
+.member-section {
+    background-image: url("../images/bedlam-stage-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    font-family: "Bitter", sans-serif;
+}
+
 .name-heading {
     color: #fcfcf5;
     padding-top: 125px;
@@ -60,16 +70,6 @@
     padding-top: 475px;
 }
 
-.member-section {
-    background-image: url("../images/bedlam-stage-background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    font-family: "Bitter", sans-serif;
-}
-
 .page-content-wrapper {
     padding-top: 3rem;
 }
@@ -77,13 +77,14 @@
 .bandcamp-player {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 50px;
 }
 
 .member-col {
     overflow-y: scroll;
     height: 420px;
     margin-top: 2rem;
-    padding-left: 175px;
+    padding-left: 155px;
 }
 
 /* Disable scrollbar functionality taken from this forum thread 
@@ -338,6 +339,7 @@ footer {
     }
     .bandcamp-player {
         margin-bottom: 1rem;
+        margin-left: 0px;
     }
     .member-col {
         padding-top: 0.75rem;
