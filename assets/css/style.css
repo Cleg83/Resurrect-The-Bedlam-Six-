@@ -342,6 +342,7 @@ footer {
 @media screen and (min-height: 1000px) {
     .name-heading {
         font-size: 4rem;
+        padding-top: 150px;
     }
     .question-heading {
         padding-top: 710px;
