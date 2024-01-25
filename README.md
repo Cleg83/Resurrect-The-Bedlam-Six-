@@ -277,12 +277,12 @@ Please refer to [testing.md](testing.md) for detailed testing information.
 
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 | 
+| 1 | Not being able to resize embedded bandcamp player | The iframe had inline style rules I needed to delete and replace with custom css. This also required renaming the div that contained the iframe to bandcamp-wrapper so the iframe could be given the id of bandcamp-player in order to resize responsively. | 
 
 
 ### Known Bugs
 
-
+Not necessarily a bug but I'm not 100% happy with the home page layout when viewed on extra large screens. I will chalk this up to not being a natural designer and will welcome suggestions on how to improve the home page.
 
 - - -
 
