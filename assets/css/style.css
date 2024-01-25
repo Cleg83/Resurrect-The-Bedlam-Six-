@@ -74,10 +74,16 @@
     padding-top: 3rem;
 }
 
-.bandcamp-player {
+.bandcamp-wrapper {
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 50px;
+}
+
+#bandcamp-player {
+    border: 0; 
+    width: 315px; 
+    height: 427px;
 }
 
 .member-col {
@@ -343,7 +349,7 @@ footer {
     .question-heading {
         padding-top: 50px;
     }
-    .bandcamp-player {
+    .bandcamp-wrapper {
         margin-bottom: 1rem;
         margin-left: 0px;
     }
@@ -363,7 +369,7 @@ footer {
     .name-heading {
         font-size: 2.5rem;
     }
-    .bandcamp-player {
+    .bandcamp-wrapper {
         margin-right: 0px;
     }
     .member-col {
@@ -389,6 +395,28 @@ footer {
     .footer-menu {
         padding-left: 0px;
 }
+}
+
+@media screen and (max-width: 490px) {
+    .member-col {
+        padding-left: 8%;
+    }
+    .member-info {
+        margin-right: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #bandcamp-player {
+        height: 400px;
+        width: 280px;
+    }
+    .member-col {
+        padding-left: 10%;
+    }
+    .member-info {
+        margin-right: 0.25rem;
+    }
 }
 
 /*Contact Page-----------------------*/
