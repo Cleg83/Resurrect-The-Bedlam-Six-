@@ -1,6 +1,6 @@
 # Resurrect Louis Barabbas & The Bedlam Six
 
-<!-- ![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](assets/images/readme-heading-image.png) -->
+![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
 
 Visit the deployed site here: (link to active site goes here).
 
@@ -137,6 +137,26 @@ All pages are fully responsive and feature a favicon icon in the browser tab:
 
 ![favicon](documents/favicon-ss.png)
 
+- - -
+
+#### The Nav Bar
+
+I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
+
+![Navbar image 1](documents/nav-bar-ss1.png)
+
+The band name is a link that takes you back to the home page.
+
+On smaller screen sizes, I wanted the navbar to collapse into a hamburger menu (which Bootstrap kindly does the bulk of the work for).
+
+![Navbar image 2](documents/navbar-ss3.png)
+
+The image below shows the expanded navbar and also shows that the active state of the video link.
+
+![Navbar image 3](documents/navbar-ss2.png)
+
+- - -
+
 #### The Home Page - Still not completely happy with design / layout
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
@@ -150,6 +170,8 @@ When you scroll down the home page you encounter a smaller heading directin you 
 On devices with displays of !!!px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
 ![Home page image 3](documents/home-page-ss3-placeholder.png)
+
+#### The Footer
 
 #### The Video Page
 
