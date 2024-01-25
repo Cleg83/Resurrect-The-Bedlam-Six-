@@ -67,7 +67,7 @@
 
 .question-heading {
     color: #fcfcf5;
-    padding-top: 475px;
+    padding-top: 510px;
 }
 
 .page-content-wrapper {
@@ -339,7 +339,7 @@ footer {
 
 /*Home Page---------------------------*/
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 1200px) {
     .name-heading {
         font-size: 4rem;
         padding-top: 150px;
