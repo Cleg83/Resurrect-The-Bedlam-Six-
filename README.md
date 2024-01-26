@@ -28,6 +28,7 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
     * [The Video Page](#the-video-page)
     * [The Gallery Page](#the-gallery-page)
     * [The Contact Page](#the-contact-page)
+    * [The Submit Page](#the-submit-page)
     * [Shop - external link to Bandcamp](#the-shop-page)
     * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
@@ -208,8 +209,13 @@ All images open in a new browser tab when clicked.
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
-![Contact page image](documents/creadme-images/ontact-page-ss1.png)
+![Contact page image](documents/readme-images/contact-page-ss1.png)
 
+#### The Submit Page
+
+On the user submitting the contact form with all required fields completed, I wanted a new page to load that thanks the user for contacting the band and provides a link back to the home page. 
+
+![Submit page image](documents/readme-images/submit-ss1.png)
 
 #### The Shop Page
 
