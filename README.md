@@ -155,7 +155,7 @@ The image below shows the expanded navbar and also shows that the active state o
 
 ![Navbar image 3](documents/readme-images/navbar-ss2.png)
 
-#### The Home Page - Still not completely happy with design / layout
+#### The Home Page 
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
 
