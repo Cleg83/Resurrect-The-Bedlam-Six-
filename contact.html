@@ -56,7 +56,10 @@
     Below form layout started with an example found on the form layout page of Bootstrap Documentation 
     (https://getbootstrap.com/docs/5.3/forms/overview/) and customised to suit the needs of my form.
 -->
-    <form class="form-container contact-form">
+<!--Had to remove method attribute from form in order for this static site to load submit.html when
+    form is submitted. Also had to change the submit button from <button> to <input type="submit"> in
+    order to achieve the desired result-->
+    <form class="form-container contact-form" action="submit.html">
         <h3 class="uppercase text-center form-heading">Get in touch!</h3>
         <div class="mb-3 row align-items-center">
             <div class="col-md-3 text-align-right sm-text-align-center">
@@ -79,7 +82,7 @@
             <textarea class="form-control bg-input-fields" id="contact-reason" rows="10" placeholder="Please give us as much detail as possible about what you have planned....." required></textarea>
         </div> 
         <div class="d-grid col-6 mx-auto">
-            <a href="submit.html" target="_parent" class="btn form-button" role="button">Submit</a>
+            <input type="submit" class="btn form-button" role="button"></button>
         </div>
     </form>
 </section>
