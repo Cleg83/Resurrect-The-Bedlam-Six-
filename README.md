@@ -45,7 +45,7 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
 
 * [Testing](#testing)
   * [Solved Bugs](#solved-bugs)
-  * [Known Bugs](#known-bugs)
+  * [Known Issues](#known-issues)
   
 * [Credits](#credits)
   * [External code](#external-code)
@@ -139,8 +139,6 @@ All pages are fully responsive and feature a favicon icon in the browser tab:
 
 ![favicon](documents/favicon-ss.png)
 
-- - -
-
 #### The Navbar
 
 I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
@@ -156,8 +154,6 @@ On smaller screen sizes, I wanted the navbar to collapse into a hamburger menu (
 The image below shows the expanded navbar and also shows that the active state of the video link.
 
 ![Navbar image 3](documents/navbar-ss2.png)
-
-- - -
 
 #### The Home Page - Still not completely happy with design / layout
 
@@ -183,7 +179,6 @@ On mobile devices I wanted the links and icons to display on top of one another,
 
 ![Footer image 2](documents/footer-ss2.png)
 
-
 #### The Video Page
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
@@ -198,6 +193,7 @@ On smaller devices, the videos are displayed in a 1x6 grid.
 
 ![Image of large screen video page](documents/video-page-ss3.png)
 
+
 #### The gallery page
 
 The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
@@ -208,17 +204,20 @@ All images open in a new browser tab when clicked.
 
 ![Image of new browser tab with full-size image](documents/gallery-page-ss2.png)
 
+
 #### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
 ![Contact page image](documents/contact-page-ss1.png)
 
+
 #### The Shop Page
 
 The shop link in the header and footer link to the Bancamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
 ![Bandcamp shop image](documents/bandcamp-store-ss1.png)
+
 
 #### Future Implementations
 
@@ -236,7 +235,7 @@ I have made the site with accessibility in mind and
 
 * Using semantic HTML.
 * Utilising the appropriate ARIA atrributes when needed.
-* Utilising a hover state on all links on the site to make it clear to the user if they are hovering over a link (not done this yet)
+* Utilising a hover state on all links on the site to make it clear to the user if they are hovering over a link.
 * Utilising a sans serif font for the site due to being more dyslexia-friendly than other font families.
 * Making sure to use contrasting colors for images and text.
 
@@ -315,9 +314,15 @@ Please refer to [testing.md](testing.md) for detailed testing information.
 | 1 | Not being able to resize embedded bandcamp player | The iframe had inline style rules I needed to delete and replace with custom css. This also required renaming the div that contained the iframe to bandcamp-wrapper so the iframe could be given the id of bandcamp-player in order to resize responsively. | 
 
 
-### Known Bugs
+### Known issues
 
-Not necessarily a bug but I'm not 100% happy with the home page layout when viewed on extra large screens. I will chalk this up to not being a natural designer and will welcome suggestions on how to improve the home page.
+1. Not necessarily a bug but I'm not 100% happy with the home page layout when viewed on extra large screens. I will chalk this up to not being a natural designer and will welcome suggestions on how to improve the home page.
+
+2. The band member section of the home page scrolls independently and I don't think this works as well as it could: The user may wish to scroll up to the top of the page but if the cursor is still within the border of the scrollable member-section, only that section will scroll. 
+
+
+
+
 
 - - -
 
@@ -332,6 +337,8 @@ Not necessarily a bug but I'm not 100% happy with the home page layout when view
 * Bootstrap documentation and examples for the navbar: (https://getbootstrap.com/docs/5.3/components/navbar/)
 and contact form:
 (https://getbootstrap.com/docs/5.3/forms/overview/) have been incredibly useful to use as a blueprint.
+
+* The layout for this README.md was heavily inspired by the perfect README.md shown to me by my Code Institute mentor, it can be found here (https://github.com/kera-cudmore/TheQuizArms)
 
 ### Site content
 
