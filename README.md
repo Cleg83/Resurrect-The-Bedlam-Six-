@@ -37,7 +37,7 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [Languages](#languages)
   * [Frameworks, Libraries & Programs](#frameworks-libraries--programs)
 
-* [Deployment & Local Development](#deployment--local-development)
+* [Deployment & Development](#deployment--development)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
     * [Extensions required](#extensions-required)
@@ -277,6 +277,21 @@ HTML, CSS
 * [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
 - - -
+
+## Deployment & Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [Resurrect The Bedlam Six Repo](https://github.com/Cleg83/Resurrect-The-Bedlam-Six-Project).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process will likely  take a few minutes.
 
 ### Local Development
 
