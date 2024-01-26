@@ -2,7 +2,7 @@
 
 ![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
 
-Visit the deployed site here: [Ressurect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
+Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
 
 Louis Barabbas & The Bedlam Six were a gloriously cacophanous musical ensemble who ceased playing live shows in 2016. This website asks the question "Is it time to bring back the greatest band you've probably never heard of?" 
 
