@@ -25,8 +25,22 @@ Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.i
 
 - - -
 
-### To be added when site is deployed
-Lighthouse tests show all scores as 90-100 with the exception of performance. However, this is likely due to it not yet being a live site and the tests being performed on the in-progresss site, running on a live server.
+### Lighthouse
+
+Lighthouse in Chrome Devloper tools was used to test the performance, accessibility, best practices and SEO of each page. 
+
+* [index-lighthouse](documents/testing/lighthouse/index-lighthouse.png)
+* [video-lighthouse](documents/testing/lighthouse/video-lighthouse.png)
+* [gallery-lighthouse](documents/testing/lighthouse/gallery-lighthouse.png)
+* [contact-lighthouse](documents/testing/lighthouse/contact-lighthouse.png)
+* [submit-lighthouse](documents/testing/lighthouse/submit-lighthouse.png)
+
+#### Anomalies / outliers 
+
+* video.html shows a performance score of 77.  This page has 6 embedded iframes slowing things down. For the sake of this static site I don't believe a change is needed, the loading attribute could be set to lazy but I wanted the videos to display at all times.
+
+* submit.html shows an SEO score of 82 but as this page only loads once the form is completed, this score does not concern me. 
+
 
 ## Manual testing
 
