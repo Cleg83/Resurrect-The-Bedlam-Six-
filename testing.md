@@ -1,8 +1,8 @@
+# Resurrect The Bedlam Six: Testing
+
 ![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
 
 Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
-
-# Resurrect The Bedlam Six: Testing
 
 ## CONTENTS
 
