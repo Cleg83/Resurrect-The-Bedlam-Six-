@@ -19,7 +19,6 @@ Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.i
 * [contact.html](documents/testing/w3c/contact.png) - Passed.
 * [gallery.html](documents/testing/w3c/gallery.png) - Passed.
 * [video.html](documents/testing/w3c/video.png) - Passed.
-* [contact.html](documents/testing/w3c/contact.png) - Passed.
 * [submit.html](documents/testing/w3c/submit.png) - Passed.
 * [style.css](documents/testing/w3c/css.png) - Passed.
 
