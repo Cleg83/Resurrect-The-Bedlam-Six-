@@ -51,7 +51,6 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [External code](#external-code)
   * [Site content](#site-content)
   * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
 
   - - - 
 ![Screenshot of navbar, page-heading and top of page background image](documents/readme-images/navbar-header-screenshot.png)
