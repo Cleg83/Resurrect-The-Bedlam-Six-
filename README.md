@@ -1,6 +1,6 @@
 # Resurrect Louis Barabbas & The Bedlam Six
 
-![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
+![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/readme-images/air-ss.png)
 
 Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
 
@@ -54,7 +54,7 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [Acknowledgments](#acknowledgments)
 
   - - - 
-![Screenshot of navbar, page-heading and top of page background image](documents/navbar-header-screenshot.png)
+![Screenshot of navbar, page-heading and top of page background image](documents/readme-images/navbar-header-screenshot.png)
 
 ## User Experience (UX)
 
@@ -91,7 +91,7 @@ All the pages of the site use the same background image so I wanted to chose a c
 * I have used `#a10f05` as the hover color and the color of the form submit buttons.
 * I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile. The difference is subtle but works more effectively than using `fcfcf5` for these sections.
 
-  ![Color scheme](documents/rtb6-color-scheme.png)
+  ![Color scheme](documents/readme-images/rtb6-color-scheme.png)
 
 ### Background image
 
@@ -105,7 +105,7 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 * Throughout all of the site I have used the google font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
 
-![Bitter font example](documents/google-fonts-bitter-example.png)
+![Bitter font example](documents/readme-images/google-fonts-bitter-example.png)
 
 ### Wireframes
 
@@ -137,86 +137,86 @@ The website is comprised of a home page, a gallery page, a video page, a contact
 
 All pages are fully responsive and feature a favicon icon in the browser tab:
 
-![favicon](documents/favicon-ss.png)
+![favicon](documents/readme-images/favicon-ss.png)
 
 #### The Navbar
 
 I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
 
-![Navbar image 1](documents/nav-bar-ss1.png)
+![Navbar image 1](documents/readme-images/nav-bar-ss1.png)
 
 The band name is a link that takes you back to the home page.
 
 On smaller screen sizes, I wanted the navbar to collapse into a hamburger menu (which Bootstrap kindly does the bulk of the work for).
 
-![Navbar image 2](documents/navbar-ss3.png)
+![Navbar image 2](documents/readme-images/navbar-ss3.png)
 
 The image below shows the expanded navbar and also shows that the active state of the video link.
 
-![Navbar image 3](documents/navbar-ss2.png)
+![Navbar image 3](documents/readme-images/navbar-ss2.png)
 
 #### The Home Page - Still not completely happy with design / layout
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
 
-![Home page image 1](documents/home-page-ss1.png)
+![Home page image 1](documents/readme-images/home-page-ss1.png)
 
 When you scroll down the home page you encounter a smaller heading directin you to the content below which comproises of a static embedded Bandcamp player on the left of the screen and a scrollable band member section on the right. 
 
-![Home page image 2](documents/home-page-ss2-placeholder.png)
+![Home page image 2](documents/readme-images/home-page-ss2-placeholder.png)
 
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
-![Home page image 3](documents/home-page-ss3-placeholder.png)
+![Home page image 3](documents/readme-images/home-page-ss3-placeholder.png)
 
 #### The Footer
 
 I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. Only on larger screens is the copyright displayed.
 
-![Footer image 1](documents/footer-ss1.png)
+![Footer image 1](documents/readme-images/footer-ss1.png)
 
 On mobile devices I wanted the links and icons to display on top of one another, rather than inline. This was achieved by making the columns full width on smaller devices using Bootstrap's class naming system.
 
-![Footer image 2](documents/footer-ss2.png)
+![Footer image 2](documents/readme-images/footer-ss2.png)
 
 #### The Video Page
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
 
-![Image of large screen video page](documents/video-page-ss1.png)
+![Image of large screen video page](documents/readme-images/video-page-ss1.png)
 
 On medium devices they are displayed as a 2x3 grid.
 
-![Image of large screen video page](documents/video-page-ss2.png)
+![Image of large screen video page](documents/readme-images/video-page-ss2.png)
 
 On smaller devices, the videos are displayed in a 1x6 grid.
 
-![Image of large screen video page](documents/video-page-ss3.png)
+![Image of large screen video page](documents/readme-images/video-page-ss3.png)
 
 
 #### The gallery page
 
 The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
 
-![Image of the gallery page](documents/gallery-page-ss1.png)
+![Image of the gallery page](documents/readme-images/gallery-page-ss1.png)
 
 All images open in a new browser tab when clicked. 
 
-![Image of new browser tab with full-size image](documents/gallery-page-ss2.png)
+![Image of new browser tab with full-size image](documents/readme-images/gallery-page-ss2.png)
 
 
 #### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
-![Contact page image](documents/contact-page-ss1.png)
+![Contact page image](documents/creadme-images/ontact-page-ss1.png)
 
 
 #### The Shop Page
 
 The shop link in the header and footer link to the Bancamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
-![Bandcamp shop image](documents/bandcamp-store-ss1.png)
+![Bandcamp shop image](documents/readme-images/bandcamp-store-ss1.png)
 
 
 #### Future Implementations

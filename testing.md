@@ -1,6 +1,6 @@
 # Resurrect The Bedlam Six: Testing
 
-![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/air-ss.png)
+![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/readme-images/air-ss.png)
 
 Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
 
@@ -15,13 +15,13 @@ Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.i
 
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
-* [index.html](documents/W3C/index.png) - Passed.
-* [contact.html](documents/W3C/contact.png) - Passed.
-* [gallery.html](documents/W3C/gallery.png) - Passed.
-* [video.html](documents/W3C/video.png) - Passed.
-* [contact.html](documents/W3C/contact.png) - Passed.
-* [submit.html](documents/W3C/submit.png) - Passed.
-* [style.css](documents/W3C/css.png) - Passed.
+* [index.html](documents/testing/w3c/index.png) - Passed.
+* [contact.html](documents/testing/w3c/contact.png) - Passed.
+* [gallery.html](documents/testing/w3c/gallery.png) - Passed.
+* [video.html](documents/testing/w3c/video.png) - Passed.
+* [contact.html](documents/testing/w3c/contact.png) - Passed.
+* [submit.html](documents/testing/w3c/submit.png) - Passed.
+* [style.css](documents/testing/w3c/css.png) - Passed.
 
 - - -
 
