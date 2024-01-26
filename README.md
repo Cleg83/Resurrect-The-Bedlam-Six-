@@ -265,9 +265,7 @@ HTML, CSS
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-* [Shields.io](https://shields.io/) To add badges to the README.
-
-* [TinyPNG](https://tinypng.com/) To compress home page images
+* [TinyPNG](https://tinypng.com/) To compress home page images.
 
 * [Visual Studio Code](https://code.visualstudio.com/) The IDE used to create this site.
 
