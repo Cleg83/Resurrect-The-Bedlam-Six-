@@ -17,7 +17,7 @@
     Navbar layout used an example from this Boostrap Ducmentation page 
     (https://getbootstrap.com/docs/5.3/components/navbar/) as a blueprint to build on and customise
 -->
-    <nav class="navbar navbar-expand-md bg-color-navbar fixed-top">
+    <nav class="navbar navbar-expand-md bg-color-navbar fixed-top font-one">
         <div class="container-fluid">
             <a class="navbar-brand text-center" href="index.html">Louis Barabbas<br>& The Bedlam Six</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -49,14 +49,15 @@
 <!--
     Home page content
 -->
-    <section class="member-section bg-member-section">
-        <div class="container-fluid">
-            <div class="col-12">
-                <h1 class="name-heading uppercase text-center">
-                    Bring back Louis Barabbas & The Bedlam Six
-                </h1>
-                <h3 class="question-heading text-center">Is it time to resurrect the greatest band you've probably never heard of?</h3>
-            </div>
+<div>
+    <section id="home-section" class="bg-stage-image full-vh-section">
+        <h1 class="headings name-heading uppercase text-center font-one">
+            Bring back Louis Barabbas & The Bedlam Six
+        </h1>
+    </section> 
+    <section id="member-section" class="bg-stage-image full-vh-section font-one">       
+        <div id="bottom-heading" class="headings">
+        <h3 class="question-heading text-center">Is it time to resurrect the greatest band you've probably never heard of?</h3>
         </div>
         <div class="container-fluid page-content-wrapper justify-content-center">
 <!--
@@ -205,11 +206,12 @@
             </div>
         </div>
     </section>
+</div>
 <!-- 
     The footer utilises Bootstrap grid layout but needed quite a lot of custom CSS to size and 
     position icons and links
 -->
-    <footer class="container-fluid bg-color-footer">
+    <footer class="container-fluid bg-color-footer fixed-bottom font-one">
         <div class="row footer-wrapper">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <ul class="list-inline footer-menu">
