@@ -1,16 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+
+/* Colors */
     --cream: #fcfcf5;
     --red: #a10f05;
     --dark: #000;
     --off-white: #fafafa;
+    --light-grey: #a0a0a0;
+    --yellow: #e4d9b7;
 }
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     /* overflow-y: scroll; */
+}
+
+.font-one {
+    font-family: "Bitter", sans-serif;
+}
+
+.font-two {
+    font-family: "Exo+2", sans-serif;
 }
 
 .full-vh-section {
@@ -72,20 +84,15 @@ html {
     z-index: -1;
 }
 
-/* .bg-member-section {
-    background-image: url("../images/gallery-images/bedlam-car-background.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-} */
-
-/*Navbar--------------------------------*/
-
-.font-one {
-    font-family: "Bitter", sans-serif;
+.bg-glass {
+    /* Glassmorphism effect for background */
+    background: rgba(253, 252, 240, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
 }
+
+
 
 /*Home Page------------------------------*/
 
@@ -97,14 +104,6 @@ html {
     color: var(--cream);
     padding-top: 125px;
     font-size: 3rem;
-}
-
-.bg-glass {
-    /* Glassmorphism effect for background */
-    background: rgba(253, 252, 240, 0.06);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.9px);
-    -webkit-backdrop-filter: blur(8.9px);
 }
 
 #content-section {
@@ -120,8 +119,8 @@ html {
 #bandcamp-wrapper {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    margin-left: 50px;
-    height: 500px;
+    margin-left: 80px;
+    height: 480px;
     width: 375px;
     border-radius: 12px;
     position: relative;
@@ -137,28 +136,25 @@ html {
     height: 427px;
     border-radius: 12px;
 }
-/* Ensure the member-wrapper has scroll snap behavior */
+
 #member-container {
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
     scroll-snap-type: y mandatory;
-    height: 500px;
+    height: 480px;
     max-width: 45vw;
     margin-top: 2rem;
+    margin-right: 0px;
     padding-left: 0.75rem;
+    padding-right: 0px;
     border-radius: 12px;
 }
 
-.style-scrollbar {
-    scrollbar-color:var(--red) var(--cream);
-    scrollbar-width: 5px;   
-}
-
-/* Ensure each member has scroll snap behavior */
 .member {
     scroll-snap-align: center;
     height: 100%;
     width: 100%;
-    padding-left: 1.5rem;
+    color: var(--cream);
+    /* position: relative; */
 }
 
 .member-photo {
@@ -166,7 +162,41 @@ html {
     max-height: 350px;
     border-radius: 12px;
     margin-top: 2rem;
+    padding-bottom: 1rem;
 }
+
+details {
+    font-size: 1.25rem;
+}
+
+summary {
+    list-style-type: none;
+}
+
+.member-info {
+    padding-top: 0.5rem;
+}
+
+/* Scrollbar */
+
+#member-container::-webkit-scrollbar {
+    width: 10px; 
+    background-color: transparent;
+}
+
+#member-container::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey); 
+    border-radius: 12px;
+}
+
+#member-container::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 12px;
+}
+
+#member-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--red); 
+  }
 
 /* Footer-----------------------------*/
 
@@ -189,7 +219,7 @@ footer {
     font-weight: 400;
     padding-right: 0.75rem;
     margin-top: 1.25rem;
-    color: var(--black);
+    color: var(--dark);
 }
 
 .footer-menu li a:nth-of-type(5){
@@ -206,7 +236,7 @@ footer {
     font-weight: 200;
     margin-top: 2rem;
     margin-bottom: 0;
-    color: var(--black);
+    color: var(--dark);
 }
 
 .social {
@@ -219,7 +249,7 @@ footer {
     font-size: 1.25rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    color: var(--black);
+    color: var(--dark);
 }
 
 .social-links:last-child {
@@ -303,7 +333,7 @@ footer {
 
 .form-button:hover {
     color: var(--cream);
-    background-color: var(--black);
+    background-color: var(--dark);
 }
 
 /* Submit response-------------------*/
