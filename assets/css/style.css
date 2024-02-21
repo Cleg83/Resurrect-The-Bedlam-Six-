@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&display=swap');
 
-/* Global Styles--------------------------*/
+:root {
+    --cream: #fcfcf5;
+    --red: #a10f05;
+    --dark: #000;
+    --off-white: #fafafa;
+}
 
 html {
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .full-vh-section {
@@ -33,12 +39,7 @@ html {
 
 /*Colors--------------------------------*/
 
-:root {
-    --cream: #fcfcf5;
-    --red: #a10f05;
-    --dark: #000;
-    --off-white: #fafafa;
-}
+
 
 .bg-color-navbar {
     background-color: var(--cream);
@@ -71,6 +72,14 @@ html {
     z-index: -1;
 }
 
+/* .bg-member-section {
+    background-image: url("../images/gallery-images/bedlam-car-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+} */
 
 /*Navbar--------------------------------*/
 
@@ -84,82 +93,79 @@ html {
     scroll-snap-align: start;
 }
 
-#member-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    padding-top: 125px;
-}
-
 .name-heading {
     color: var(--cream);
     padding-top: 125px;
     font-size: 3rem;
 }
 
-.question-heading {
-    color: var(--cream);
-    /* padding-top: 525px; */
+.bg-glass {
+    /* Glassmorphism effect for background */
+    background: rgba(253, 252, 240, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
 }
 
-.page-content-wrapper {
-    padding-top: 3rem;
+#content-section {
+    scroll-snap-align: start;
+    padding-top: 125px;
+    overflow: hidden;
 }
 
-.bandcamp-wrapper {
+#content-heading {
+    color: var(--cream)
+}
+
+#bandcamp-wrapper {
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 50px;
+    height: 500px;
+    width: 375px;
+    border-radius: 12px;
+    position: relative;
 }
 
 #bandcamp-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 0; 
     width: 315px; 
     height: 427px;
+    border-radius: 12px;
 }
-
-.member-col {
-    overflow-y: scroll;
-    height: 420px;
+/* Ensure the member-wrapper has scroll snap behavior */
+#member-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory;
+    height: 500px;
+    max-width: 45vw;
     margin-top: 2rem;
-    padding-left: 155px;
+    padding-left: 0.75rem;
+    border-radius: 12px;
 }
 
-/* Disable scrollbar functionality taken from this forum thread 
-https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll) */
-
-.disable-scrollbars::-webkit-scrollbar {
-    background: transparent; 
-    width: 0px;
-  } 
-      
-.disable-scrollbars {
-    scrollbar-width: none;
-    -ms-overflow-style: none;  
+.style-scrollbar {
+    scrollbar-color:var(--red) var(--cream);
+    scrollbar-width: 5px;   
 }
 
-.member-info {
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-    padding-right: 0px;
-    color: var(--black);
-    background-color: var(--off-white);
-    opacity: 95%;
+/* Ensure each member has scroll snap behavior */
+.member {
+    scroll-snap-align: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 1.5rem;
 }
 
 .member-photo {
-    max-width: 200px;
-    max-height: 200px;
+    width: 80%;
+    max-height: 350px;
     border-radius: 12px;
-    margin-bottom: 1.5rem;
-}
-
-.member-name {
-    padding-top: 1.5rem;
-    padding-bottom: 1.25rem;
-}
-
-.member-col > .member-info:nth-child(6) {
-    margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 /* Footer-----------------------------*/
@@ -225,6 +231,7 @@ footer {
 .video-gallery {
     padding-top: 125px;
     padding-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .video-box {
@@ -257,7 +264,7 @@ footer {
 
 .form-container {
     width: 50%;
-    /* min-height: 750px; */
+    min-height: 50vh;
     margin: 0 auto;
     padding-top: 1rem;
     padding-left: 2rem;
