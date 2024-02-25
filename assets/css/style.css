@@ -11,6 +11,7 @@
     --dark-grey: #595959;
     --bg-light: #ffffffb7;
     --nav-text: #00000093;
+    --dark-red: #700000;
 }
 
 /* Keyframes */
@@ -27,24 +28,52 @@
     }
   }
 
-@keyframes changeBorderColor {
+@keyframes changeBorderColorIn {
     0% {
-        border-color: var(--light-grey); 
+        border-color: var(--cream); 
+        border-width: 0px;
     }
     100% {
-        border-color: var(--red); 
+        border-color: var(--red);
+        border-width: 5px;
     }
 }
 
-@keyframes changeBackgroundColor {
+@keyframes changeBorderColorOut {
+    0% {
+        border-color: var(--red); 
+        border-width: 5px;
+    }
+    50% {
+        border-color: var(--cream); 
+    }
+    100% {
+        border-color: transparent;
+        border-width: 0px; 
+    }
+}
+
+@keyframes changeBackgroundColorIn {
     0% {
         background-color: none;
     }
     50% {
-        background-color: var(--red);
+        background-color: var(--dark-grey);
     }
     100% {
         background-color: var(--bg-light);
+    }
+}
+
+@keyframes changeBackgroundColorOut {
+    0% {
+        background-color: var(--bg-light);
+    }
+    50% {
+        background-color: var(--dark-grey);
+    }
+    100% {
+        background-color: none;
     }
 }
 
@@ -91,22 +120,26 @@
 @keyframes memberTextIn {
     0% {
         color: var(--cream);
+        padding-top: 2.5rem;
     }
     100% {
         color: var(--dark);
+        padding-top: 1rem;
     }
 }
 
 @keyframes memberTextOut {
     0% {
         color: var(--dark);
+        padding-top: 1rem;
     }
     100% {
         color: var(--cream);
+        padding-top: 2.5rem;
     }
 }
 
-@keyframes linkFadeIn {
+@keyframes linkColorIn {
     0% {
         color: var(--nav-text);
     }
@@ -115,7 +148,7 @@
     }
 }
 
-@keyframes linkFadeOut {
+@keyframes linkColorOut {
     0% {
         color: var(--red);
     }
@@ -124,7 +157,7 @@
     }
 }
 
-@keyframes activeLinkFadeIn {
+@keyframes activeLinkColorIn {
     0% {
         color: var(--dark);
     }
@@ -133,7 +166,7 @@
     }
 }
 
-@keyframes activeLinkFadeOut {
+@keyframes activeLinkColorOut {
     0% {
         color: var(--red);
     }
@@ -141,6 +174,43 @@
         color: var(--dark);
     }
 }
+
+@keyframes submitIn {
+    0% {
+        background-color: var(--red); 
+    }
+    100% {
+        background-color: var(--dark-red);
+    }
+}
+
+@keyframes submitOut {
+    0% {
+        background-color: var(--dark-red);
+    }
+    100% {
+        background-color: var(--red); 
+    }
+}
+
+@keyframes imageVidIn {
+    0% {
+        border-color: var(--cream) 
+    }
+    100% {
+        border-color: var(--red);
+    }
+}
+
+@keyframes imageVidOut {
+    0% {
+        border-color: var(--red);
+    }
+    100% {
+        border-color: var(--cream);
+    }
+}
+
 
 .fade-in {
     animation: fadeIn 1s ease-in; 
@@ -199,12 +269,12 @@ html {
 
 .footer-menu-link:hover,
 .nav-link:hover {
-    animation: linkFadeIn 0.5s ease-in forwards;
+    animation: linkColorIn 0.5s ease-in forwards;
 }
 
 .footer-menu-link:not(:hover),
 .nav-link:not(:hover) {
-    animation: linkFadeOut 0.5s ease-out forwards;
+    animation: linkColorOut 0.5s ease-out forwards;
 }
 /* Backgrounds */
 
@@ -252,13 +322,13 @@ html {
     padding-top: 120px;
 }
 
-.ph-content-container {
-    height: 55vh;
+.content-container {
+    min-height: 55vh;
     margin-top: 3.5rem;
     margin-bottom: 10%;
 }
 
-.ph-content-wrapper{
+.content-wrapper{
     position: relative;
     height: 100%;
     width: 100%;
@@ -266,40 +336,49 @@ html {
     border: 5px solid transparent; 
 }
 
-.ph-content-wrapper:hover {
-    border-color: var(--light-grey); 
-    animation-name: changeBorderColor, changeBackgroundColor;
-    animation-duration: 0.5s, 1s;
+.content-wrapper:hover { 
+    /* border-color: var(--light-grey); */
+    animation-name: changeBorderColorIn, changeBackgroundColorIn;
+    animation-duration: 1s, 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
 }
 
-.ph-content-wrapper:hover .member {
+.content-wrapper:not(:hover) {
+    border-color: transparent;
+    animation-name: changeBorderColorOut, changeBackgroundColorOut;
+    animation-duration: 1s, 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.content-wrapper:hover .member {
     animation: paddingMemberIn 1s ease-in forwards;
 }
 
-.ph-content-wrapper:not(:hover) .member {
+.content-wrapper:not(:hover) .member {
     animation: paddingMemberOut 0.5s ease-out forwards;
 }
 
-.ph-content-wrapper:hover details {
+.content-wrapper:hover details {
     animation: memberTextIn 1s ease-in forwards;
 }
 
-.ph-content-wrapper:not(:hover) details {
+.content-wrapper:not(:hover) details {
     animation: memberTextOut 0.5s ease-out forwards;
 }
 
-.ph-content-wrapper:hover #bandcamp-player {
+.content-wrapper:hover #bandcamp-player {
     animation: paddingBandcampIn 1s ease-in forwards;
 }
 
-.ph-content-wrapper:not(:hover) #bandcamp-player {
+.content-wrapper:not(:hover) #bandcamp-player {
     animation: paddingBandcampOut 0.5s ease-out forwards;
 } 
 
-.ph-content {
+.home-page-content {
     position: absolute;
     height: 100%;
     width: 90%;
@@ -317,8 +396,12 @@ html {
 }
 
 #member-container {
-    overflow-y: auto; 
+    overflow: hidden;
     scroll-snap-type: y mandatory;
+}
+
+#member-container:hover {
+    overflow-y: auto;
 }
 
 .member {
@@ -326,6 +409,7 @@ html {
     height: 100%;
     width: 100%;
     color: var(--cream);
+    border: none;
 }
 
 .member-photo {
@@ -340,7 +424,7 @@ details {
 
 summary {
     list-style-type: none;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .member-info {
@@ -355,7 +439,7 @@ summary {
 }
 
 #member-container::-webkit-scrollbar-thumb {
-    background-color: var(--light-grey); 
+    background-color: var(--dark-grey); 
     border-radius: 12px;
 }
 
@@ -365,7 +449,7 @@ summary {
 }
 
 #member-container::-webkit-scrollbar-thumb:hover {
-    background-color: var(--red); 
+    background-color: var(--red);
   }
 
 /* Footer-----------------------------*/
@@ -396,10 +480,6 @@ footer {
     color: var(--dark);
 }
 
-.footer-menu li a:nth-of-type(5){
-    padding-right: 0px;
-}
-
 .copy-container {
     text-align: center;
     height: 100%;
@@ -408,10 +488,10 @@ footer {
 }
 
 .copy {
-    font-weight: 200;
     margin-top: 2rem;
     margin-bottom: 0;
     color: var(--dark);
+    font-weight: 400;
 }
 
 .social {
@@ -422,21 +502,21 @@ footer {
 
 .social-links {
     font-size: 1.25rem;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
     color: var(--dark);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
-.social-links:last-child {
-    margin-right: 1rem;
+.social li {
+    margin-right: 0px;
 }
 
 .active:hover, .social-links:hover {
-    animation: activeLinkFadeIn 0.5s ease-in forwards;
+    animation: activeLinkColorIn 0.5s ease-in forwards;
 }
 
 .active:not(:hover), .social-links:not(:hover) {
-    animation: activeLinkFadeOut 0.5s ease-out forwards;
+    animation: activeLinkColorOut 0.5s ease-out forwards;
 }
 
 /*Video Page-----------------------*/
@@ -460,8 +540,12 @@ footer {
 }
 
 .video-box:hover {
-    border-color: var(--light-grey); 
-    animation: changeBorderColor 1s ease-in forwards; 
+    border-color: var(--cream); 
+    animation: imageVidIn 1s ease-in forwards; 
+}
+
+.video-box:not(:hover) {
+    animation: imageVidOut 1s ease-out forwards;
 }
 
 /*Gallery Page--------------------------*/
@@ -477,8 +561,12 @@ footer {
 }
 
 .gallery-image:hover {
-    border-color: var(--light-grey); 
-    animation: changeBorderColor 1s ease-in forwards; 
+    border-color: var(--cream); 
+    animation: imageVidIn 1s ease-in forwards; 
+}
+
+.gallery-image:not(:hover) {
+    animation: imageVidOut 1s ease-out forwards;
 }
 
 /*Contact page----------------------------*/
@@ -520,7 +608,7 @@ footer {
 }
 
 .text-area-heading {
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 .form-button {
@@ -530,8 +618,13 @@ footer {
 }
 
 .form-button:hover {
+    animation: submitIn 0.5s ease-in forwards;
     color: var(--cream);
-    background-color: var(--dark);
+}
+
+.form-button:not(:hover) {
+    animation: submitOut 0.5s ease-out forwards;
+    color: var(--cream);
 }
 
 /* Submit response-------------------*/
@@ -563,21 +656,75 @@ footer {
 
 /*Media Queries--------------------------Media Queries*/
 
-@media screen and (max-width: 768px) { 
-    /* #member-container {
-        width: 75vh;
-    }
-    #bandcamp-wrapper {
-        transform: scaleX(0.8);
-        transform: scaleY(0.9);
+/* @media screen and (max-width: 1000px) {
+    .name-heading {
+        font-size: 4rem;
+        padding-top: 150px;
     }
     #member-container {
-        margin-left: 5%;
-    } */
+        margin-bottom: 3rem;
+    }
+} */
+
+/* Footer only---------------------------*/
+
+@media screen and (max-width: 1170px) {
+    .copy-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .menu-container {
+        display: none;
+    }
     .social {
         text-align: center;
     }
-    
+    .social-links {
+        font-size: 1.5rem;
+    }
+    .social-links:nth-of-type(5) {
+        margin-right: 0px;
+    }
+}
+
+/* Footer only---------------------------*/
+
+
+@media screen and (max-width: 768px) { 
+
+    .name-heading {
+        font-size: 4rem;
+        padding-top: 150px;
+    }
+    #content-section, #contact-section {
+        padding-bottom: 4rem;
+    }
+    .member-col {
+        height: 80vh;
+    }
+    .form-container {
+        width: 80%;
+        min-height: 200px;
+        margin-bottom: 3rem;
+    }
+    .contact-text-area {
+        width: 95%;
+    }
+    #name, #email-address {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .sm-text-align-center {
+        text-align: center;
+    }
+    .form-heading {
+        padding-bottom: 0.5rem;
+    } 
+    .text-area-heading {
+        padding-bottom: 0.5rem
+    }
 }
 
 
