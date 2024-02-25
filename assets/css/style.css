@@ -706,7 +706,7 @@ footer {
     }
     .form-container {
         width: 80%;
-        min-height: 200px;
+        min-height: 30vh;
         margin-bottom: 3rem;
     }
     .contact-text-area {
