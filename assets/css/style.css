@@ -57,9 +57,6 @@
     0% {
         background-color: none;
     }
-    50% {
-        background-color: var(--dark-grey);
-    }
     100% {
         background-color: var(--bg-light);
     }
@@ -68,9 +65,6 @@
 @keyframes changeBackgroundColorOut {
     0% {
         background-color: var(--bg-light);
-    }
-    50% {
-        background-color: var(--dark-grey);
     }
     100% {
         background-color: none;
@@ -213,7 +207,7 @@
 
 
 .fade-in {
-    animation: fadeIn 1s ease-in; 
+    animation: fadeIn 1s ease-in-out; 
     background-color: rgba(137, 133, 133, 0.9);
   }
 
@@ -269,12 +263,12 @@ html {
 
 .footer-menu-link:hover,
 .nav-link:hover {
-    animation: linkColorIn 0.5s ease-in forwards;
+    animation: linkColorIn 0.5s ease-in-out forwards;
 }
 
 .footer-menu-link:not(:hover),
 .nav-link:not(:hover) {
-    animation: linkColorOut 0.5s ease-out forwards;
+    animation: linkColorOut 0.5s ease-in-out forwards;
 }
 /* Backgrounds */
 
@@ -342,7 +336,7 @@ html {
     animation-duration: 1s, 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
 }
 
 .content-wrapper:not(:hover) {
@@ -351,31 +345,31 @@ html {
     animation-duration: 1s, 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
 }
 
 .content-wrapper:hover .member {
-    animation: paddingMemberIn 1s ease-in forwards;
+    animation: paddingMemberIn 1s ease-in-out forwards;
 }
 
 .content-wrapper:not(:hover) .member {
-    animation: paddingMemberOut 0.5s ease-out forwards;
+    animation: paddingMemberOut 0.5s ease-in-out forwards;
 }
 
 .content-wrapper:hover details {
-    animation: memberTextIn 1s ease-in forwards;
+    animation: memberTextIn 1s ease-in-out forwards;
 }
 
 .content-wrapper:not(:hover) details {
-    animation: memberTextOut 0.5s ease-out forwards;
+    animation: memberTextOut 0.5s ease-in-out forwards;
 }
 
 .content-wrapper:hover #bandcamp-player {
-    animation: paddingBandcampIn 1s ease-in forwards;
+    animation: paddingBandcampIn 1s ease-in-out forwards;
 }
 
 .content-wrapper:not(:hover) #bandcamp-player {
-    animation: paddingBandcampOut 0.5s ease-out forwards;
+    animation: paddingBandcampOut 0.5s ease-in-out forwards;
 } 
 
 .home-page-content {
@@ -392,6 +386,7 @@ html {
 #bandcamp-player {
     width: 100%; 
     height: 100%;
+    border: 0px solid transparent;
     border-radius: 5px;
 }
 
@@ -415,6 +410,7 @@ html {
 .member-photo {
     width: 80%;
     height: 70%;
+    border: 0px solid transparent;
     border-radius: 5px;
 }
 
@@ -440,12 +436,14 @@ summary {
 
 #member-container::-webkit-scrollbar-thumb {
     background-color: var(--dark-grey); 
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 #member-container::-webkit-scrollbar-track {
     background-color: transparent;
-    border-radius: 12px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #member-container::-webkit-scrollbar-thumb:hover {
@@ -512,11 +510,11 @@ footer {
 }
 
 .active:hover, .social-links:hover {
-    animation: activeLinkColorIn 0.5s ease-in forwards;
+    animation: activeLinkColorIn 0.5s ease-in-out forwards;
 }
 
 .active:not(:hover), .social-links:not(:hover) {
-    animation: activeLinkColorOut 0.5s ease-out forwards;
+    animation: activeLinkColorOut 0.5s ease-in-out forwards;
 }
 
 /*Video Page-----------------------*/
@@ -541,11 +539,11 @@ footer {
 
 .video-box:hover {
     border-color: var(--cream); 
-    animation: imageVidIn 1s ease-in forwards; 
+    animation: imageVidIn 1s ease-in-out forwards; 
 }
 
 .video-box:not(:hover) {
-    animation: imageVidOut 1s ease-out forwards;
+    animation: imageVidOut 1s ease-in-out forwards;
 }
 
 /*Gallery Page--------------------------*/
@@ -562,11 +560,11 @@ footer {
 
 .gallery-image:hover {
     border-color: var(--cream); 
-    animation: imageVidIn 1s ease-in forwards; 
+    animation: imageVidIn 1s ease-in-out forwards; 
 }
 
 .gallery-image:not(:hover) {
-    animation: imageVidOut 1s ease-out forwards;
+    animation: imageVidOut 1s ease-in-out forwards;
 }
 
 /*Contact page----------------------------*/
@@ -618,12 +616,12 @@ footer {
 }
 
 .form-button:hover {
-    animation: submitIn 0.5s ease-in forwards;
+    animation: submitIn 0.5s ease-in-out forwards;
     color: var(--cream);
 }
 
 .form-button:not(:hover) {
-    animation: submitOut 0.5s ease-out forwards;
+    animation: submitOut 0.5s ease-in-out forwards;
     color: var(--cream);
 }
 
@@ -700,9 +698,6 @@ footer {
     }
     #content-section, #contact-section {
         padding-bottom: 4rem;
-    }
-    .member-col {
-        height: 80vh;
     }
     .form-container {
         width: 80%;
