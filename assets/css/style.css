@@ -847,6 +847,6 @@ footer {
     }
     .quote-container {
         animation-delay: 6s; /* Adjusted delay time for smaller screens */
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -50%);
     }
 }
