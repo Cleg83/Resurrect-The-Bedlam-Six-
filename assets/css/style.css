@@ -54,23 +54,6 @@
     }
 }
 
-@keyframes quoteBorderColor {
-    0% {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: var(--bg-light);
-    }
-
-    75% {
-        border-color: var(--nav-text);
-    }
-    100% {
-        border-color: transparent;
-    }
-}
-
 @keyframes quoteText {
     0% {
         color: var(--cream);
@@ -78,49 +61,6 @@
 
     100% {
         color: var(--black);
-    }
-}
-
-@keyframes hideQuotes {
-    0% {
-        opacity: 1;
-    }
-    40% {
-        opacity: 0;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes changeBorderColorIn {
-    0% {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: var(--bg-light);
-    }
-
-    100% {
-        border-color: var(--red);
-    }
-}
-
-@keyframes changeBorderColorOut {
-    0% {
-        border-color: var(--red);
-    }
-
-    50% {
-        border-color: var(--bg-light);
-    }
-
-    100% {
-        border-color: transparent;
     }
 }
 
@@ -410,13 +350,13 @@ html {
 }
 
 .quote-container {
-    animation-name: quoteBorderColor, changeBackgroundColorIn, paddingMemberIn, quoteText, hideQuotes;
-    animation-duration: 2s, 2s, 2s, 2s, 10s;
+    animation-name: changeBackgroundColorIn, paddingMemberIn, quoteText;
+    animation-duration: 2s, 2s, 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    animation-delay: 10s, 9s, 9s, 9s, 17s;
-    border: 2.5px solid transparent;
+    animation-delay: 9s, 9s, 9s;
+    border: 0px solid transparent;
     border-radius: 10px;
     width: 75vw;
     color: var(--cream);
@@ -474,13 +414,13 @@ html {
     position: relative;
     height: 100%;
     width: 100%;
-    border-radius: 5px;
-    border: 5px solid transparent;
+    border-radius: 10px;
+    border: 0px solid transparent;
 }
 
 .content-wrapper:hover {
-    animation-name: changeBorderColorIn, changeBackgroundColorIn;
-    animation-duration: 1s, 1s;
+    animation-name: changeBackgroundColorIn;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
@@ -488,8 +428,8 @@ html {
 
 .content-wrapper:not(:hover) {
     border-color: transparent;
-    animation-name: changeBorderColorOut, changeBackgroundColorOut;
-    animation-duration: 1s, 1s;
+    animation-name: changeBackgroundColorOut;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
@@ -511,11 +451,11 @@ html {
     animation: textOut 0.5s ease-in-out forwards;
 }
 
-.content-wrapper:hover #bandcamp-player {
+.content-wrapper:hover #bandcamp-wrapper {
     animation: paddingBandcampIn 1s ease-in-out forwards;
 }
 
-.content-wrapper:not(:hover) #bandcamp-player {
+.content-wrapper:not(:hover) #bandcamp-wrapper {
     animation: paddingBandcampOut 0.5s ease-in-out forwards;
 }
 
@@ -523,18 +463,25 @@ html {
     position: absolute;
     height: 100%;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+#bandcamp-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
 #bandcamp-player {
     width: 100%;
     height: 100%;
     border: 0px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 #member-container {
@@ -558,7 +505,7 @@ html {
     width: 80%;
     height: 70%;
     border: 0px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 details {
