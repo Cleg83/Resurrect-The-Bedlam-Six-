@@ -378,8 +378,7 @@ html {
 }
 
 .quote-container blockquote:nth-child(1),
-.quote-container blockquote:nth-child(3),
-.quote-container blockquote:nth-child(5) {
+.quote-container blockquote:nth-child(3) {
     animation-name: slideFromLeft;
 }
 
@@ -518,6 +517,7 @@ summary {
 
 .member-info {
     padding-top: 0.5rem;
+    font-size: 1rem;
 }
 
 /* Scrollbar */
@@ -838,5 +838,15 @@ footer {
 @media screen and (max-width: 410px) {
     .name-heading {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .quote-container blockquote:nth-child(4) {
+        display: none;
+    }
+    .quote-container {
+        animation-delay: 6s; /* Adjusted delay time for smaller screens */
+        transform: translate(-50%, -40%);
     }
 }
