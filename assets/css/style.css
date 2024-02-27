@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
 
-/* Colors */
+    /* Colors */
     --cream: #fcfcf5;
     --red: #a10f05;
-    --dark: #000;
+    --black: #000;
     --off-white: #fafafa;
     --light-grey: #a0a0a0;
     --dark-grey: #595959;
@@ -18,38 +18,109 @@
 
 @keyframes fadeIn {
     0% {
-      opacity: 0; 
+        opacity: 0;
     }
+
     75% {
         opacity: 0.5;
     }
+
     100% {
-      opacity: 1; 
+        opacity: 1;
     }
-  }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes quoteBorderColor {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--bg-light);
+    }
+
+    75% {
+        border-color: var(--nav-text);
+    }
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes quoteText {
+    0% {
+        color: var(--cream);
+    }
+
+    100% {
+        color: var(--black);
+    }
+}
+
+@keyframes hideQuotes {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 @keyframes changeBorderColorIn {
     0% {
-        border-color: var(--cream); 
-        border-width: 0px;
+        border-color: transparent;
     }
+
+    50% {
+        border-color: var(--bg-light);
+    }
+
     100% {
         border-color: var(--red);
-        border-width: 5px;
     }
 }
 
 @keyframes changeBorderColorOut {
     0% {
-        border-color: var(--red); 
-        border-width: 5px;
+        border-color: var(--red);
     }
+
     50% {
-        border-color: var(--cream); 
+        border-color: var(--bg-light);
     }
+
     100% {
         border-color: transparent;
-        border-width: 0px; 
     }
 }
 
@@ -57,6 +128,7 @@
     0% {
         background-color: none;
     }
+
     100% {
         background-color: var(--bg-light);
     }
@@ -66,6 +138,7 @@
     0% {
         background-color: var(--bg-light);
     }
+
     100% {
         background-color: none;
     }
@@ -75,6 +148,7 @@
     0% {
         padding-top: 0px;
     }
+
     100% {
         padding-top: 1rem;
     }
@@ -84,6 +158,7 @@
     0% {
         padding-top: 1rem;
     }
+
     100% {
         padding-top: 0px;
     }
@@ -94,6 +169,7 @@
         padding-top: 0px;
         padding-bottom: 0px;
     }
+
     100% {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -105,28 +181,31 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
     100% {
         padding-top: 0px;
         padding-bottom: 0px;
     }
 }
 
-@keyframes memberTextIn {
+@keyframes textIn {
     0% {
         color: var(--cream);
         padding-top: 2.5rem;
     }
+
     100% {
-        color: var(--dark);
+        color: var(--black);
         padding-top: 1rem;
     }
 }
 
-@keyframes memberTextOut {
+@keyframes textOut {
     0% {
-        color: var(--dark);
+        color: var(--black);
         padding-top: 1rem;
     }
+
     100% {
         color: var(--cream);
         padding-top: 2.5rem;
@@ -137,6 +216,7 @@
     0% {
         color: var(--nav-text);
     }
+
     100% {
         color: var(--red)
     }
@@ -146,6 +226,7 @@
     0% {
         color: var(--red);
     }
+
     100% {
         color: var(--nav-text);
     }
@@ -153,8 +234,9 @@
 
 @keyframes activeLinkColorIn {
     0% {
-        color: var(--dark);
+        color: var(--black);
     }
+
     100% {
         color: var(--red);
     }
@@ -164,15 +246,17 @@
     0% {
         color: var(--red);
     }
+
     100% {
-        color: var(--dark);
+        color: var(--black);
     }
 }
 
 @keyframes submitIn {
     0% {
-        background-color: var(--red); 
+        background-color: var(--red);
     }
+
     100% {
         background-color: var(--dark-red);
     }
@@ -182,15 +266,17 @@
     0% {
         background-color: var(--dark-red);
     }
+
     100% {
-        background-color: var(--red); 
+        background-color: var(--red);
     }
 }
 
 @keyframes imageVidIn {
     0% {
-        border-color: var(--cream) 
+        border-color: var(--cream)
     }
+
     100% {
         border-color: var(--red);
     }
@@ -200,6 +286,7 @@
     0% {
         border-color: var(--red);
     }
+
     100% {
         border-color: var(--cream);
     }
@@ -207,9 +294,9 @@
 
 
 .fade-in {
-    animation: fadeIn 1s ease-in-out; 
+    animation: fadeIn 1s ease-in-out;
     background-color: rgba(137, 133, 133, 0.9);
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -223,6 +310,10 @@ html {
 
 .font-two {
     font-family: "Exo+2", sans-serif;
+}
+
+.font-three {
+    font-family: "Cardo", sans-serif;
 }
 
 .full-vh-section {
@@ -270,6 +361,7 @@ html {
 .nav-link:not(:hover) {
     animation: linkColorOut 0.5s ease-in-out forwards;
 }
+
 /* Backgrounds */
 
 .bg-stage-image {
@@ -293,6 +385,7 @@ html {
 
 #home-section {
     scroll-snap-align: start;
+    position: relative;
 }
 
 .name-heading {
@@ -316,22 +409,76 @@ html {
     padding-top: 120px;
 }
 
+.quote-container {
+    animation-name: quoteBorderColor, changeBackgroundColorIn, paddingMemberIn, quoteText, hideQuotes;
+    animation-duration: 2s, 2s, 2s, 2s, 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s, 9s, 9s, 9s, 17s;
+    border: 2.5px solid transparent;
+    border-radius: 10px;
+    width: 75vw;
+    color: var(--cream);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -30%);
+}
+
+.quote-container blockquote {
+    opacity: 0;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+.quote-container blockquote:nth-child(1),
+.quote-container blockquote:nth-child(3),
+.quote-container blockquote:nth-child(5) {
+    animation-name: slideFromLeft;
+}
+
+.quote-container blockquote:nth-child(2),
+.quote-container blockquote:nth-child(4) {
+    animation-name: slideFromRight;
+}
+
+.quote-container blockquote:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.quote-container blockquote:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.quote-container blockquote:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.quote-container blockquote:nth-child(4) {
+    animation-delay: 6s;
+}
+
 .content-container {
     min-height: 55vh;
     margin-top: 3.5rem;
     margin-bottom: 10%;
 }
 
-.content-wrapper{
+.content-wrapper {
     position: relative;
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    border: 5px solid transparent; 
+    border: 5px solid transparent;
 }
 
-.content-wrapper:hover { 
-    /* border-color: var(--light-grey); */
+.content-wrapper:hover {
     animation-name: changeBorderColorIn, changeBackgroundColorIn;
     animation-duration: 1s, 1s;
     animation-iteration-count: 1;
@@ -357,11 +504,11 @@ html {
 }
 
 .content-wrapper:hover details {
-    animation: memberTextIn 1s ease-in-out forwards;
+    animation: textIn 1s ease-in-out forwards;
 }
 
 .content-wrapper:not(:hover) details {
-    animation: memberTextOut 0.5s ease-in-out forwards;
+    animation: textOut 0.5s ease-in-out forwards;
 }
 
 .content-wrapper:hover #bandcamp-player {
@@ -370,7 +517,7 @@ html {
 
 .content-wrapper:not(:hover) #bandcamp-player {
     animation: paddingBandcampOut 0.5s ease-in-out forwards;
-} 
+}
 
 .home-page-content {
     position: absolute;
@@ -384,7 +531,7 @@ html {
 }
 
 #bandcamp-player {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     border: 0px solid transparent;
     border-radius: 5px;
@@ -420,7 +567,6 @@ details {
 
 summary {
     list-style-type: none;
-    /* padding-top: 1rem; */
 }
 
 .member-info {
@@ -430,12 +576,12 @@ summary {
 /* Scrollbar */
 
 #member-container::-webkit-scrollbar {
-    width: 10px; 
+    width: 10px;
     background-color: transparent;
 }
 
 #member-container::-webkit-scrollbar-thumb {
-    background-color: var(--dark-grey); 
+    background-color: var(--dark-grey);
     border-radius: 10px;
 }
 
@@ -448,7 +594,7 @@ summary {
 
 #member-container::-webkit-scrollbar-thumb:hover {
     background-color: var(--red);
-  }
+}
 
 /* Footer-----------------------------*/
 
@@ -475,7 +621,7 @@ footer {
     font-weight: 400;
     padding-right: 0.75rem;
     margin-top: 1.25rem;
-    color: var(--dark);
+    color: var(--black);
 }
 
 .copy-container {
@@ -488,7 +634,7 @@ footer {
 .copy {
     margin-top: 2rem;
     margin-bottom: 0;
-    color: var(--dark);
+    color: var(--black);
     font-weight: 400;
 }
 
@@ -500,7 +646,7 @@ footer {
 
 .social-links {
     font-size: 1.25rem;
-    color: var(--dark);
+    color: var(--black);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
 }
@@ -509,11 +655,13 @@ footer {
     margin-right: 0px;
 }
 
-.active:hover, .social-links:hover {
+.active:hover,
+.social-links:hover {
     animation: activeLinkColorIn 0.5s ease-in-out forwards;
 }
 
-.active:not(:hover), .social-links:not(:hover) {
+.active:not(:hover),
+.social-links:not(:hover) {
     animation: activeLinkColorOut 0.5s ease-in-out forwards;
 }
 
@@ -538,8 +686,8 @@ footer {
 }
 
 .video-box:hover {
-    border-color: var(--cream); 
-    animation: imageVidIn 1s ease-in-out forwards; 
+    border-color: var(--cream);
+    animation: imageVidIn 1s ease-in-out forwards;
 }
 
 .video-box:not(:hover) {
@@ -554,13 +702,13 @@ footer {
 }
 
 .gallery-image {
-  border: 5px solid var(--cream); 
-  border-radius: 5px; 
+    border: 5px solid var(--cream);
+    border-radius: 5px;
 }
 
 .gallery-image:hover {
-    border-color: var(--cream); 
-    animation: imageVidIn 1s ease-in-out forwards; 
+    border-color: var(--cream);
+    animation: imageVidIn 1s ease-in-out forwards;
 }
 
 .gallery-image:not(:hover) {
@@ -627,10 +775,6 @@ footer {
 
 /* Submit response-------------------*/
 
-#submit-section {
-
-}
-
 .response-wrapper {
     padding-top: 375px;
 }
@@ -654,16 +798,6 @@ footer {
 
 /*Media Queries--------------------------Media Queries*/
 
-/* @media screen and (max-width: 1000px) {
-    .name-heading {
-        font-size: 4rem;
-        padding-top: 150px;
-    }
-    #member-container {
-        margin-bottom: 3rem;
-    }
-} */
-
 /* Footer only---------------------------*/
 
 @media screen and (max-width: 1170px) {
@@ -676,12 +810,15 @@ footer {
     .menu-container {
         display: none;
     }
+
     .social {
         text-align: center;
     }
+
     .social-links {
         font-size: 1.5rem;
     }
+
     .social-links:nth-of-type(5) {
         margin-right: 0px;
     }
@@ -690,164 +827,58 @@ footer {
 /* Footer only---------------------------*/
 
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
 
     .name-heading {
-        font-size: 4rem;
-        padding-top: 150px;
+        /* font-size: 4rem; */
+        padding-top: 110px;
     }
-    #content-section, #contact-section {
+
+    #content-section,
+    #contact-section {
         padding-bottom: 4rem;
     }
+
+    .quote-container {
+        transform: translate(-50%, -25%)
+    }
+
     .form-container {
         width: 80%;
         min-height: 30vh;
         margin-bottom: 3rem;
     }
+
     .contact-text-area {
         width: 95%;
     }
-    #name, #email-address {
+
+    #name,
+    #email-address {
         max-width: 80%;
         margin: 0 auto;
     }
+
     .sm-text-align-center {
         text-align: center;
     }
+
     .form-heading {
         padding-bottom: 0.5rem;
-    } 
+    }
+
     .text-area-heading {
         padding-bottom: 0.5rem
     }
 }
 
-
-/*Home Page---------------------------*/
-
-/* @media screen and (min-height: 1800px) {
-    #bottom-heading {
-        min-height: 1200px;
-    }
-    .form-container {
-        min-height: 1600px;
-    }
-}
-
-@media screen and (min-height: 1000px) {
-    #bottom-heading {
-        min-height: 1200px;
-    }
-    .form-container {
-        min-height: 1000px;
-        padding-top: 50px;
-    }
-    .form-heading {
-        padding-bottom: 2rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .name-heading {
-        font-size: 4rem;
-        padding-top: 150px;
-    }
-    #bottom-heading {
-        min-height: 800px;
-    }
-    .form-container {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #bottom-heading {
-        min-height: 100px;
-    }
-    .bandcamp-wrapper {
-        margin-bottom: 1rem;
-        margin-left: 0px;
-    }
-    .member-col {
-        padding-top: 0.75rem;
-        padding-left: 10%;
-    }
-    .member-info {
-        margin-right: 50px;
-    }
-    .member-col > .member-info:nth-child(6) {
-        margin-bottom: 3rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .name-heading {
-        font-size: 2.5rem;
-    }
-    .bandcamp-wrapper {
-        margin-right: 0px;
-    }
-    .member-col {
-        padding-left: 7.5%;
-    }
-    .member-info {
-        margin-right: 1.5rem;
-    }
-    .footer-menu {
-        text-align: center;
-        padding-left: 0px;
-        padding-right: 0px; 
-    }
-    .social {
-        text-align: center;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 0.5rem;
-    }
-    .social-links:last-child {
-        margin-right: 0px;
-    }
-    .footer-menu {
-        padding-left: 0px;
-    }
-    .sm-text-align-center {
-        text-align: center;
-    }
-    .form-container {
-        width: 80%;
-    }
-    .contact-text-area {
-        width: 95%;
-    }
-}
-
 @media screen and (max-width: 490px) {
-    .member-section {
+    .bg-stage-image {
         background-image: url("../images/home-page/bedlam-stage-background-small-screens.jpg");
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
-        font-family: "Bitter", sans-serif;
-    }
-    .member-col {
-        padding-left: 8%;
-    }
-    .member-info {
-        margin-right: 0.5rem;
     }
 }
-
-@media screen and (max-width: 350px) {
-    #bandcamp-player {
-        height: 400px;
-        width: 280px;
-    }
-    .member-col {
-        padding-left: 10%;
-    }
-    .member-info {
-        margin-right: 0.25rem;
-    }
-}     */

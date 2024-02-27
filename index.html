@@ -1,211 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/6cbc018174.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Resurrect Louis Barabbas & The Bedlam Six</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/6cbc018174.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Resurrect Louis Barabbas & The Bedlam Six</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
+
 <body>
-<header>
-<!--
-    Navbar layout used an example from this Bootstrap Docmentation page 
+
+  <!--
+    Navbar layout used an example from this Bootstrap Documentation page 
     (https://getbootstrap.com/docs/5.3/components/navbar/) as a blueprint to build on and customise
 -->
+  <header>
     <nav class="navbar navbar-expand-md bg-color-navbar fixed-top font-one">
-        <div class="container-fluid">
-            <a class="navbar-brand text-center" href="index.html">Louis Barabbas<br>& The Bedlam Six</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://bedlamsix.bandcamp.com/" target="_blank">Shop</a>
-                    </li>                    
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand text-center" href="index.html">Louis Barabbas<br>& The Bedlam Six</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bedlamsix.bandcamp.com/" target="_blank">Shop</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
-<!--
+  </header>
+  <!--
     Home page content
 -->
-<div>
-    <section id="home-section" class="bg-stage-image full-vh-section fade-in">
-        <h1 class="headings name-heading uppercase text-center font-one">
-            Bring back Louis Barabbas & The Bedlam Six
-        </h1>
-    </section> 
-    <section id="content-section" class="bg-stage-image full-vh-section"> 
-        <div id="glass-layer" class="bg-glass">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="headings col-12">
-                        <h3 id="content-heading" class="text-center font-one">Is it time to resurrect the greatest band you've probably never heard of?</h3>
-                    </div>
-                </div>
-                <div class="container px-4">
-                    <div class="row gx-4">
-                        <div class="col-12 col-md-4 content-container">
-                            <div class="p-3 content-wrapper">
-                                <div class="home-page-content">
-                                    <iframe id="bandcamp-player" 
-                                    src="https://bandcamp.com/EmbeddedPlayer/album=3728589527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-8 content-container margin-small">
-                            <div id="member-col" class="p-3 content-wrapper">
-                                <div id="member-container" class="home-page-content text-center">
-                                    <div id="member1" class="member">
-                                        <img src="assets/images/home-page/louis.jpg" class="member-photo"
-                                            alt="Close up of Louis Barabbas playing the guitar on stage while looking at the 
-                                            camera, copyright Stefan Gnad 2013">
-                                        <details>
-                                            <summary>Louis Barabbas</summary>
-                                            <p class="member-info">Hidden paragraph content for Louis Barabbas</p>
-                                        </details>
-                                    </div>
-                                    <div id="member2" class="member">
-                                        <img src="assets/images/home-page/cleg-dancehouse-2.jpg" class="img-fluid member-photo"
-                                            alt="Picture of Matthew Cleghorn playing guitar on stage, leaning back and looking 
-                                            at least 30 years out of place, copyright Andrew AB Photography">
-                                        <details>
-                                            <summary>Matthew Cleghorn</summary>
-                                            <p class="member-info">Hidden paragraph content for Matthew Cleghorn</p>
-                                        </details>
-                                    </div> 
-                                    <div id="member3" class="member">
-                                        <img src="assets/images/home-page/tom-stage-2.jpg" class="img-fluid member-photo"
-                                            alt="Picture of Tom Clehorn playing the drums on stage, copyright Christine Keating">
-                                        <details>
-                                            <summary>Tom Cleghorn</summary>
-                                            <p class="member-info">Hidden paragraph content for Tom Cleghorn</p>
-                                        </details>
-                                    </div>
-                                    <div id="member4" class="member">
-                                        <img src="assets/images/home-page/fran-stage-2.jpg" class="img-fluid member-photo"
-                                            alt="Picture of Fran Lydiatt playing the keyboards on stage, copyright Andrew AB Photography">
-                                        <details>
-                                            <summary>Fran Lydiatt</summary>
-                                            <p class="member-info">Hidden paragraph content for Fran Lydiatt</p>
-                                        </details>
-                                    </div>
-                                    <div id="member5" class="member">
-                                        <img src="assets/images/home-page/biff-stage-2.jpg" class="img-fluid member-photo"
-                                            alt="Picture of Biff Roxby playing the trombone on stage, copyright Ben Robins Photography">
-                                        <details>
-                                            <summary>Biff Roxby</summary>
-                                            <p class="member-info">Hidden paragraph content for Biff Roxby</p>
-                                        </details>
-                                    </div>
-                                    <div id="member6" class="member">
-                                        <img src="assets/images/home-page/dan-stage-2.jpg" class="img-fluid member-photo"
-                                            alt="Picture of Dan Watkins in his fancy hat, playing the bass guitar 
-                                            on stage and looking suave, copyright Andrew AB Photography">
-                                        <details>
-                                            <summary>Dan Watkins</summary>
-                                            <p class="member-info">Hidden paragraph content for Dan Watkins</p>
-                                        </details>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
-            </div>
-        </div>
-    </section>
-</div>
 
-<!-- 
+  <section id="home-section" class="bg-stage-image full-vh-section fade-in">
+    <h1 class="headings name-heading uppercase text-center font-one">
+      Bring back Louis Barabbas & The Bedlam Six
+    </h1>
+    <div class="quote-container font-three hide-quotes">
+      <blockquote>“Outstanding.”
+        <br>
+        Drowned In Sound
+      </blockquote>   
+      <blockquote>“Excellent in every way: an outfit and a voice that belong in smoke-filled gin-joints where the booze drips off the ceiling and love is left outside.”
+        <br>
+        Chris Hawkins, BBC Radio 6 Music
+      </blockquote>
+      <blockquote>“Appallingly talented.”
+        <br>
+        A. Valliard, author
+      </blockquote>
+      <blockquote>“A dynamite vest couldn’t have blown my tits off with such gusto… amazing live, truly catchy – if these folks don’t go to the moon I’ll finally accept there is no god.”
+        <br>
+        Front magazine
+      </blockquote>             
+    </div>
+  </section>
+  <section id="content-section" class="bg-stage-image full-vh-section">
+    <div id="glass-layer" class="bg-glass">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="headings col-12">
+            <h3 id="content-heading" class="text-center font-one">Is it time to resurrect the greatest band you've
+              probably never heard of?</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container px-4">
+        <div class="row gx-4">
+          <div class="col-12 col-md-4 content-container">
+            <div class="p-3 content-wrapper">
+              <div class="home-page-content">
+                <iframe id="bandcamp-player"
+                  src="https://bandcamp.com/EmbeddedPlayer/album=3728589527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/">
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <article class="col-12 col-md-8 content-container margin-small">
+            <div class="p-3 content-wrapper">
+              <div id="member-container" class="home-page-content text-center">
+                <div id="member1" class="member">
+                  <img src="assets/images/home-page/louis.jpg" class="member-photo" alt="Close up of Louis Barabbas playing the guitar on stage while looking at the 
+                  camera, copyright Stefan Gnad 2013">
+                  <details>
+                    <summary>Louis Barabbas</summary>
+                    <p class="member-info">Hidden paragraph content for Louis Barabbas</p>
+                  </details>
+                </div>
+                <div id="member2" class="member">
+                  <img src="assets/images/home-page/cleg-dancehouse-2.jpg" class="img-fluid member-photo" alt="Picture of Matthew Cleghorn playing guitar on stage, leaning back and looking 
+                  at least 30 years out of place, copyright Andrew AB Photography">
+                  <details>
+                    <summary>Matthew Cleghorn</summary>
+                    <p class="member-info">Hidden paragraph content for Matthew Cleghorn</p>
+                  </details>
+                </div>
+                <div id="member3" class="member">
+                  <img src="assets/images/home-page/tom-stage-2.jpg" class="img-fluid member-photo"
+                    alt="Picture of Tom Clehorn playing the drums on stage, copyright Christine Keating">
+                  <details>
+                    <summary>Tom Cleghorn</summary>
+                    <p class="member-info">Hidden paragraph content for Tom Cleghorn</p>
+                  </details>
+                </div>
+                <div id="member4" class="member">
+                  <img src="assets/images/home-page/fran-stage-2.jpg" class="img-fluid member-photo"
+                    alt="Picture of Fran Lydiatt playing the keyboards on stage, copyright Andrew AB Photography">
+                  <details>
+                    <summary>Fran Lydiatt</summary>
+                    <p class="member-info">Hidden paragraph content for Fran Lydiatt</p>
+                  </details>
+                </div>
+                <div id="member5" class="member">
+                  <img src="assets/images/home-page/biff-stage-2.jpg" class="img-fluid member-photo"
+                    alt="Picture of Biff Roxby playing the trombone on stage, copyright Ben Robins Photography">
+                  <details>
+                    <summary>Biff Roxby</summary>
+                    <p class="member-info">Hidden paragraph content for Biff Roxby</p>
+                  </details>
+                </div>
+                <div id="member6" class="member">
+                  <img src="assets/images/home-page/dan-stage-2.jpg" class="img-fluid member-photo" alt="Picture of Dan Watkins in his fancy hat, playing the bass guitar 
+                  on stage and looking suave, copyright Andrew AB Photography">
+                  <details>
+                    <summary>Dan Watkins</summary>
+                    <p class="member-info">Hidden paragraph content for Dan Watkins</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
     The footer utilises Bootstrap grid layout but needed quite a lot of custom CSS to size and 
     position icons and links
 -->
-    <footer class="container-fluid bg-color-footer fixed-bottom font-one">
-        <div class="row footer-wrapper">
-            <div class="col menu-container">
-                <ul class="list-inline footer-menu">
-                    <li class="list-inline-item">
-                        <a href="index.html" aria-current="page" class="inline-block footer-menu-link active">Home</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="video.html" class="inline-block footer-menu-link">Video</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="gallery.html" class="inline-block footer-menu-link">Gallery</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="contact.html" class="inline-block footer-menu-link">Contact</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://bedlamsix.bandcamp.com/" target="_blank" class="inline-block footer-menu-link">Shop</a>
-                    </li>                    
-                </ul>
-            </div>
-            <div class="col copy-container">
-                <p class="copy">
-                    <small>Copyright M.Cleghorn 2024</small>
-                </p>
-            </div>
-            <div class="col">
-                <ul class="list-inline social">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/groups/bedlamsix" target="_blank" class="social-links">
-                            <i class="fa-brands fa-facebook-f link-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://twitter.com/BedlamSix" target="_blank" class="social-links">
-                            <i class="fa-brands fa-x-twitter link-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/louisbarabbas/" target="_blank" class="social-links">
-                            <i class="fa-brands fa-instagram link-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/@debtrecords/videos" target="_blank" class="social-links">
-                            <i class="fa-brands fa-youtube link-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://bedlamsix.bandcamp.com/" target="_blank" class="social-links">
-                            <i class="fa-brands fa-bandcamp link-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Bandcamp</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <footer class="container-fluid bg-color-footer fixed-bottom font-one">
+    <div class="row footer-wrapper">
+      <div class="col menu-container">
+        <ul class="list-inline footer-menu">
+          <li class="list-inline-item">
+            <a href="index.html" aria-current="page" class="inline-block footer-menu-link active">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="video.html" class="inline-block footer-menu-link">Video</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="gallery.html" class="inline-block footer-menu-link">Gallery</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="contact.html" class="inline-block footer-menu-link">Contact</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://bedlamsix.bandcamp.com/" target="_blank" class="inline-block footer-menu-link">Shop</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col copy-container">
+        <p class="copy">
+          <small>Copyright M.Cleghorn 2024</small>
+        </p>
+      </div>
+      <div class="col">
+        <ul class="list-inline social">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/groups/bedlamsix" target="_blank" class="social-links">
+              <i class="fa-brands fa-facebook-f link-icon" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/BedlamSix" target="_blank" class="social-links">
+              <i class="fa-brands fa-x-twitter link-icon" aria-hidden="true"></i>
+              <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/louisbarabbas/" target="_blank" class="social-links">
+              <i class="fa-brands fa-instagram link-icon" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/@debtrecords/videos" target="_blank" class="social-links">
+              <i class="fa-brands fa-youtube link-icon" aria-hidden="true"></i>
+              <span class="sr-only">Youtube</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://bedlamsix.bandcamp.com/" target="_blank" class="social-links">
+              <i class="fa-brands fa-bandcamp link-icon" aria-hidden="true"></i>
+              <span class="sr-only">Bandcamp</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
