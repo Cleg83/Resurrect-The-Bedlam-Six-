@@ -861,7 +861,7 @@ footer {
 
 @media screen and (max-width: 490px) {
     .bg-stage-image {
-        background-image: url("../images/home-page/bedlam-stage-background-small-screens.jpg");
+        background-image: url("../images/home-page/bedlam-stage-background-small-screens.webp");
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
