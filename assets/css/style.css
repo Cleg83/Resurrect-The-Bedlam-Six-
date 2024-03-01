@@ -340,7 +340,7 @@ html {
 }
 
 #glass-layer {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -662,6 +662,17 @@ footer {
     animation: imageVidOut 1s ease-in-out forwards;
 }
 
+/* Image pages------------------------------ */
+
+.bg-image-page {
+    background-color: var(--bg-light);
+}
+
+.bg-image-page h1 {
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
 /*Contact page----------------------------*/
 
 .contact-heading {
@@ -780,6 +791,11 @@ footer {
         /* font-size: 4rem; */
         padding-top: 110px;
     }
+
+    /* .margin-small {
+        padding-left: 0;
+        padding-right: 0;
+    } */
 
     #content-section,
     #contact-section {
