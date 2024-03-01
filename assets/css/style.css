@@ -673,6 +673,13 @@ footer {
     font-weight: 500;
 }
 
+.bg-image-page img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+}
+
 /*Contact page----------------------------*/
 
 .contact-heading {
