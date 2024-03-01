@@ -11,7 +11,7 @@
     --nav-text: #00000093;
     --dark-grey: #595959;
     --red: #a10f05;
-    --dark-red: #700000;
+    --blue: #0111bc;
 }
 
 /* Keyframes */
@@ -104,30 +104,6 @@
     }
 }
 
-@keyframes paddingBandcampIn {
-    0% {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-
-    100% {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-@keyframes paddingBandcampOut {
-    0% {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    100% {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-}
-
 @keyframes textIn {
     0% {
         color: var(--cream);
@@ -198,17 +174,35 @@
     }
 
     100% {
-        background-color: var(--dark-red);
+        background-color: var(--blue);
     }
 }
 
 @keyframes submitOut {
     0% {
-        background-color: var(--dark-red);
+        background-color: var(--blue);
     }
 
     100% {
         background-color: var(--red);
+    }
+}
+
+@keyframes responseHomeLinkIn {
+    0% {
+        color: var(--red)
+    }
+    100% {
+        color: var(--blue)
+    }
+}
+
+@keyframes responseHomeLinkOut {
+    0% {
+        color: var(--blue)
+    }
+    100% {
+        color: var(--red)
     }
 }
 
@@ -232,16 +226,16 @@
     }
 }
 
-
 .fade-in {
     animation: fadeIn 1s ease-in-out;
     background-color: rgba(137, 133, 133, 0.9);
 }
 
+/* Global-----------------------------*/
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    /* overflow-y: scroll; */
 }
 
 .font-one {
@@ -249,10 +243,6 @@ html {
 }
 
 .font-two {
-    font-family: "Zilla Slab", sans-serif;
-}
-
-.font-three {
     font-family: "Cardo", sans-serif;
 }
 
@@ -276,18 +266,7 @@ html {
     text-align: center;
 }
 
-.headings {
-    font-family: "Bitter", sans-serif;
-}
-
-/*Colors--------------------------------*/
-
-
-
-.bg-color-navbar {
-    background-color: var(--cream);
-}
-
+.bg-color-navbar,
 .bg-color-footer {
     background-color: var(--cream);
 }
@@ -344,11 +323,6 @@ html {
     width: 100%;
 }
 
-#content-heading {
-    color: var(--cream);
-    padding-top: 120px;
-}
-
 .quote-container {
     animation-name: changeBackgroundColorIn, paddingMemberIn, quoteText;
     animation-duration: 2s;
@@ -403,10 +377,16 @@ html {
     animation-delay: 6s;
 }
 
+#content-heading {
+    color: var(--cream);
+    padding-top: 120px;
+}
+
 .content-container {
     min-height: 55vh;
     margin-top: 3.5rem;
     margin-bottom: 10%;
+    border-radius: 10px;
 }
 
 .content-wrapper {
@@ -414,10 +394,28 @@ html {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    border: 0px solid transparent;
+    border: none;
 }
 
-.content-wrapper:hover {
+#bandcamp-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+#bandcamp-player {
+    min-height: 100%;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+}
+
+article {
+    border-radius: 10px;
+}
+
+article:hover {
     animation-name: changeBackgroundColorIn;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -425,8 +423,7 @@ html {
     animation-timing-function: ease-in-out;
 }
 
-.content-wrapper:not(:hover) {
-    border-color: transparent;
+article:not(:hover) {
     animation-name: changeBackgroundColorOut;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -434,28 +431,20 @@ html {
     animation-timing-function: ease-in-out;
 }
 
-.content-wrapper:hover .member {
+article:hover .member {
     animation: paddingMemberIn 1s ease-in-out forwards;
 }
 
-.content-wrapper:not(:hover) .member {
+article:not(:hover) .member {
     animation: paddingMemberOut 0.5s ease-in-out forwards;
 }
 
-.content-wrapper:hover details {
+article:hover details {
     animation: textIn 1s ease-in-out forwards;
 }
 
-.content-wrapper:not(:hover) details {
+article:not(:hover) details {
     animation: textOut 0.5s ease-in-out forwards;
-}
-
-.content-wrapper:hover #bandcamp-wrapper {
-    animation: paddingBandcampIn 1s ease-in-out forwards;
-}
-
-.content-wrapper:not(:hover) #bandcamp-wrapper {
-    animation: paddingBandcampOut 0.5s ease-in-out forwards;
 }
 
 .home-page-content {
@@ -467,20 +456,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-#bandcamp-wrapper {
-    width: 100%;
-    height: 100%;
-    border: 0px solid transparent;
-    border-radius: 10px;
-}
-
-#bandcamp-player {
-    width: 100%;
-    height: 100%;
-    border: 0px solid transparent;
-    border-radius: 10px;
+    text-align: center;
 }
 
 #member-container {
@@ -505,7 +481,7 @@ html {
     max-height: 70%;
     height: auto;
     width: auto;
-    border: 0px solid transparent;
+    border: none;
     border-radius: 10px;
 }
 
@@ -757,11 +733,22 @@ footer {
 .response-text {
     min-height: 100px;
     padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 #response-home-link {
     color: var(--red);
+    text-decoration: none;
 }
+
+#response-home-link:hover {
+    animation: responseHomeLinkIn 0.5s ease-in-out forwards;
+}
+
+#response-home-link:not(:hover) {
+    animation: responseHomeLinkOut 0.5s ease-in-out forwards;
+}
+
 
 /*Media Queries--------------------------Media Queries*/
 
@@ -791,20 +778,20 @@ footer {
     }
 }
 
-/* Footer only---------------------------*/
+/* General --------------------------*/
 
+/* @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .width-50 {
+        max-width: 55%;
+        margin-left: 10%;
+    }
+} */
 
 @media screen and (max-width: 768px) {
 
     .name-heading {
-        /* font-size: 4rem; */
         padding-top: 110px;
     }
-
-    /* .margin-small {
-        padding-left: 0;
-        padding-right: 0;
-    } */
 
     #content-section,
     #contact-section {
@@ -838,22 +825,28 @@ footer {
     .form-heading {
         padding-bottom: 0.5rem;
     }
+
     .text-area-heading {
         padding-bottom: 0.5rem
     }
+
     .image-gallery {
         display: flex;
         flex-wrap: wrap;
     }
+
     .image-wrapper:nth-of-type(9) {
         order: 3;
     }
+
     .image-wrapper:nth-of-type(10) {
         order: 1;
     }
+
     .image-wrapper:nth-of-type(11) {
         order: 2;
     }
+
     .image-wrapper:nth-of-type(12) {
         order: 3;
     }
@@ -893,37 +886,46 @@ footer {
     }
 }
 
-/* Gallery--------------------------*/
+/* Gallery only--------------------------*/
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
     .image-gallery {
         display: flex;
         flex-wrap: wrap;
     }
+
     .image-wrapper:nth-of-type(3) {
         order: 4;
     }
+
     .image-wrapper:nth-of-type(5) {
         order: 2;
     }
+
     .image-wrapper:nth-of-type(6) {
         order: 1;
     }
+
     .image-wrapper:nth-of-type(7) {
         order: 1;
     }
+
     .image-wrapper:nth-of-type(8) {
         order: 1;
     }
+
     .image-wrapper:nth-of-type(9) {
         order: 3;
     }
+
     .image-wrapper:nth-of-type(10) {
         order: 2;
     }
+
     .image-wrapper:nth-of-type(11) {
         order: 1;
     }
+
     .image-wrapper:nth-of-type(12) {
         order: 4;
     }
