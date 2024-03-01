@@ -305,7 +305,7 @@ html {
 /* Backgrounds */
 
 .bg-stage-image {
-    background-image: url("../images/bedlam-stage-background-1.webp");
+    background-image: url("../images/home-page/bedlam-stage-background-1.webp");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
