@@ -250,11 +250,6 @@
 
 /* Global-----------------------------*/
 
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
 .font-one {
     font-family: "Bitter", sans-serif;
 }
@@ -322,6 +317,7 @@ html {
 /*Home Page------------------------------*/
 
 #home-section {
+    scroll-snap-type: y mandatory;
     scroll-snap-align: start;
     position: relative;
 }
