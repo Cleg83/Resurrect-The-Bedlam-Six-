@@ -619,19 +619,18 @@ footer {
 .video-gallery {
     padding-top: 125px;
     padding-bottom: 2rem;
-    margin-bottom: 3rem;
+    margin: 0 auto;
+    min-height: 65vh;
+    width: 100%;
 }
 
 .video-box {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 5px solid var(--cream);
-    border-radius: 5px;
-}
-
-.video-size {
     height: 275px;
     width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 5px solid var(--cream);
+    border-radius: 5px;
 }
 
 .video-box:hover {
@@ -693,7 +692,7 @@ footer {
 
 .form-container {
     width: 50%;
-    min-height: 50vh;
+    min-height: 65vh;
     margin: 0 auto;
     padding-top: 1rem;
     padding-left: 2rem;
@@ -909,7 +908,7 @@ footer {
 @media screen and (max-height: 490px) {
     .name-heading {
         padding-top: 150px;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .quote-container {
