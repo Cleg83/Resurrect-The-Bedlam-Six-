@@ -908,6 +908,7 @@ footer {
 
 @media screen and (max-height: 490px) {
     .name-heading {
+        padding-top: 150px;
         font-size: 3rem;
     }
     
