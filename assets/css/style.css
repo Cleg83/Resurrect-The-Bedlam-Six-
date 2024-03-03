@@ -334,6 +334,7 @@ html {
 
 #content-section {
     scroll-snap-align: start;
+    scroll-snap-type: y proximity;
     overflow: hidden;
 }
 
