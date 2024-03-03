@@ -886,6 +886,13 @@ footer {
 
 }
 
+@media screen and (max-width: 260px) {
+    .name-heading {
+        font-size: 1.5rem;
+        padding-top: 135px;
+    }
+}
+
 /* Footer only---------------------------*/
 
 @media screen and (max-width: 1170px) {
