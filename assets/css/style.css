@@ -896,6 +896,12 @@ footer {
     }
 }
 
+@media screen and (max-height: 490px) {
+    .quote-container {
+        display: none;
+    }
+}
+
 /* Footer only---------------------------*/
 
 @media screen and (max-width: 1170px) {
