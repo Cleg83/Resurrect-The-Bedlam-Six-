@@ -907,6 +907,10 @@ footer {
 }
 
 @media screen and (max-height: 490px) {
+    .name-heading {
+        font-size: 3rem;
+    }
+    
     .quote-container {
         display: none;
     }
