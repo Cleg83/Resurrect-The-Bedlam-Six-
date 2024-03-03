@@ -395,7 +395,6 @@
 
 #content-section {
     scroll-snap-align: start;
-    /* scroll-snap-type: y mandatory; */
     overflow-y: hidden;
 }
 
@@ -782,6 +781,10 @@ footer {
         padding-top: 110px;
     }
 
+    #scroll-container {
+        scroll-snap-type: none;
+    }
+
     #content-section,
     #contact-section {
         padding-bottom: 4rem;
@@ -869,6 +872,12 @@ footer {
     .quote-container {
         animation-delay: 6s;
         transform: translate(-50%, -40%);
+    }
+
+    .sm-article-height {
+        min-height: 55vh;
+        margin-bottom: 1rem;
+        margin-top: 0;
     }
 
     #bandcamp-wrapper {
