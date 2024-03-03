@@ -186,7 +186,7 @@
 @keyframes submitIn {
     0% {
         background-color: var(--red);
-        
+
     }
 
     100% {
@@ -245,7 +245,7 @@
 }
 
 .fade-in {
-    animation: fadeIn 1.5s ease-in-out;   
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Global-----------------------------*/
@@ -414,6 +414,7 @@ html {
     border: none;
     height: 100%;
     width: 100%;
+    scroll-snap-type: none;
 }
 
 #bandcamp-player {
@@ -877,6 +878,7 @@ footer {
     .quote-container blockquote:nth-child(3) {
         display: none;
     }
+
     .quote-container {
         animation-delay: 4s;
         transform: translate(-50%, -45%);
