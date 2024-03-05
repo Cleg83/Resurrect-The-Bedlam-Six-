@@ -28,7 +28,7 @@
 @keyframes slideFromLeft {
     0% {
         opacity: 0;
-        transform: translateX(-20%);
+        transform: translateX(-10%);
     }
 
     100% {
@@ -40,7 +40,7 @@
 @keyframes slideFromRight {
     0% {
         opacity: 0;
-        transform: translateX(20%);
+        transform: translateX(10%);
     }
 
     100% {
@@ -245,7 +245,7 @@
 }
 
 .fade-in {
-    animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 750ms ease-in-out;
 }
 
 /* Global-----------------------------*/
@@ -306,12 +306,12 @@
 
 .nav-link:hover,
 .footer-menu-link:hover {
-    animation: linkColorIn 0.5s ease-in-out forwards;
+    animation: linkColorIn 250ms ease-in-out forwards;
 }
 
 .nav-link:not(:hover),
 .footer-menu-link:not(:hover) {
-    animation: linkColorOut 0.5s ease-in-out forwards;
+    animation: linkColorOut 250ms ease-in-out forwards;
 }
 
 /*Home Page------------------------------*/
@@ -341,11 +341,11 @@
 
 .quote-container {
     animation-name: quoteBackground, quoteText, quotePadding;
-    animation-duration: 2s;
+    animation-duration: 750ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    animation-delay: 8s;
+    animation-delay: 750ms;
     border: 0px solid transparent;
     border-radius: 10px;
     width: 75vw;
@@ -358,7 +358,7 @@
 
 .quote-container blockquote {
     opacity: 0;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     text-align: center;
     width: 90%;
@@ -375,22 +375,6 @@
 .quote-container blockquote:nth-child(2),
 .quote-container blockquote:nth-child(4) {
     animation-name: slideFromRight;
-}
-
-.quote-container blockquote:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.quote-container blockquote:nth-child(2) {
-    animation-delay: 2s;
-}
-
-.quote-container blockquote:nth-child(3) {
-    animation-delay: 4s;
-}
-
-.quote-container blockquote:nth-child(4) {
-    animation-delay: 6s;
 }
 
 #content-section {
@@ -436,7 +420,7 @@
 #bandcamp-wrapper:hover,
 #member-container:hover {
     animation-name: changeBackgroundColorIn;
-    animation-duration: 1.5s;
+    animation-duration: 500ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
@@ -445,7 +429,7 @@
 #bandcamp-wrapper:not(:hover),
 #member-container:not(:hover) {
     animation-name: changeBackgroundColorOut;
-    animation-duration: 1s;
+    animation-duration: 250ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
@@ -510,19 +494,19 @@ summary {
 }
 
 article:hover .member {
-    animation: paddingMemberIn 1s ease-in-out forwards;
+    animation: paddingMemberIn 500ms ease-in-out forwards;
 }
 
 article:not(:hover) .member {
-    animation: paddingMemberOut 0.5s ease-in-out forwards;
+    animation: paddingMemberOut 250ms ease-in-out forwards;
 }
 
 article:hover details {
-    animation: textIn 1s ease-in-out forwards;
+    animation: textIn 500ms ease-in-out forwards;
 }
 
 article:not(:hover) details {
-    animation: textOut 0.5s ease-in-out forwards;
+    animation: textOut 250ms ease-in-out forwards;
 }
 
 /* Scrollbar */
@@ -609,12 +593,12 @@ footer {
 
 .active:hover,
 .social-links:hover {
-    animation: activeLinkColorIn 0.5s ease-in-out forwards;
+    animation: activeLinkColorIn 250ms ease-in-out forwards;
 }
 
 .active:not(:hover),
 .social-links:not(:hover) {
-    animation: activeLinkColorOut 0.5s ease-in-out forwards;
+    animation: activeLinkColorOut 250ms ease-in-out forwards;
 }
 
 /*Video Page-----------------------*/
@@ -625,6 +609,11 @@ footer {
     margin: 0 auto;
     min-height: 65vh;
     width: 100%;
+}
+
+#video-heading {
+    font-size: 2rem;
+    color: var(--cream);
 }
 
 .video-box {
@@ -638,18 +627,25 @@ footer {
 
 .video-box:hover {
     border-color: var(--cream);
-    animation: imageVidIn 1s ease-in-out forwards;
+    animation: imageVidIn 500ms ease-in-out forwards;
 }
 
 .video-box:not(:hover) {
-    animation: imageVidOut 1s ease-in-out forwards;
+    animation: imageVidOut 250ms ease-in-out forwards;
 }
 
 /*Gallery Page--------------------------*/
 
 .image-gallery {
-    padding-top: 150px;
+    padding-top: 125px;
     padding-bottom: 80px;
+}
+
+#gallery-heading {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    color: var(--cream);
+    font-size: 2rem;
 }
 
 .gallery-image {
@@ -659,11 +655,11 @@ footer {
 
 .gallery-image:hover {
     border-color: var(--cream);
-    animation: imageVidIn 1s ease-in-out forwards;
+    animation: imageVidIn 500ms ease-in-out forwards;
 }
 
 .gallery-image:not(:hover) {
-    animation: imageVidOut 1s ease-in-out forwards;
+    animation: imageVidOut 250ms ease-in-out forwards;
 }
 
 /* Image pages------------------------------ */
@@ -738,7 +734,7 @@ footer {
 }
 
 .form-button:not(:hover) {
-    animation: submitOut 0.5s ease-in-out forwards;
+    animation: submitOut 250ms ease-in-out forwards;
     color: var(--cream);
 }
 
@@ -768,11 +764,11 @@ footer {
 }
 
 #response-home-link:hover {
-    animation: responseHomeLinkIn 0.5s ease-in-out forwards;
+    animation: responseHomeLinkIn 250ms ease-in-out forwards;
 }
 
 #response-home-link:not(:hover) {
-    animation: responseHomeLinkOut 0.5s ease-in-out forwards;
+    animation: responseHomeLinkOut 250ms ease-in-out forwards;
 }
 
 /*Media Queries--------------------------Media Queries*/
@@ -885,7 +881,7 @@ footer {
     }
 
     .quote-container {
-        animation-delay: 6s;
+        /* animation-delay: 3s; */
         transform: translate(-50%, -40%);
     }
 
@@ -908,7 +904,7 @@ footer {
     }
 
     .quote-container {
-        animation-delay: 4s;
+        /* animation-delay: 4s; */
         transform: translate(-50%, -45%);
     }
 
