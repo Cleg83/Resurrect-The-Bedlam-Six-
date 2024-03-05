@@ -91,7 +91,7 @@ All the pages of the site use the same background image so I wanted to chose a c
 * I have used `#a10f05` as the hover color and the color of the form submit buttons.
 * I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile. The difference is subtle but works more effectively than using `fcfcf5` for these sections.
 
-  ![Color scheme](documents/readme-images/rtb6-color-scheme.png)
+  ![Color scheme](documents/readme-images/color-scheme.png)
 
 ### Background image
 
@@ -159,15 +159,15 @@ The image below shows the expanded navbar and also shows that the active state o
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
 
-![Home page image 1](documents/readme-images/home-page-ss1.png)
+![Home page image 1](documents/readme-images/home-page-ss.png)
 
 When you scroll down the home page you encounter a smaller heading directin you to the content below which comproises of a static embedded Bandcamp player on the left of the screen and a scrollable band member section on the right. 
 
-![Home page image 2](documents/readme-images/home-page-ss2-placeholder.png)
+![Home page image 2](documents/readme-images/home-page2-ss.png)
 
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
-![Home page image 3](documents/readme-images/home-page-ss3-placeholder.png)
+![Home page image 3](documents/readme-images/home-page3-ss.png)
 
 #### The Footer
 
@@ -183,7 +183,7 @@ On mobile devices I wanted the links and icons to display on top of one another,
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
 
-![Image of large screen video page](documents/readme-images/video-page-ss1.png)
+![Image of large screen video page](documents/readme-images/video-ss.png)
 
 On medium devices they are displayed as a 2x3 grid.
 
@@ -198,11 +198,11 @@ On smaller devices, the videos are displayed in a 1x6 grid.
 
 The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
 
-![Image of the gallery page](documents/readme-images/gallery-page-ss1.png)
+![Image of the gallery page](documents/readme-images/gallery-ss.png)
 
 All images open in a new browser tab when clicked. 
 
-![Image of new browser tab with full-size image](documents/readme-images/gallery-page-ss2.png)
+![Image of new browser tab with full-size image](documents/readme-images/clicked-photo.png)
 
 
 #### The Contact Page

@@ -113,6 +113,8 @@ Lighthouse in Chrome Devloper tools was used to test the performance, accessibil
 | Video 4| Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
 | Video 5 | Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
 | Video 6 | Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
+| All videos: hover | Border color changes from cream to red on hover | Hovered mouse over each video | Border color changed from red to cream | Pass |
+| All videos:not(:hover) | Border color changes from red to cream when mouse stops hovering | Moved mouse away from each video after hovering | Border color changed from cream to red | Pass |
 
 ##### Footer 
 
@@ -162,6 +164,8 @@ Lighthouse in Chrome Devloper tools was used to test the performance, accessibil
 | Thumbnail 10 | Image open in new browser tab | Clicked thumbnail link | Opens image in new browser tab | Pass |
 | Thumbnail 11 | Image open in new browser tab | Clicked thumbnail link | Opens image in new browser tab | Pass |
 | Thumbnail 12 | Image open in new browser tab | Clicked thumbnail link | Opens image in new browser tab | Pass |
+| All thumbnails: hover | Border color changes from cream to red on hover | Hovered mouse over each thumbnail | Border color changed from red to cream | Pass |
+| All thumbnails:not(:hover) | Border color changes from red to cream when mouse stops hovering | Moved mouse away from each thumbnail after hovering | Border color changed from cream to red | Pass |
 
 ##### Footer 
 
