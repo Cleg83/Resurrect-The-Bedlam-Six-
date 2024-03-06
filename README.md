@@ -1,6 +1,6 @@
 # Resurrect Louis Barabbas & The Bedlam Six
 
-![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/readme-images/air-ss.png)
+![Resurrect Louis Barabbas & The Bedlam Six shown on a variety of screen sizes](documents/readme-images/readme-main.png)
 
 Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.io/Resurrect-The-Bedlam-Six-Project/).
 
@@ -84,28 +84,48 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
 
 ### Colour Scheme
 
-All the pages of the site use the same background image so I wanted to chose a color scheme that contrasted with the image in a visually pleasing and coherent manner.
+All the pages of the site have a background image so I wanted to chose a color scheme that contrasted with the image in a visually pleasing and coherent manner. 
+
+![Color scheme](documents/readme-images/rtb6-color-scheme.png)
+
+All colors were declared as CSS variables: 
+
+![Color variables](documents/readme-images/color-variables.png)
 
 * I have used `#fcfcf5` as the text color when the background is dark & `#000000` for the text color when the background is light.
 * I have also used `fcfcf5` as the color for the navbar and the footer.
 * I have used `#a10f05` as the hover color and the color of the form submit buttons.
 * I have used `#fafafa` with the opcacity set to 95% for the contact form background and as the background for each band member's profile. The difference is subtle but works more effectively than using `fcfcf5` for these sections.
+* The --bg variable names are the backgrounds for the home page content (when hovered and when not hovered).
+* The --nav-text variable is for the non-active header and footer links.
 
-  ![Color scheme](documents/readme-images/color-scheme.png)
+  
 
-### Background image
+### Background images
 
 As the website is dedicated to bringing back a band few have heard of, I have chosen a background image of the band on stage for all pages. The image is mostly dark which allows text to be easily read across all pages.  
 
-![Bedlam-stage-background](assets/images/bedlam-stage-background.jpg)
+![Main background image](assets/images/home-page/bedlam-stage-background-1.webp)
+
+On narrower screens, the contrast wasn't great between the image and text. As a result, the background image changes to the below on narrower screens.
+
+![Background image on smaller screens](assets/images/home-page/bedlam-stage-background-small-screens.webp)
+
+
 
 ### Typography
 
 Google Fonts was used to import the chosen fonts for use in the site.
 
-* Throughout all of the site I have used the google font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic.
+* For the site heading and throughout most of the site I have used the Google Font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic. THe header and heading text both use Bitter.
 
 ![Bitter font example](documents/readme-images/google-fonts-bitter-example.png)
+
+For the quotes and band member info, I opted for the Google Font [Cardo](https://fonts.google.com/specimen/Cardo).
+
+![Cardo font example 1](documents/readme-images/google-fonts-cardo-example.png)
+
+![Cardo font example 1](documents/readme-images/cardo2.png)
 
 ### Wireframes
 
@@ -157,13 +177,41 @@ The image below shows the expanded navbar and also shows that the active state o
 
 #### The Home Page 
 
-The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six" When viewd on a desktop, I have left a lot of vertical space beneath the page heading, showing the page background image almost in full before the smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
-
 ![Home page image 1](documents/readme-images/home-page-ss.png)
 
-When you scroll down the home page you encounter a smaller heading directin you to the content below which comproises of a static embedded Bandcamp player on the left of the screen and a scrollable band member section on the right. 
+The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six." 
+
+As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark, the padding increases and a background appears. I have attempted to capture this effect in the images below:
+
+![Early fade in](documents/readme-images/quotes-early-fade.png)
+
+![Late fade in](documents/readme-images/quote-late-fade.png)
+
+Fewer quotes display on narrower screens, 3 quotes display on most mobiles and only 2 on the narrowest:
+
+![Screen with 3 quotes](documents/readme-images/3quotes.png)
+
+![Screen with 2 quotes](documents/readme-images/2quotes.png)
+
+
+When you scroll down the home page it snaps to the section below (on devices narrower than 768px, the snap feature has been disabled).
+This section opens with a heading that poses a question: smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
+
+Below the heading there is an embedded Bandcamp player on the left of the screen and a scrollable band member article on the right which snaps to each band member when scrolled. 
 
 ![Home page image 2](documents/readme-images/home-page2-ss.png)
+
+When the user hovers over the bandcamp player or the band members, the background color of the container changes to show it is in focus:
+
+![Bandcamp player in focus](documents/readme-images/home-page-bandcamp-focus.png)
+
+![Band members in focus](documents/readme-images/home-page2-member-focus.png)
+
+As you can see, when the band members are hovered / in focus, the padding at the top increases and the scroll bar appears. 
+
+Also, when a user clicks on the band members a name, some more information is displayed (this is achieved by using details and summary html elements).
+
+![Band members in focus with summary expanded](documents/readme-images/home-page2-member-focus-summary.png)
 
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
@@ -171,13 +219,17 @@ On devices with displays of 768px and smaller, the Bandcamp player is centered a
 
 #### The Footer
 
-I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. Only on larger screens is the copyright displayed.
+I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. On larger screens the copyright is displayed in the center.
 
-![Footer image 1](documents/readme-images/footer-ss1.png)
+![Footer image 1](documents/readme-images/footer1.png)
 
-On mobile devices I wanted the links and icons to display on top of one another, rather than inline. This was achieved by making the columns full width on smaller devices using Bootstrap's class naming system.
+On tablets, the footer looks like this:
 
-![Footer image 2](documents/readme-images/footer-ss2.png)
+![Footer image 2](documents/readme-images/footer2.png)
+
+On devices narrower than 768px, only the social media icons are displayed:
+
+![Footer image ](documents/readme-images/footer3.png)
 
 #### The Video Page
 
@@ -193,6 +245,10 @@ On smaller devices, the videos are displayed in a 1x6 grid.
 
 ![Image of large screen video page](documents/readme-images/video-page-ss3.png)
 
+When a video is hovered, the border color changes to red.
+
+![Image of a video being hovered](documents/readme-images/video-border-ss.png)
+
 
 #### The gallery page
 
@@ -200,26 +256,29 @@ The gallery page is thumbnail image gallery of the band and band members. A sele
 
 ![Image of the gallery page](documents/readme-images/gallery-ss.png)
 
-All images open in a new browser tab when clicked. 
+All images open in a new browser tab when clicked. This required an html page to be made for each image and very basic styling to be applied (background-color and font to keep consistency).
 
 ![Image of new browser tab with full-size image](documents/readme-images/clicked-photo.png)
 
+As with the video page, when a photo is hovered, the border color changes to red.
+
+![Image of a video being hovered](documents/readme-images/gallery-border-ss.png)
 
 #### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
-![Contact page image](documents/readme-images/contact-page-ss1.png)
+![Contact page image](documents/readme-images/contact-ss.png)
 
 #### The Submit Page
 
 On the user submitting the contact form with all required fields completed, I wanted a new page to load that thanks the user for contacting the band and provides a link back to the home page. 
 
-![Submit page image](documents/readme-images/submit-ss1.png)
+![Submit page image](documents/readme-images/submit-ss.png)
 
 #### The Shop Page
 
-The shop link in the header and footer link to the Bancamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
+The shop link in the header and footer link to the Bandcamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
 ![Bandcamp shop image](documents/readme-images/bandcamp-store-ss1.png)
 
@@ -239,9 +298,9 @@ For future implementations of the site, I would like to:
 I have made the site with accessibility in mind and
 
 * Using semantic HTML.
-* Utilising the appropriate ARIA atrributes when needed.
+* Utilising the appropriate ARIA attributes when needed.
 * Utilising a hover state on all links on the site to make it clear to the user if they are hovering over a link.
-* Utilising a sans serif font for the site due to being more dyslexia-friendly than other font families.
+* Utilising sans serif fonts for the site due to being more dyslexia-friendly than other font families.
 * Making sure to use contrasting colors for images and text.
 
 - - -
