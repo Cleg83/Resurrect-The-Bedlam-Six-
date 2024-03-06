@@ -215,7 +215,9 @@ Also, when a user clicks on the band members a name, some more information is di
 
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
-![Home page image 3](documents/readme-images/home-page3-ss.png)
+![Home page image 3](documents/readme-images/bandcamp-focus.png)
+
+![Home page image 4](documents/readme-images/member-focus.png)
 
 #### The Footer
 
@@ -269,6 +271,11 @@ As with the video page, when a photo is hovered, the border color changes to red
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
 ![Contact page image](documents/readme-images/contact-ss.png)
+
+The submit button color changes to black when hovered: 
+
+![Submit button hover](documents/readme-images/submit-hover.png)
+
 
 #### The Submit Page
 
