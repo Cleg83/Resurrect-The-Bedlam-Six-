@@ -931,7 +931,7 @@ textarea {
 
 @media screen and (max-height: 490px) {
     .name-heading {
-        padding-top: 150px;
+        padding-top: 130px;
         font-size: 2.5rem;
     }
     
@@ -948,7 +948,7 @@ textarea {
 
 @media screen and (min-height: 1200px) {
     textarea {
-        height: 600px;
+        height: 500px;
     }
 }
 
