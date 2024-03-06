@@ -617,7 +617,7 @@ footer {
 }
 
 .video-box {
-    height: 275px;
+    height: 270px;
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -721,6 +721,12 @@ footer {
 .text-area-heading {
     padding-bottom: 0.75rem;
 }
+
+textarea {
+    width: 100%;
+    height: 150px; /* Adjust as needed */
+    resize: vertical; /* Allow vertical resizing */
+  }
 
 .form-button {
     color: var(--cream);
@@ -931,6 +937,18 @@ footer {
     
     .quote-container {
         display: none;
+    }
+}
+
+@media screen and (min-height: 920px) {
+    textarea {
+        height: 400px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    textarea {
+        height: 600px;
     }
 }
 
