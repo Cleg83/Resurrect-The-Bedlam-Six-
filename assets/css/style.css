@@ -939,6 +939,10 @@ textarea {
     .quote-container {
         display: none;
     }
+
+    .response-wrapper {
+        padding-top: 100px;
+    }
 }
 
 @media screen and (min-height: 920px) {
