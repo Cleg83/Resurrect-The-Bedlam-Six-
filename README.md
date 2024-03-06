@@ -254,7 +254,7 @@ When a video is hovered, the border color changes to red.
 
 #### The gallery page
 
-The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
+The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. The grid scales down in a similar way to the video page.
 
 ![Image of the gallery page](documents/readme-images/gallery-ss.png)
 
