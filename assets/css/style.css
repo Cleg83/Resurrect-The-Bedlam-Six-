@@ -605,7 +605,7 @@ footer {
 
 .video-gallery {
     padding-top: 125px;
-    padding-bottom: 2rem;
+    padding-bottom: 80px;
     margin: 0 auto;
     min-height: 65vh;
     width: 100%;
@@ -703,8 +703,9 @@ footer {
 }
 
 .form-heading {
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .bg-input-fields {
@@ -713,7 +714,7 @@ footer {
 }
 
 .contact-text-area {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 85%;
     margin: 0 auto;
 }
@@ -724,7 +725,7 @@ footer {
 
 textarea {
     width: 100%;
-    height: 150px; /* Adjust as needed */
+    height: 125px; /* Adjust as needed */
     resize: vertical; /* Allow vertical resizing */
   }
 
@@ -946,7 +947,6 @@ textarea {
     }
 }
 
-
 @media screen and (min-height: 920px) and (max-width: 1025px) {
     #content-heading {
         margin-top: 3rem;
@@ -957,6 +957,11 @@ textarea {
     }
     #member-wrapper {
         height: 75%;
+    }
+
+    .contact-heading {
+        padding-top: 4rem;
+        padding-bottom: 80px;
     }
     textarea {
         height: 400px;
