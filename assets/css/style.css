@@ -942,7 +942,7 @@ textarea {
 
 @media screen and (min-height: 920px) {
     textarea {
-        height: 400px;
+        height: 350px;
     }
 }
 
@@ -958,6 +958,10 @@ textarea {
     #member-wrapper {
         height: 75%;
     }
+    textarea {
+        height: 400px;
+    }
+    
 }
 
 /* Footer only---------------------------*/
