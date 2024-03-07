@@ -190,7 +190,7 @@ The image below shows the expanded navbar and also shows that the active state o
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six." 
 
-As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark, the padding increases and a background appears. I have attempted to capture this effect in the images below:
+As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark and a background appears. I have attempted to capture this effect in the images below:
 
 ![Early fade in](documents/readme-images/quotes-early-fade.png)
 
@@ -409,25 +409,34 @@ To clone the repository:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-- - -
+---
 
 ## Testing
 
 Please refer to [testing.md](testing.md) for detailed testing information.
 
-### Solved Bugs
+### Lighthouse 
 
-| No | Bug | How I solved the issue |
-| :--- | :--- | :--- |
-| 1 | Not being able to resize embedded bandcamp player | The iframe had inline style rules I needed to delete and replace with custom css. This also required renaming the div that contained the iframe to bandcamp-wrapper so the iframe could be given the id of bandcamp-player in order to resize responsively. | 
+[Home Page 1](documents/testing/lighthouse/index-lighthouse.png)
+
+[Home Page 2](documents/testing/lighthouse/index-lighthouse2.png)
+
+[Video Page](documents/testing/lighthouse/video-lighthouse.png)
+
+[Gallery Page 1](documents/testing/lighthouse/gallery-lighthouse.png)
+
+[Gallery Page 2](documents/testing/lighthouse/gallery-lighthouse2.png)
+
+[Gallery Page 3](documents/testing/lighthouse/gallery-lighthouse3.png)
+
+[Contact Page](documents/testing/lighthouse/contact-lighthouse.png)
+
+[Submit Page](documents/testing/lighthouse/submit-lighthouse.png)
 
 
-### Known issues
+N.B. Due to recent changes to Google's third party cookie policy, the best practices scores on the pages with embedded iframes (the home page and the video page) only score 78. 
 
-1. Not necessarily a bug but I'm not 100% happy with the home page layout when viewed on extra large screens. I will chalk this up to not being a natural designer and will welcome suggestions on how to improve the home page.
-
-2. The band member section of the home page scrolls independently and I don't think this works as well as it could: The user may wish to scroll up to the top of the page but if the cursor is still within the border of the scrollable member-section, only that section will scroll. 
-
+There is no way of improving this unless the embedded players are removed (not an option in this case) or a third party script is added but as this project is only HTML and CSS, that was also not an option.
 - - -
 
 ## Credits

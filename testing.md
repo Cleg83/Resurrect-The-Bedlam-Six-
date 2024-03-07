@@ -28,17 +28,27 @@ Visit the deployed site here: [Resurrect The Bedlam Six](https://cleg83.github.i
 
 Lighthouse in Chrome Devloper tools was used to test the performance, accessibility, best practices and SEO of each page. 
 
-* [index-lighthouse](documents/testing/lighthouse/index-lighthouse.png)
-* [video-lighthouse](documents/testing/lighthouse/video-lighthouse.png)
-* [gallery-lighthouse](documents/testing/lighthouse/gallery-lighthouse.png)
-* [contact-lighthouse](documents/testing/lighthouse/contact-lighthouse.png)
-* [submit-lighthouse](documents/testing/lighthouse/submit-lighthouse.png)
+* [Home Page 1](documents/testing/lighthouse/index-lighthouse.png)
+
+* [Home Page 2](documents/testing/lighthouse/index-lighthouse2.png)
+
+* [Video Page](documents/testing/lighthouse/video-lighthouse.png)
+
+* [Gallery Page 1](documents/testing/lighthouse/gallery-lighthouse.png)
+
+* [Gallery Page 2](documents/testing/lighthouse/gallery-lighthouse2.png)
+
+* [Gallery Page 3](documents/testing/lighthouse/gallery-lighthouse3.png)
+
+* [Contact Page](documents/testing/lighthouse/contact-lighthouse.png)
+
+* [Submit Page](documents/testing/lighthouse/submit-lighthouse.png)
 
 #### Anomalies / outliers 
 
-* video.html shows a performance score of 77.  This page has 6 embedded iframes slowing things down. For the sake of this static site I don't believe a change is needed, the loading attribute could be set to lazy but I wanted the videos to display at all times.
+Due to recent changes to Google's third party cookie policy, the best practices scores on the pages with embedded iframes (the home page and the video page) only score 78. 
 
-* submit.html shows an SEO score of 82 but as this page only loads once the form is completed, this score does not concern me. 
+There is no way of improving this unless the embedded players are removed (not an option in this case) or a third party script is added but as this project is only HTML and CSS, that was also not an option.
 
 
 ## Manual testing
