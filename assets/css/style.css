@@ -114,7 +114,6 @@
 
 .fade-in {
     animation: fadeIn 750ms ease-in-out;
-    background-color: var(--black);
 }
 
 /* Global-----------------------------*/
