@@ -321,6 +321,7 @@ For future implementations of the site, I would like to:
 2. Add a tour / gigs page if the response to the site leads to a resurrection / reunion.
 3. Add links to all members other projects or potentially add an extra media page showcasing those projects.
 4. Create my own custom media player rather than using an embedded Bandcamp player.
+5. Improve interactivity by introducing JavaScript (this will have the added benefit of allowing me to disable third party cookies on the embedded Bandcamp and Youtube players).
 
 ---
 
@@ -414,6 +415,20 @@ To clone the repository:
 ## Testing
 
 Please refer to [testing.md](testing.md) for detailed testing information.
+
+### W3C
+
+[Home Page](documents/testing/w3c/index.png)
+
+[Video Page](documents/testing/w3c/video.png)
+
+[Gallery Page](documents/testing/w3c/gallery.png)
+
+[Contact Page](documents/testing/w3c/contact.png)
+
+[Submit Page](documents/testing/w3c/submit.png)
+
+[CSS](documents/testing/w3c/css.png)
 
 ### Lighthouse 
 
