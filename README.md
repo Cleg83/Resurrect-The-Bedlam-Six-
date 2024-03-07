@@ -99,6 +99,7 @@ All colors were declared as CSS variables:
 * The --bg variable names are the backgrounds for the home page content (when hovered and when not hovered).
 * The --nav-text variable is for the non-active header and footer links.
 
+---
   
 
 ### Background images
@@ -111,7 +112,7 @@ On narrower screens, the contrast wasn't great between the image and text. As a 
 
 ![Background image on smaller screens](assets/images/home-page/bedlam-stage-background-small-screens.webp)
 
-
+---
 
 ### Typography
 
@@ -126,6 +127,8 @@ For the quotes and band member info, I opted for the Google Font [Cardo](https:/
 ![Cardo font example 1](documents/readme-images/google-fonts-cardo-example.png)
 
 ![Cardo font example 1](documents/readme-images/cardo2.png)
+
+---
 
 ### Wireframes
 
@@ -147,6 +150,8 @@ Wireframes were created for mobile, tablet and desktop using Justinmind.
 
 ![Contact Page](documents/wireframes/contact-page-wireframe.png)
 
+---
+
 ### Features
 
 The website makes use of Bootstrap framework for grid layouts and intuitive responsiveness.
@@ -158,6 +163,8 @@ The website is comprised of a home page, a gallery page, a video page, a contact
 All pages are fully responsive and feature a favicon icon in the browser tab:
 
 ![favicon](documents/readme-images/favicon-ss.png)
+
+---
 
 #### The Navbar
 
@@ -174,6 +181,8 @@ On smaller screen sizes, I wanted the navbar to collapse into a hamburger menu (
 The image below shows the expanded navbar and also shows that the active state of the video link.
 
 ![Navbar image 3](documents/readme-images/navbar-ss2.png)
+
+---
 
 #### The Home Page 
 
@@ -215,9 +224,11 @@ Also, when a user clicks on the band members a name, some more information is di
 
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
 
-![Home page image 3](documents/readme-images/bandcamp-focus.png)
+![Home page image 3](documents/readme-images/bandcamp-focus.webp)
 
 ![Home page image 4](documents/readme-images/member-focus.png)
+
+---
 
 #### The Footer
 
@@ -232,6 +243,8 @@ On tablets, the footer looks like this:
 On devices narrower than 768px, only the social media icons are displayed:
 
 ![Footer image ](documents/readme-images/footer3.png)
+
+---
 
 #### The Video Page
 
@@ -251,6 +264,8 @@ When a video is hovered, the border color changes to red.
 
 ![Image of a video being hovered](documents/readme-images/video-border-ss.png)
 
+---
+
 
 #### The gallery page
 
@@ -266,6 +281,8 @@ As with the video page, when a photo is hovered, the border color changes to red
 
 ![Image of a video being hovered](documents/readme-images/gallery-border-ss.png)
 
+---
+
 #### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
@@ -276,6 +293,8 @@ The submit button color changes to black when hovered:
 
 ![Submit button hover](documents/readme-images/submit-hover.png)
 
+---
+
 
 #### The Submit Page
 
@@ -283,11 +302,15 @@ On the user submitting the contact form with all required fields completed, I wa
 
 ![Submit page image](documents/readme-images/submit-ss.png)
 
+---
+
 #### The Shop Page
 
 The shop link in the header and footer link to the Bandcamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
 ![Bandcamp shop image](documents/readme-images/bandcamp-store-ss1.png)
+
+---
 
 
 #### Future Implementations
@@ -299,6 +322,7 @@ For future implementations of the site, I would like to:
 3. Add links to all members other projects or potentially add an extra media page showcasing those projects.
 4. Create my own custom media player rather than using an embedded Bandcamp player.
 
+---
 
 ### Accessibility
 
@@ -403,10 +427,6 @@ Please refer to [testing.md](testing.md) for detailed testing information.
 1. Not necessarily a bug but I'm not 100% happy with the home page layout when viewed on extra large screens. I will chalk this up to not being a natural designer and will welcome suggestions on how to improve the home page.
 
 2. The band member section of the home page scrolls independently and I don't think this works as well as it could: The user may wish to scroll up to the top of the page but if the cursor is still within the border of the scrollable member-section, only that section will scroll. 
-
-
-
-
 
 - - -
 
