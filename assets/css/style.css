@@ -658,6 +658,10 @@ textarea {
         transform: translate(-50%, -25%)
     }
 
+    .quote-container blockquote:nth-child(4) {
+        display: none;
+    }
+
     #bandcamp-wrapper {
         width: 80%;
         margin: 0 auto;
@@ -778,12 +782,6 @@ textarea {
     .name-heading {
         font-size: 1.5rem;
         padding-top: 135px;
-    }
-}
-
-@media screen and (min-height: 491px) and (max-height: 601px) {
-    .quote-container blockquote:nth-child(4) {
-        display: none;
     }
 }
 
