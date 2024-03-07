@@ -68,60 +68,10 @@
     }
 }
 
-@keyframes quotePadding {
-    0% {
-        padding-top: 0rem;
-    }
-
-    100% {
-        padding-top: 1rem;
-    }
-}
-
-@keyframes changeBackgroundColorIn {
-    0% {
-        background-color: var(--bg-dark);
-    }
-
-    100% {
-        background-color: var(--bg-light);
-    }
-}
-
-@keyframes changeBackgroundColorOut {
-    0% {
-        background-color: var(--bg-light);
-    }
-
-    100% {
-        background-color: var(--bg-dark);
-    }
-}
-
-@keyframes paddingMemberIn {
-    0% {
-        padding-top: 1.3rem;
-    }
-
-    100% {
-        padding-top: 2rem;
-    }
-}
-
-@keyframes paddingMemberOut {
-    0% {
-        padding-top: 2rem;
-    }
-
-    100% {
-        padding-top: 1.3rem;
-    }
-}
-
 @keyframes textIn {
     0% {
         color: var(--cream);
-        padding-top: 2.5rem;
+        padding-top: 2rem;
     }
 
     100% {
@@ -138,27 +88,7 @@
 
     100% {
         color: var(--cream);
-        padding-top: 2.5rem;
-    }
-}
-
-@keyframes linkColorIn {
-    0% {
-        color: var(--nav-text);
-    }
-
-    100% {
-        color: var(--red)
-    }
-}
-
-@keyframes linkColorOut {
-    0% {
-        color: var(--red);
-    }
-
-    100% {
-        color: var(--nav-text);
+        padding-top: 2rem;
     }
 }
 
@@ -182,69 +112,9 @@
     }
 }
 
-@keyframes submitIn {
-    0% {
-        background-color: var(--red);
-
-    }
-
-    100% {
-        background-color: var(--black);
-    }
-}
-
-@keyframes submitOut {
-    0% {
-        background-color: var(--black);
-    }
-
-    100% {
-        background-color: var(--red);
-    }
-}
-
-@keyframes responseHomeLinkIn {
-    0% {
-        color: var(--red)
-    }
-
-    100% {
-        color: var(--black)
-    }
-}
-
-@keyframes responseHomeLinkOut {
-    0% {
-        color: var(--black)
-    }
-
-    100% {
-        color: var(--red)
-    }
-}
-
-@keyframes imageVidIn {
-    0% {
-        border-color: var(--cream)
-    }
-
-    100% {
-        border-color: var(--red);
-    }
-}
-
-@keyframes imageVidOut {
-    0% {
-        border-color: var(--red);
-    }
-
-    100% {
-        border-color: var(--cream);
-    }
-}
-
 .fade-in {
     animation: fadeIn 750ms ease-in-out;
+    background-color: var(--black);
 }
 
 /* Global-----------------------------*/
@@ -296,21 +166,20 @@
     -webkit-backdrop-filter: blur(8.9px);
 }
 
-/*Navbar-----------------------------*/
-
 .bg-color-navbar,
 .bg-color-footer {
     background-color: var(--cream);
 }
 
-.nav-link:hover,
-.footer-menu-link:hover {
-    animation: linkColorIn 250ms ease-in-out forwards;
+/*Navbar-----------------------------*/
+
+.nav-link {
+    color: var(--nav-text);
+    transition: color 250ms ease-in-out;
 }
 
-.nav-link:not(:hover),
-.footer-menu-link:not(:hover) {
-    animation: linkColorOut 250ms ease-in-out forwards;
+.nav-link:hover {
+    color: var(--red);
 }
 
 /*Home Page------------------------------*/
@@ -339,15 +208,16 @@
 }
 
 .quote-container {
-    animation-name: quoteBackground, quoteText, quotePadding;
-    animation-duration: 750ms;
+    animation-name: quoteBackground, quoteText;
+    animation-duration: 400ms;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    animation-delay: 750ms;
+    animation-delay: 300ms;
+    padding-top: 1rem;
     border: 0px solid transparent;
     border-radius: 10px;
-    width: 75vw;
+    width: 80vw;
     color: var(--cream);
     position: absolute;
     left: 50%;
@@ -357,8 +227,9 @@
 
 .quote-container blockquote {
     opacity: 0;
-    animation-duration: 1.5s;
+    animation-duration: 400ms;
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
     text-align: center;
     width: 90%;
     margin: auto;
@@ -401,7 +272,8 @@
     width: 100%;
     scroll-snap-type: none;
     margin: 0 auto;
-
+    transition: background-color 500ms ease-in-out;
+    background-color: var(--bg-dark);
 }
 
 #bandcamp-player {
@@ -417,21 +289,10 @@
 }
 
 #bandcamp-wrapper:hover,
-#member-container:hover {
-    animation-name: changeBackgroundColorIn;
-    animation-duration: 500ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
-
-#bandcamp-wrapper:not(:hover),
-#member-container:not(:hover) {
-    animation-name: changeBackgroundColorOut;
-    animation-duration: 250ms;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+#bandcamp-wrapper:focus,
+#member-container:hover,
+#member-container:focus {
+    background-color: var(--bg-light);
 }
 
 #member-container {
@@ -442,6 +303,8 @@
     border: none;
     scroll-snap-type: none;
     margin: 0 auto;
+    transition: background-color 500ms ease-in-out;
+    background-color: var(--bg-dark);
 }
 
 #member-wrapper {
@@ -468,7 +331,14 @@
     width: 100%;
     color: var(--cream);
     border: none;
+    padding-top: 1.3rem;
+    transition: padding-top 500ms ease-in-out;
 }
+
+article:hover .member {
+    padding-top: 2rem;
+}
+
 
 .member-photo {
     max-width: 80%;
@@ -490,14 +360,6 @@ summary {
 .member-info {
     padding-top: 0.5rem;
     font-size: 1rem;
-}
-
-article:hover .member {
-    animation: paddingMemberIn 500ms ease-in-out forwards;
-}
-
-article:not(:hover) .member {
-    animation: paddingMemberOut 250ms ease-in-out forwards;
 }
 
 article:hover details {
@@ -551,6 +413,14 @@ footer {
     height: 100%;
 }
 
+.footer-menu-link {
+    color: var(--nav-text);
+    transition: color 250ms ease-in-out;
+}
+.footer-menu-link:hover {
+    color: var(--red);
+}
+
 .footer-menu li a {
     text-decoration: none;
     font-weight: 400;
@@ -584,19 +454,21 @@ footer {
     color: var(--black);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    transition: color 250ms ease-in-out;
 }
 
+.social-links:hover {
+    color: var(--red)
+}
 .social li {
     margin-right: 0px;
 }
 
-.active:hover,
-.social-links:hover {
+.active:hover{
     animation: activeLinkColorIn 250ms ease-in-out forwards;
 }
 
-.active:not(:hover),
-.social-links:not(:hover) {
+.active:not(:hover) {
     animation: activeLinkColorOut 250ms ease-in-out forwards;
 }
 
@@ -622,16 +494,13 @@ footer {
     margin-bottom: 2rem;
     border: 5px solid var(--cream);
     border-radius: 5px;
+    transition: border-color 500ms ease-in-out;
 }
 
 .video-box:hover {
-    border-color: var(--cream);
-    animation: imageVidIn 500ms ease-in-out forwards;
+    border-color: var(--red);
 }
 
-.video-box:not(:hover) {
-    animation: imageVidOut 250ms ease-in-out forwards;
-}
 
 /*Gallery Page--------------------------*/
 
@@ -650,15 +519,11 @@ footer {
 .gallery-image {
     border: 5px solid var(--cream);
     border-radius: 5px;
+    transition: border-color 500ms ease-in-out;
 }
 
 .gallery-image:hover {
-    border-color: var(--cream);
-    animation: imageVidIn 500ms ease-in-out forwards;
-}
-
-.gallery-image:not(:hover) {
-    animation: imageVidOut 250ms ease-in-out forwards;
+    border-color: var(--red);
 }
 
 /* Image pages------------------------------ */
@@ -732,15 +597,11 @@ textarea {
     color: var(--cream);
     background-color: var(--red);
     margin-bottom: 1rem;
+    transition: background-color 250ms ease-in-out;
 }
 
 .form-button:hover {
-    animation: submitIn 0.5s ease-in-out forwards;
-    color: var(--cream);
-}
-
-.form-button:not(:hover) {
-    animation: submitOut 250ms ease-in-out forwards;
+    background-color: var(--black);
     color: var(--cream);
 }
 
@@ -767,15 +628,14 @@ textarea {
 #response-home-link {
     color: var(--red);
     text-decoration: none;
+    transition: color 250ms ease-in-out;
 }
 
-#response-home-link:hover {
-    animation: responseHomeLinkIn 250ms ease-in-out forwards;
+#response-home-link:hover,
+#response-home-link:focus {
+    color: var(--black);
 }
 
-#response-home-link:not(:hover) {
-    animation: responseHomeLinkOut 250ms ease-in-out forwards;
-}
 
 /*Media Queries--------------------------Media Queries*/
 
