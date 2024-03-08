@@ -450,7 +450,7 @@ article:not(:hover) details {
     animation: textOut 250ms ease-in-out forwards;
 }
 
-/* Scrollbar-------------------------------------------------------------- */
+/* Scrollbar for member article */
 
 #member-wrapper::-webkit-scrollbar {
     width: 10px;
@@ -644,7 +644,7 @@ footer {
 
 .form-container {
     width: 50%;
-    min-height: 50vh;
+    min-height: 45vh;
     margin: 0 auto;
     padding-top: 1rem;
     padding-left: 2rem;
