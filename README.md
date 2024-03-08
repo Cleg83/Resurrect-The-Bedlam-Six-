@@ -360,13 +360,22 @@ When a video is hovered, the border color changes to red.
 
 ### The gallery page
 
-The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. The grid scales down in a similar way to the video page.
+The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. 
 
 <br>
 
 ![Image of the gallery page](documents/readme-images/gallery-ss.png)
 
 <br>
+
+The grid scales down in a similar way to the video page though I had to use flex order to display images in a different order on medium and small screens.
+
+<br>
+
+![Gallery on medium screens](documents/readme-images/gallery-med.png)
+
+![Gallery on small screens](documents/readme-images/gallery-small.png)
+
 
 All images open in a new browser tab when clicked. This required an html page to be made for each image and very basic styling to be applied (background-color and font to keep consistency).
 
