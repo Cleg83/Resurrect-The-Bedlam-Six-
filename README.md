@@ -475,9 +475,11 @@ HTML, CSS
 
 * [Bootstrap](https://getbootstrap.com/) - For the layout of most pages.
 
-* [CSS Glass](https://css.glass/) - For the glass layer of the home page content section.
+* [Chrome Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [Cloud Convert](https://cloudconvert.com/) - To convert images to webp format.
+
+* [CSS Glass](https://css.glass/) - For the glass layer of the home page content section.
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
@@ -488,8 +490,6 @@ HTML, CSS
 * [Github](https://github.com/) - To save and store the files for the website.
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
-
-* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [TinyPNG](https://tinypng.com/) To compress images.
 
