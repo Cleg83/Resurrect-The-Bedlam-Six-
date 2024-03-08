@@ -83,15 +83,19 @@ There is no way of improving this unless the embedded players are removed (not a
 | Embedded Bandcamp player: mouse out | Background color changes from var(--bg-light) to var (--bg-dark) when mouse moved away | Moved mouse away from player | Background color changes from dark to light | Pass |
 | Embedded Bandcamp player: Play button | Plays music when the play button is clicked | Clicked button | Music plays | Pass |
 | Embedded Bandcamp player: Pause button | Pauses music when the pause button is clicked | Clicked button | Music pauses | Pass |
-| Embedded Bandcamp player: Links | Opens external Bandcamp page when each link is clicked | Clicked each link | External bandcamp page opened when each link was clicked | Pass |
+| Embedded Bandcamp player: Links | Opens external Bandcamp page when each link is clicked | Clicked each link | External Bandcamp page opened when each link was clicked | Pass |
 |  Embedded Bandcamp player: Track list | User can scroll through the album tracks within the iframe | Scrolled through tracks | All tracks visible with no hidden overflow | Pass |
 | Band member article: hover | Background color changes from var(--bg-dark) to var(--bg-light) when hovered | Hovered mouse over article | Background color changes from light to dark | Pass |
 | Band member article: hover | Top padding of content increases to push content down from top of container when hovered / in focus | Hovered mouse over article | Top padding increased | Pass |
 | Band member article: hover | Article text color changes from var(--cream) to var(--black) when hovered / in focus | Hovered mouse over article | Font changed color from var(--black) to var(--cream) | Pass |
 | Band member article: hover | Article text top padding reduces to push it closer to member photo when hovered / in focus | Hovered mouse over article | Top padding of text reduced | Pass |
-
-| Band member article  : mouse out | Background color changes from var(--bg-light) to var (--bg-dark) when mouse moved away | Moved mouse away from player | Background color changes from dark to light | Pass |
-| Band member column | Scrolls independently from Bandcamp Player| Scrolled through band members | Column scrolls independently | Pass |
+| Band member article  : mouse out | Background color changes from var(--bg-light) to var (--bg-dark) when mouse moved away | Moved mouse away from article| Background color changes from dark to light | Pass |
+| Band member article: mouse out | Top padding of content decreases to push content up when not hovered / in focus | Moved mouse away from article | Top padding decreased | Pass |
+| Band member article: mouse out | Article text color changes from var(--black) to var(--cream) when not hovered / in focus | Moved mouse away from article | Font changed color from var(--cream) to var(--black) | Pass |
+| Band member article: mouse out | Top padding of the article text increases to push text away from content when not hovered / in focus | Moved mouse away from article | Top padding increased | Pass |
+| Band member article | Scroll snaps to each member when scrolled | Scrolled through band members | Snaps to each member when scrolled | Pass |
+| Band member article: Summary hidden | Summary displays when band member name is clicked | Clicked each band member name | Summary displayed to show more details | Pass |
+| Band member article: Summary visible | Summary disappears when band member name is clicked | Clicked each band member name | Summary disappeared | Pass |
 
 ##### Footer 
 
@@ -150,8 +154,8 @@ There is no way of improving this unless the embedded players are removed (not a
 | Video 4| Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
 | Video 5 | Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
 | Video 6 | Allows video to play fullscreen | Clicked video fullscreen button | Video expands to full screen and plays | Pass |
-| All videos:hover | Border color changes from cream to red on hover | Hovered mouse over each video | Border color changed from red to cream | Pass |
-| All videos:not(:hover) | Border color changes from red to cream when mouse stops hovering | Moved mouse away from each video after hovering | Border color changed from cream to red | Pass |
+| All videos:hover | Border color changes from var(--cream) to var(--red) on hover | Hovered mouse over each video | Border color changed from var(--cream) to var(--red) | Pass |
+| All videos: mouse out | Border color changes from var(--red) to var(--cream) when mouse stops hovering | Moved mouse away from each video after hovering | Border color changed from var(--red) to var(--cream) | Pass |
 
 ##### Footer 
 
@@ -209,8 +213,8 @@ There is no way of improving this unless the embedded players are removed (not a
 | Thumbnail 10 | Correct image opens in new browser tab | Clicked thumbnail link | Correct image opened in new browser tab | Pass |
 | Thumbnail 11 | Correct image opens in new browser tab | Clicked thumbnail link | Correct image opened in new browser tab | Pass |
 | Thumbnail 12 | Correct image opens in new browser tab | Clicked thumbnail link | Correct image opened in new browser tab | Pass |
-| All thumbnails: hover | Border color changes from cream to red on hover | Hovered mouse over each thumbnail | Border color changed from red to cream | Pass |
-| All thumbnails:not(:hover) | Border color changes from red to cream when mouse stops hovering | Moved mouse away from each thumbnail after hovering | Border color changed from cream to red | Pass |
+| All thumbnails: hover | Border color changes from var(--cream) to var(--red) on hover | Hovered mouse over each thumbnail | Border color changed from var(--cream) to vae(--red) | Pass |
+| All thumbnails: mouse out | Border color changes from var(--red) to var(--cream) when mouse stops hovering | Moved mouse away from each thumbnail after hovering | Border color changed from var(--red) to var(--cream) | Pass |
 
 ##### Footer 
 
@@ -311,8 +315,8 @@ Submit button | Loads submission response page when clicked | Click submit butto
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 Click here to return home link | Directs user to the home page | Clicked on link | Home page opens | Pass |
-Click here to return home link:hover | Link changes color to black when hovered | Hovered mouse over link | Link changed color to black | Pass |
-Click here to return home link:not(hover) | Link color changes back to #a10f0 when mouse stops hovering | Moved mouse away from link after hovering | Link changed color to #a10f0 | Pass |
+Click here to return home link:hover | Link changes color from var(--red) to var(--black) when hovered | Hovered mouse over link | Link changed color from var(--red) to var(--black) | Pass |
+Click here to return home link: mouse out | Link color changes from var(--black) to var(--red) when mouse stops hovering | Moved mouse away from link after hovering | Link changed color from var(--black) to var(--red) | Pass |
 
 ##### Footer 
 
