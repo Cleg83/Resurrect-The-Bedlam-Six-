@@ -51,7 +51,6 @@ The site serves as a simple platform to find out some basic information about th
   
 * [Credits](#credits)
   * [External code](#external-code)
-  * [Site content](#site-content)
   * [Media](#media)
 
   - - - 
@@ -86,11 +85,19 @@ The site serves as a simple platform to find out some basic information about th
 
 All the pages of the site have a background image so I wanted to chose a color scheme that contrasted with the image in a visually pleasing and coherent manner. 
 
+<br>
+
 ![Color scheme](documents/readme-images/rtb6-color-scheme.png)
+
+<br>
 
 All colors were declared as CSS variables: 
 
+<br>
+
 ![Color variables](documents/readme-images/color-variables.png)
+
+<br>
 
 * I have used `#fcfcf5` as the text color when the background is dark & `#000000` for the text color when the background is light.
 * I have also used `fcfcf5` as the color for the navbar and the footer.
@@ -107,6 +114,8 @@ All colors were declared as CSS variables:
 As the website is dedicated to bringing back a band few have heard of, I have chosen a background image of the band on stage for all pages. The image is mostly dark which allows text to be easily read across all pages.  
 
 ![Main background image](assets/images/home-page/bedlam-stage-background-1.webp)
+
+<br>
 
 On narrower screens, the contrast wasn't great between the image and text. As a result, the background image changes to the below on narrower screens.
 
@@ -152,7 +161,7 @@ Wireframes were created for mobile, tablet and desktop using Justinmind.
 
 ---
 
-### Features
+## Features
 
 The website makes use of Bootstrap framework for grid layouts and intuitive responsiveness.
 
@@ -166,7 +175,7 @@ All pages are fully responsive and feature a favicon icon in the browser tab:
 
 ---
 
-#### The Navbar
+### The Navbar
 
 I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
 
@@ -184,7 +193,7 @@ The image below shows the expanded navbar and also shows that the active state o
 
 ---
 
-#### The Home Page 
+### The Home Page 
 
 ![Home page image 1](documents/readme-images/home-page-ss.png)
 
@@ -236,7 +245,7 @@ On devices with displays of 768px and smaller, the Bandcamp player is centered a
 
 ---
 
-#### The Footer
+### The Footer
 
 I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. On larger screens the copyright is displayed in the center.
 
@@ -252,7 +261,7 @@ On devices narrower than 768px, only the social media icons are displayed:
 
 ---
 
-#### The Video Page
+### The Video Page
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
 
@@ -273,7 +282,7 @@ When a video is hovered, the border color changes to red.
 ---
 
 
-#### The gallery page
+### The gallery page
 
 The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. The grid scales down in a similar way to the video page.
 
@@ -289,7 +298,7 @@ As with the video page, when a photo is hovered, the border color changes to red
 
 ---
 
-#### The Contact Page
+### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
@@ -302,7 +311,7 @@ The submit button color changes to black when hovered:
 ---
 
 
-#### The Submit Page
+### The Submit Page
 
 On the user submitting the contact form with all required fields completed, I wanted a new page to load that thanks the user for contacting the band and provides a link back to the home page. 
 
@@ -310,7 +319,7 @@ On the user submitting the contact form with all required fields completed, I wa
 
 ---
 
-#### The Shop Page
+### The Shop Page
 
 The shop link in the header and footer link to the Bandcamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
@@ -319,7 +328,7 @@ The shop link in the header and footer link to the Bandcamp page for Louis Barab
 ---
 
 
-#### Future Implementations
+## Future Implementations
 
 For future implementations of the site, I would like to:
 
@@ -332,7 +341,7 @@ For future implementations of the site, I would like to:
 
 ---
 
-### Accessibility
+## Accessibility
 
 I have made the site with accessibility in mind and
 
@@ -480,12 +489,6 @@ and contact form:
 (https://getbootstrap.com/docs/5.3/forms/overview/) have been incredibly useful to use as a blueprint.
 
 * The layout for this README.md was heavily inspired by the perfect README.md shown to me by my Code Institute mentor, it can be found here (https://github.com/kera-cudmore/TheQuizArms)
-
-### Site content
-
-* Band member info /bios were taken from the band's existing (but outdated) [website](https://bedlamsix.com/). I have updated any outdated information.
-
-* All page headings etc. were written by myself.
 
 ### Media
 
