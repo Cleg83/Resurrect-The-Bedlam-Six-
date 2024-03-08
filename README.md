@@ -113,11 +113,15 @@ All colors were declared as CSS variables:
 
 As the website is dedicated to bringing back a band few have heard of, I have chosen a background image of the band on stage for all pages. The image is mostly dark which allows text to be easily read across all pages.  
 
+<br> 
+
 ![Main background image](assets/images/home-page/bedlam-stage-background-1.webp)
 
 <br>
 
 On narrower screens, the contrast wasn't great between the image and text. As a result, the background image changes to the below on narrower screens.
+
+<br>
 
 ![Background image on smaller screens](assets/images/home-page/bedlam-stage-background-small-screens.webp)
 
@@ -129,9 +133,15 @@ Google Fonts was used to import the chosen fonts for use in the site.
 
 * For the site heading and throughout most of the site I have used the Google Font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic. The header and heading text both use Bitter.
 
+<br>
+
 ![Bitter font example](documents/readme-images/google-fonts-bitter-example.png)
 
+<br>
+
 For the quotes and band member info, I opted for the Google Font [Cardo](https://fonts.google.com/specimen/Cardo).
+
+<br>
 
 ![Cardo font example 1](documents/readme-images/google-fonts-cardo-example.png)
 
@@ -171,7 +181,11 @@ The website is comprised of a home page, a gallery page, a video page, a contact
 
 All pages are fully responsive and feature a favicon icon in the browser tab:
 
+<br>
+
 ![favicon](documents/readme-images/favicon-ss.png)
+
+<br>
 
 ---
 
@@ -179,17 +193,29 @@ All pages are fully responsive and feature a favicon icon in the browser tab:
 
 I wasnted to utilise a very simple navbar layout with the band name on the left and the menu items on right. 
 
+<br>
+
 ![Navbar image 1](documents/readme-images/nav-bar-ss1.png)
+
+<br>
 
 The band name is a link that takes you back to the home page.
 
 On smaller screen sizes, I wanted the navbar to collapse into a hamburger menu (which Bootstrap kindly does the bulk of the work for).
 
+<br>
+
 ![Navbar image 2](documents/readme-images/navbar-ss3.png)
+
+<br>
 
 The image below shows the expanded navbar and also shows that the active state of the video link.
 
+<br>
+
 ![Navbar image 3](documents/readme-images/navbar-ss2.png)
+
+<br>
 
 ---
 
@@ -197,21 +223,31 @@ The image below shows the expanded navbar and also shows that the active state o
 
 ![Home page image 1](documents/readme-images/home-page-ss.png)
 
+<br>
+
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six." 
 
 The wireframes do not show the quotes because this was a decision made later (once I got to grips with animations / transitions). It also fills up the vertical space in a pleasing way. 
 
 As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark and a background appears. I have attempted to capture this effect in the images below:
 
+<br>
+
 ![Early fade in](documents/readme-images/quotes-early-fade.png)
 
 ![Late fade in](documents/readme-images/quote-late-fade.png)
 
+<br>
+
 Fewer quotes display on narrower screens, 3 quotes display on most tablets and 2 on most mobiles:
+
+<br>
 
 ![Screen with 3 quotes](documents/readme-images/3quotes.png)
 
 ![Screen with 2 quotes](documents/readme-images/2quotes.png)
+
+<br>
 
 The layout differs slightly from the wireframes above as it became clear that the second heading looked out of place at the bottom of the home page. I opted to move it to the top of the second home page section and make it the section heading. 
 
@@ -223,21 +259,34 @@ This section has glass like layer behind it to blur the background image and bri
 
 Below the heading there is an embedded Bandcamp player on the left of the screen and a scrollable band member article on the right which snaps to each band member when scrolled. 
 
+<br>
+
 ![Home page image 2](documents/readme-images/home-page2-ss.png)
 
+<br>
+
 When the user hovers over the Bandcamp player or the band members, the background color of the container changes to show it is in focus:
+
+<br>
 
 ![Bandcamp player in focus](documents/readme-images/home-page-bandcamp-focus.png)
 
 ![Band members in focus](documents/readme-images/home-page2-member-focus.png)
 
+<br>
 As you can see, when the band members are hovered / in focus, the padding at the top increases and the scroll bar appears. 
 
 Also, when a user clicks on the band members a name, some more information is displayed (this is achieved by using details and summary html elements).
 
+<br>
+
 ![Band members in focus with summary expanded](documents/readme-images/home-page2-member-focus-summary.png)
 
+<br>
+
 On devices with displays of 768px and smaller, the Bandcamp player is centered and the scrollable band member section is centred beneath the Bandcamp player.
+
+<br>
 
 ![Home page image 3](documents/readme-images/bandcamp-focus.webp)
 
@@ -249,15 +298,27 @@ On devices with displays of 768px and smaller, the Bandcamp player is centered a
 
 I wanted the footer to include the same 5 links contained in the navbar and also include the relevant social media icons. On larger screens the copyright is displayed in the center.
 
+<br>
+
 ![Footer image 1](documents/readme-images/footer1.png)
+
+<br>
 
 On tablets, the footer looks like this:
 
+<br>
+
 ![Footer image 2](documents/readme-images/footer2.png)
+
+<br>
 
 On devices narrower than 768px, only the social media icons are displayed:
 
+<br>
+
 ![Footer image ](documents/readme-images/footer3.png)
+
+<br>
 
 ---
 
@@ -265,19 +326,34 @@ On devices narrower than 768px, only the social media icons are displayed:
 
 The video page is a very simple video gallery with six embedded Youtube videos. These are displayed as a 3x2 grid on large devices.
 
+<br>
+
 ![Image of large screen video page](documents/readme-images/video-ss.png)
+
+<br>
 
 On medium devices they are displayed as a 2x3 grid.
 
+<br>
+
 ![Image of large screen video page](documents/readme-images/video-page-ss2.png)
 
+<br>
 On smaller devices, the videos are displayed in a 1x6 grid.
+
+<br>
 
 ![Image of large screen video page](documents/readme-images/video-page-ss3.png)
 
+<br>
+
 When a video is hovered, the border color changes to red.
 
+<br>
+
 ![Image of a video being hovered](documents/readme-images/video-border-ss.png)
+
+<br>
 
 ---
 
@@ -286,25 +362,41 @@ When a video is hovered, the border color changes to red.
 
 The gallery page is thumbnail image gallery of the band and band members. A selection of color, black & white and sepia images for a pleasing visual contrast. The grid scales down in a similar way to the video page.
 
+<br>
+
 ![Image of the gallery page](documents/readme-images/gallery-ss.png)
+
+<br>
 
 All images open in a new browser tab when clicked. This required an html page to be made for each image and very basic styling to be applied (background-color and font to keep consistency).
 
+<br>
+
 ![Image of new browser tab with full-size image](documents/readme-images/clicked-photo.png)
 
+<br>
 As with the video page, when a photo is hovered, the border color changes to red.
+
+<br>
 
 ![Image of a video being hovered](documents/readme-images/gallery-border-ss.png)
 
+<br>
 ---
 
 ### The Contact Page
 
 The contact page comprises of a simple contact form that requires the user to input their name, email address and to provide information about the event they want to discuss with the band.
 
+<br>
+
 ![Contact page image](documents/readme-images/contact-ss.png)
 
+<br>
+
 The submit button color changes to black when hovered: 
+
+<br>
 
 ![Submit button hover](documents/readme-images/submit-hover.png)
 
@@ -315,15 +407,22 @@ The submit button color changes to black when hovered:
 
 On the user submitting the contact form with all required fields completed, I wanted a new page to load that thanks the user for contacting the band and provides a link back to the home page. 
 
+<br>
+
 ![Submit page image](documents/readme-images/submit-ss.png)
 
+<br>
 ---
 
 ### The Shop Page
 
 The shop link in the header and footer link to the Bandcamp page for Louis Barabbas & The Bedlam Six and opens in a new browser window / tab. 
 
+<br>
+
 ![Bandcamp shop image](documents/readme-images/bandcamp-store-ss1.png)
+
+<br>
 
 ---
 
