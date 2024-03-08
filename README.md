@@ -19,7 +19,7 @@ The site serves as a simple platform to find out some basic information about th
 
 * [Design](#design)
   * [Colour Scheme](#colour-scheme)
-  * [Background-image](#background-image)
+  * [Background-images](#background-images)
   * [Typography](#typography)
   * [Wireframes](#wireframes)
   * [Features](#features)
