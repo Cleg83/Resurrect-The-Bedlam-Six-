@@ -70,14 +70,27 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opens| Pass |
 | Shop page link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
-| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Header links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Header links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active header link: Hover | The color of the header home page link should change to var(--red) when hovered | Moved the mouse over the home page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the header home page link should change to var(--black) when not hovered | Moved the mouse way from the home page link to see if the text color changed to var(--black) | Link changed color | Pass |
 
 ##### Home page content 
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Embedded Bandcamp player | Plays music when the play button is clicked | Clicked button | Music plays | Pass |
+| Embedded Bandcamp player: hover | Background color changes from var(--bg-dark) to var(--bg-light) when hovered | Hovered mouse over player | Background color changes from light to dark | Pass |
+| Embedded Bandcamp player: mouse out | Background color changes from var(--bg-light) to var (--bg-dark) when mouse moved away | Moved mouse away from player | Background color changes from dark to light | Pass |
+| Embedded Bandcamp player: Play button | Plays music when the play button is clicked | Clicked button | Music plays | Pass |
+| Embedded Bandcamp player: Pause button | Pauses music when the pause button is clicked | Clicked button | Music pauses | Pass |
+| Embedded Bandcamp player: Links | Opens external Bandcamp page when each link is clicked | Clicked each link | External bandcamp page opened when each link was clicked | Pass |
+|  Embedded Bandcamp player: Track list | User can scroll through the album tracks within the iframe | Scrolled through tracks | All tracks visible with no hidden overflow | Pass |
+| Band member article: hover | Background color changes from var(--bg-dark) to var(--bg-light) when hovered | Hovered mouse over article | Background color changes from light to dark | Pass |
+| Band member article: hover | Top padding of content increases to push content down from top of container when hovered / in focus | Hovered mouse over article | Top padding increased | Pass |
+| Band member article: hover | Article text color changes from var(--cream) to var(--black) when hovered / in focus | Hovered mouse over article | Font changed color from var(--black) to var(--cream) | Pass |
+| Band member article: hover | Article text top padding reduces to push it closer to member photo when hovered / in focus | Hovered mouse over article | Top padding of text reduced | Pass |
+
+| Band member article  : mouse out | Background color changes from var(--bg-light) to var (--bg-dark) when mouse moved away | Moved mouse away from player | Background color changes from dark to light | Pass |
 | Band member column | Scrolls independently from Bandcamp Player| Scrolled through band members | Column scrolls independently | Pass |
 
 ##### Footer 
@@ -89,15 +102,17 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opened | Pass |
 | Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
-| Links: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Footer menu links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Footer menu links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active footer link: Hover | The color of the footer home page link should change to var(--red) when hovered | Moved the mouse over the footer home page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the footer home page link should change to var(--black) when not hovered | Moved the mouse way from the footer home page link to see if the text color changed to var(--black) | Link changed color | Pass |
 | Facebook icon link | Directs the user to external Facebook page page | Clicked Facebook link | Opens external Facebook page in new tab | Pass |
 | Twitter / X icon link | Directs the user to external Twitter / X page |Clicked Twitter / X link | Opens external Twitter / X page in new tab |  Pass |
 | Instagram icon link | Directs the user to external Instagram page |Clicked Instagram link | Opens external Instagram page in new tab | Pass |
 | Youtube icon link | Directs the user to external Youtube page |Clicked Youtube link | Opens external Youtube page in new tab | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page |Clicked Bandcamp link | Opens external Bandcamp page in new tab | Pass |
-| Link icons: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Link icons:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Link icons: hover | The color of each link should change to var(--red) when hovered | Moved the mouse over each link icon to see if the text color changed to var(--red) | Link changed color | Pass |
+| Link icons: mouse out | The color of all links should change to var(--black) when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
 
 ---
 
@@ -114,8 +129,10 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opens| Pass |
 | Shop page link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
-| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Header links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Header links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active header link: Hover | The color of the header video page link should change to var(--red) when hovered | Moved the mouse over the video page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the header video home page link should change to var(--black) when not hovered | Moved the mouse way from the video page link to see if the text color changed to var(--black) | Link changed color | Pass |
 
 ##### Video page content 
 
@@ -145,15 +162,17 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opened | Pass |
 | Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
-| Links: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Footer menu links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Footer menu links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active footer link: Hover | The color of the footer video page link should change to var(--red) when hovered | Moved the mouse over the footer video page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the footer video page link should change to var(--black) when not hovered | Moved the mouse way from the footer video page link to see if the text color changed to var(--black) | Link changed color | Pass |
 | Facebook icon link | Directs the user to external Facebook page page | Clicked Facebook link | Opens external Facebook page in new tab | Pass |
 | Twitter / X icon link | Directs the user to external Twitter / X page |Clicked Twitter / X link | Opens external Twitter / X page in new tab |  Pass |
 | Instagram icon link | Directs the user to external Instagram page |Clicked Instagram link | Opens external Instagram page in new tab | Pass |
 | Youtube icon link | Directs the user to external Youtube page |Clicked Youtube link | Opens external Youtube page in new tab | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page |Clicked Bandcamp link | Opens external Bandcamp page in new tab | Pass |
-| Link icons: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Link icons:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Link icons: hover | The color of each link should change to var(--red) when hovered | Moved the mouse over each link icon to see if the text color changed to var(--red) | Link changed color | Pass |
+| Link icons: mouse out | The color of all links should change to var(--black) when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
 
 ---
 
@@ -169,8 +188,10 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link (active) | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opens| Pass |
 | Shop page link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
-| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Header links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Header links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active header link: Hover | The color of the header gallery page link should change to var(--red) when hovered | Moved the mouse over the gallery page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the header gallery home page link should change to var(--black) when not hovered | Moved the mouse way from the gallery page link to see if the text color changed to var(--black) | Link changed color | Pass |
 
 ##### Gallery page content
 
@@ -200,15 +221,17 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link (active) | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
 | Contact page link | Directs users to contact page | Clicked on link | Contact page opened | Pass |
 | Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
-| Links: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Footer menu links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Footer menu links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active footer link: Hover | The color of the footer gallery page link should change to var(--red) when hovered | Moved the mouse over the footer gallery page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the footer gallery page link should change to var(--black) when not hovered | Moved the mouse way from the footer gallery page link to see if the text color changed to var(--black) | Link changed color | Pass |
 | Facebook icon link | Directs the user to external Facebook page page | Clicked Facebook link | Opens external Facebook page in new tab | Pass |
 | Twitter / X icon link | Directs the user to external Twitter / X page |Clicked Twitter / X link | Opens external Twitter / X page in new tab |  Pass |
 | Instagram icon link | Directs the user to external Instagram page |Clicked Instagram link | Opens external Instagram page in new tab | Pass |
 | Youtube icon link | Directs the user to external Youtube page |Clicked Youtube link | Opens external Youtube page in new tab | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page |Clicked Bandcamp link | Opens external Bandcamp page in new tab | Pass |
-| Link icons: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Link icons:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Link icons: hover | The color of each link should change to var(--red) when hovered | Moved the mouse over each link icon to see if the text color changed to var(--red) | Link changed color | Pass |
+| Link icons: mouse out | The color of all links should change to var(--black) when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
 
 ---
 
@@ -224,8 +247,10 @@ There is no way of improving this unless the embedded players are removed (not a
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
 | Contact page link (active) | Directs users to contact page | Clicked on link | Contact page opens| Pass |
 | Shop page link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
-| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Header links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Header links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active header link: Hover | The color of the header contact page link should change to var(--red) when hovered | Moved the mouse over the contact page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the header contact home page link should change to var(--black) when not hovered | Moved the mouse way from the contact page link to see if the text color changed to var(--black) | Link changed color | Pass |
 
 ##### Contact page content
 
@@ -250,15 +275,17 @@ Submit button | Loads submission response page when clicked | Click submit butto
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
 | Contact page link (active) | Directs users to contact page | Clicked on link | Contact page opened | Pass |
 | Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
-| Links: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Footer menu links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Footer menu links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active footer link: Hover | The color of the footer contact page link should change to var(--red) when hovered | Moved the mouse over the footer contact page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the footer contact page link should change to var(--black) when not hovered | Moved the mouse way from the footer contact page link to see if the text color changed to var(--black) | Link changed color | Pass |
 | Facebook icon link | Directs the user to external Facebook page page | Clicked Facebook link | Opens external Facebook page in new tab | Pass |
 | Twitter / X icon link | Directs the user to external Twitter / X page |Clicked Twitter / X link | Opens external Twitter / X page in new tab |  Pass |
 | Instagram icon link | Directs the user to external Instagram page |Clicked Instagram link | Opens external Instagram page in new tab | Pass |
 | Youtube icon link | Directs the user to external Youtube page |Clicked Youtube link | Opens external Youtube page in new tab | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page |Clicked Bandcamp link | Opens external Bandcamp page in new tab | Pass |
-| Link icons: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Link icons:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Link icons: hover | The color of each link should change to var(--red) when hovered | Moved the mouse over each link icon to see if the text color changed to var(--red) | Link changed color | Pass |
+| Link icons: mouse out | The color of all links should change to var(--black) when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
 
 ---
 
@@ -274,8 +301,10 @@ Submit button | Loads submission response page when clicked | Click submit butto
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opens | Pass |
 | Contact page link (active) | Directs users to contact page | Clicked on link | Contact page opens| Pass |
 | Shop page link | Directs the user to external Bandcamp page | Clicked on link | Opens external Bandcamp page in new tab | Pass |
-| Links: hover | The color of all links should change to #a10f0 when hovered | Moved the mouse over each header link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+| Header links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Header links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active header link: Hover | The color of the header contact page link should change to var(--red) when hovered | Moved the mouse over the contact page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the header contact home page link should change to var(--black) when not hovered | Moved the mouse way from the contact page link to see if the text color changed to var(--black) | Link changed color | Pass |
 
 ##### Form submission page content
 
@@ -294,12 +323,14 @@ Click here to return home link:not(hover) | Link color changes back to #a10f0 wh
 | Gallery page link | Directs user to the gallery page | Clicked on link | Gallery page opened | Pass |
 | Contact page link (active) | Directs users to contact page | Clicked on link | Contact page opened | Pass |
 | Shop link | Directs the user to external Bandcamp page | Clicked on link | Opened external Bandcamp page in new tab | Pass |
-| Links: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Links:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Footer menu links: hover | The color of all links should change to var(--red) when hovered | Moved the mouse over each header link to see if the text color changed to var(--red) | Link changed color | Pass |
+| Footer menu links: mouse out | The color of all links should change to var(--nav-text) when the link is no longer hovered | Moved the mouse away from each header link after hovering | Link changed color | Pass |
+|Active footer link: Hover | The color of the footer contact page link should change to var(--red) when hovered | Moved the mouse over the footer contact page link to see if the text color changed to var(--red) | Link changed color | Pass |
+|Active header link: mouse out | The color of the footer contact page link should change to var(--black) when not hovered | Moved the mouse way from the footer contact page link to see if the text color changed to var(--black) | Link changed color | Pass |
 | Facebook icon link | Directs the user to external Facebook page page | Clicked Facebook link | Opens external Facebook page in new tab | Pass |
 | Twitter / X icon link | Directs the user to external Twitter / X page |Clicked Twitter / X link | Opens external Twitter / X page in new tab |  Pass |
 | Instagram icon link | Directs the user to external Instagram page |Clicked Instagram link | Opens external Instagram page in new tab | Pass |
 | Youtube icon link | Directs the user to external Youtube page |Clicked Youtube link | Opens external Youtube page in new tab | Pass |
 | Bandcamp icon link | Directs the user to external Bandcamp page |Clicked Bandcamp link | Opens external Bandcamp page in new tab | Pass |
-| Link icons: hover | The color of each link should change to #a10f0 when hovered | Moved the mouse over each footer link to see if the text color changed to #a10f0 | Link changed color | Pass |
-| Link icons:not(:hover) | The color of all links should change to black when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
+| Link icons: hover | The color of each link should change to var(--red) when hovered | Moved the mouse over each link icon to see if the text color changed to var(--red) | Link changed color | Pass |
+| Link icons: mouse out | The color of all links should change to var(--black) when the link is no longer hovered | Moved the mouse away from each footer link after hovering | Link changed color | Pass |
