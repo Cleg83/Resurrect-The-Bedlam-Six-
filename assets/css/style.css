@@ -3,6 +3,7 @@
 :root {
 
     /* Colors */
+
     --cream: #fcfcf5;
     --off-white: #fafafa;
     --black: #000;
@@ -12,7 +13,9 @@
     --bg-dark: #59595941;
 }
 
-/* Keyframes */
+/*Keyframes------------------------------------------------------------- */
+
+/* Fade in on page load for every page except home page */
 
 @keyframes fadeIn {
     0% {
@@ -23,6 +26,8 @@
         opacity: 1;
     }
 }
+
+/* Animation to slide quotes 1 and 3 from the left on home page load */
 
 @keyframes slideFromLeft {
     0% {
@@ -36,6 +41,8 @@
     }
 }
 
+/* Animation to slide quotes 2 and 4 from the right on home page load */
+
 @keyframes slideFromRight {
     0% {
         opacity: 0;
@@ -48,6 +55,8 @@
     }
 }
 
+/* Animation to fade background color of quote container on home page load */
+
 @keyframes quoteBackground {
     0% {
         background-color: transparent;
@@ -58,6 +67,8 @@
     }
 }
 
+/* Animation to change quote text color on home page load */
+
 @keyframes quoteText {
     0% {
         color: var(--cream);
@@ -67,6 +78,8 @@
         color: var(--black);
     }
 }
+
+/* Animation to change text color and top-padding of band member info */
 
 @keyframes textIn {
     0% {
@@ -92,6 +105,8 @@
     }
 }
 
+/* Animations to change the color of the active page link when hovered and when mouse moves out */
+
 @keyframes activeLinkColorIn {
     0% {
         color: var(--black);
@@ -112,11 +127,13 @@
     }
 }
 
+/* Fade in class below applied to all main page sections except home page */
+
 .fade-in {
     animation: fadeIn 750ms ease-in-out;
 }
 
-/* Global-----------------------------*/
+/* Global------------------------------------------------------------------------------*/
 
 .font-one {
     font-family: "Bitter", sans-serif;
@@ -157,8 +174,8 @@
     z-index: -1;
 }
 
+/* Glassmorphism effect for background from this site: https://css.glass/*/
 .bg-glass {
-    /* Glassmorphism effect for background */
     background: rgba(253, 252, 240, 0.06);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.9px);
@@ -170,7 +187,7 @@
     background-color: var(--cream);
 }
 
-/*Navbar-----------------------------*/
+/*Navbar------------------------------------------------------------------*/
 
 .nav-link {
     color: var(--nav-text);
@@ -181,7 +198,7 @@
     color: var(--red);
 }
 
-/*Home Page------------------------------*/
+/*Home Page-----------------------------------------------------------------*/
 
 #scroll-container {
     height: 100vh;
@@ -369,7 +386,7 @@ article:not(:hover) details {
     animation: textOut 250ms ease-in-out forwards;
 }
 
-/* Scrollbar */
+/* Scrollbar-------------------------------------------------------------- */
 
 #member-wrapper::-webkit-scrollbar {
     width: 10px;
@@ -392,7 +409,7 @@ article:not(:hover) details {
     background-color: var(--red);
 }
 
-/* Footer-----------------------------*/
+/* Footer---------------------------------------------------------------------------*/
 
 footer {
     min-height: 60px;
@@ -471,7 +488,7 @@ footer {
     animation: activeLinkColorOut 250ms ease-in-out forwards;
 }
 
-/*Video Page-----------------------*/
+/*Video Page--------------------------------------------------------------------------*/
 
 .video-gallery {
     padding-top: 125px;
@@ -501,7 +518,7 @@ footer {
 }
 
 
-/*Gallery Page--------------------------*/
+/*Gallery Page------------------------------------------------------------------------*/
 
 .image-gallery {
     padding-top: 125px;
@@ -525,7 +542,7 @@ footer {
     border-color: var(--red);
 }
 
-/* Image pages------------------------------ */
+/* Image pages------------------------------------------------------------------------- */
 
 .bg-image-page {
     background-color: var(--bg-light);
@@ -543,7 +560,7 @@ footer {
     height: auto;
 }
 
-/*Contact page----------------------------*/
+/*Contact page--------------------------------------------------------------------------*/
 
 .contact-heading {
     margin-top: 100px;
@@ -604,7 +621,7 @@ textarea {
     color: var(--cream);
 }
 
-/* Submit response-------------------*/
+/* Submit response-------------------------------------------------------------------*/
 
 .response-wrapper {
     padding-top: 375px;
@@ -636,7 +653,7 @@ textarea {
 }
 
 
-/*Media Queries--------------------------Media Queries*/
+/*Media Queries---------------------------------------------------------Media Queries*/
 
 @media screen and (max-width: 768px) {
 
@@ -805,6 +822,8 @@ textarea {
     }
 }
 
+/* The below media query is only for tall tablets in portrait mode */
+
 @media screen and (min-height: 920px) and (max-width: 1025px) {
     #content-heading {
         margin-top: 3rem;
@@ -830,7 +849,7 @@ textarea {
 
 }
 
-/* Footer only---------------------------*/
+/* Footer only-----------------------------------------------------------*/
 
 @media screen and (max-width: 1170px) {
     .copy-container {
@@ -856,7 +875,7 @@ textarea {
     }
 }
 
-/* Gallery only--------------------------*/
+/* Gallery only - change the order of images when displayed the specified screen sizes */
 
 @media screen and (min-width: 769px) and (max-width: 990px) {
     .image-gallery {
