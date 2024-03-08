@@ -15,6 +15,13 @@
 
 /*Keyframes------------------------------------------------------------- */
 
+/* 
+
+    I have only added webkit keyframes when necessary. 
+    Most animations are on font color and padding so vendor prefixes are not necessary.
+    
+*/
+
 /* Fade in on page load for every page except home page */
 
 @keyframes fadeIn {
@@ -27,6 +34,7 @@
     }
 }
 
+
 /* Animation to slide quotes 1 and 3 from the left on home page load */
 
 @keyframes slideFromLeft {
@@ -38,6 +46,16 @@
     100% {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideFromLeft {
+    0% {
+        -webkit-transform: translateX(-10%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
     }
 }
 
@@ -55,6 +73,16 @@
     }
 }
 
+@-webkit-keyframes slideFromRight {
+    0% {
+        -webkit-transform: translateX(10%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
 /* Animation to fade background color of quote container on home page load */
 
 @keyframes quoteBackground {
@@ -64,6 +92,16 @@
 
     100% {
         background-color: var(--bg-light);
+    }
+}
+
+@-webkit-keyframes quoteBackground {
+    0% {
+        -webkit-background-color: transparent;
+    }
+
+    100% {
+        -webkit-background-color: var(--bg-light);
     }
 }
 
@@ -78,6 +116,7 @@
         color: var(--black);
     }
 }
+
 
 /* Animation to change text color and top-padding of band member info */
 
@@ -192,6 +231,9 @@
 .nav-link {
     color: var(--nav-text);
     transition: color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
 }
 
 .nav-link:hover {
@@ -230,6 +272,12 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-delay: 300ms;
+    -webkit-animation-name: quoteBackground;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 300ms;
     padding-top: 1rem;
     border: 0px solid transparent;
     border-radius: 10px;
@@ -246,6 +294,11 @@
     animation-duration: 400ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
     text-align: center;
     width: 90%;
     margin: auto;
@@ -256,11 +309,13 @@
 .quote-container blockquote:nth-child(1),
 .quote-container blockquote:nth-child(3) {
     animation-name: slideFromLeft;
+    -webkit-animation-name: slideFromLeft;
 }
 
 .quote-container blockquote:nth-child(2),
 .quote-container blockquote:nth-child(4) {
     animation-name: slideFromRight;
+    -webkit-animation-name: slideFromRight;
 }
 
 #content-section {
@@ -288,8 +343,11 @@
     width: 100%;
     scroll-snap-type: none;
     margin: 0 auto;
-    transition: background-color 500ms ease-in-out;
     background-color: var(--bg-dark);
+    transition: background-color 500ms ease-in-out;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out; 
 }
 
 #bandcamp-player {
@@ -319,8 +377,11 @@
     border: none;
     scroll-snap-type: none;
     margin: 0 auto;
-    transition: background-color 500ms ease-in-out;
     background-color: var(--bg-dark);
+    transition: background-color 500ms ease-in-out;
+    -webkit-transition: background-color 500ms ease-in-out;
+    -moz-transition: background-color 500ms ease-in-out; 
+    -o-transition: background-color 500ms ease-in-out; 
 }
 
 #member-wrapper {
@@ -349,6 +410,9 @@
     border: none;
     padding-top: 1.3rem;
     transition: padding-top 500ms ease-in-out;
+    -webkit-transition: padding-top 500ms ease-in-out;
+    -moz-transition: padding-top 500ms ease-in-out;
+    -o-transition: padding-top 500ms ease-in-out;
 }
 
 article:hover .member {
@@ -471,6 +535,9 @@ footer {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     transition: color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
 }
 
 .social-links:hover {
@@ -511,6 +578,9 @@ footer {
     border: 5px solid var(--cream);
     border-radius: 5px;
     transition: border-color 500ms ease-in-out;
+    -webkit-transition: border-color 500ms ease-in-out;
+    -moz-transition: border-color 500ms ease-in-out;
+    -o-transition: border-color 500ms ease-in-out;
 }
 
 .video-box:hover {
@@ -536,6 +606,9 @@ footer {
     border: 5px solid var(--cream);
     border-radius: 5px;
     transition: border-color 500ms ease-in-out;
+    -webkit-transition: border-color 500ms ease-in-out;
+    -moz-transition: border-color 500ms ease-in-out;
+    -o-transition: border-color 500ms ease-in-out;
 }
 
 .gallery-image:hover {
@@ -614,6 +687,9 @@ textarea {
     background-color: var(--red);
     margin-bottom: 1rem;
     transition: background-color 250ms ease-in-out;
+    -webkit-transition: background-color 250ms ease-in-out;
+    -moz-transition: background-color 250ms ease-in-out;
+    -o-transition: background-color 250ms ease-in-out;
 }
 
 .form-button:hover {
@@ -645,6 +721,9 @@ textarea {
     color: var(--red);
     text-decoration: none;
     transition: color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out;
 }
 
 #response-home-link:hover,
