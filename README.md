@@ -10,6 +10,7 @@ This site aims to (hopefully) answer this question by showcasing music, images a
 
 In a time when grassroots music venues are disappearing on a weekly basis, I feel it's time to celebrate a band who only achieved what they achieved due to the support of such venues (how much the band actually achieved is the subject of some debate).
 
+The site serves as a simple platform to find out some basic information about the band, be able to contact them, listen to their music, watch some of their videos or be directed to the external Bandcamp shop.
 
 ## CONTENTS
 
@@ -54,7 +55,6 @@ In a time when grassroots music venues are disappearing on a weekly basis, I fee
   * [Media](#media)
 
   - - - 
-![Screenshot of navbar, page-heading and top of page background image](documents/readme-images/navbar-header-screenshot.png)
 
 ## User Experience (UX)
 
@@ -118,7 +118,7 @@ On narrower screens, the contrast wasn't great between the image and text. As a 
 
 Google Fonts was used to import the chosen fonts for use in the site.
 
-* For the site heading and throughout most of the site I have used the Google Font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic. THe header and heading text both use Bitter.
+* For the site heading and throughout most of the site I have used the Google Font [Bitter](https://fonts.google.com/specimen/Bitter?query=bitter). Bitter has that classic, old-timey look that fits perfectly with the bands aesthetic. The header and heading text both use Bitter.
 
 ![Bitter font example](documents/readme-images/google-fonts-bitter-example.png)
 
@@ -196,7 +196,7 @@ As the page loads, 2 quotes slide in from the left and two from the right. The f
 
 ![Late fade in](documents/readme-images/quote-late-fade.png)
 
-Fewer quotes display on narrower screens, 3 quotes display on most mobiles and only 2 on the narrowest:
+Fewer quotes display on narrower screens, 3 quotes display on most tablets and 2 on most mobiles:
 
 ![Screen with 3 quotes](documents/readme-images/3quotes.png)
 
@@ -204,7 +204,10 @@ Fewer quotes display on narrower screens, 3 quotes display on most mobiles and o
 
 
 When you scroll down the home page it snaps to the section below (on devices narrower than 768px, the snap feature has been disabled).
+
 This section opens with a heading that poses a question: smaller heading poses this question: "Is it time to bring back the greatest band you've probably never heard of?".
+
+This section has glass like layer behind it to blur the background image and bring the home page content into focus.
 
 Below the heading there is an embedded Bandcamp player on the left of the screen and a scrollable band member article on the right which snaps to each band member when scrolled. 
 
