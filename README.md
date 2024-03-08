@@ -190,7 +190,7 @@ The image below shows the expanded navbar and also shows that the active state o
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six." 
 
-THe wireframes do not show the quotes because this was a decision made later (once I got to grips with animations / transitions). It also fills up the vertical space in a pleasing way. 
+The wireframes do not show the quotes because this was a decision made later (once I got to grips with animations / transitions). It also fills up the vertical space in a pleasing way. 
 
 As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark and a background appears. I have attempted to capture this effect in the images below:
 
@@ -328,6 +328,7 @@ For future implementations of the site, I would like to:
 3. Add links to all members other projects or potentially add an extra media page showcasing those projects.
 4. Create my own custom media player rather than using an embedded Bandcamp player.
 5. Improve interactivity by introducing JavaScript (this will have the added benefit of allowing me to disable third party cookies on the embedded Bandcamp and Youtube players).
+6. Have the contact form actually be sent to an active email address. 
 
 ---
 
@@ -356,6 +357,8 @@ HTML, CSS
 * [Be Funky](https://www.befunky.com/features/resize-image/) to resize images.
 
 * [Bootstrap](https://getbootstrap.com/) - For the layout of most pages.
+
+* [CSS Glass](https://css.glass/) - For the glass layer of the home page content section.
 
 * [Cloud Convert](https://cloudconvert.com/) - To convert images to webp format.
 
@@ -502,7 +505,7 @@ Gallery image 2 | © Simon Heaton |
 Gallery image 3 | © Christine Keating 2012 |
 Gallery image 4 | © Werner Gensmantel 2013 |
 Gallery image 5 | © Christine Keating 2012 |
-Gallery image 6 | © Andrew AB Photography (http://andrewab.photography)|
+Gallery image 6 | © Christine Keating |
 Gallery image 7 | © Christine Keating 2016|
 Gallery image 8 | © Christine Keating 2015 |
 Gallery image 9 | © Martine Nie? |
