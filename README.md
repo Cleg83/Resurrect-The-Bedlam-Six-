@@ -46,8 +46,8 @@ The site serves as a simple platform to find out some basic information about th
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
-  * [Solved Bugs](#solved-bugs)
-  * [Known Issues](#known-issues)
+  * [W3C](#W3C)
+  * [Lighthouse](#Lighthouse)
   
 * [Credits](#credits)
   * [External code](#external-code)
@@ -190,6 +190,8 @@ The image below shows the expanded navbar and also shows that the active state o
 
 The home page of Resurrect Louis Barabbas & The Bedlam Six makes a bold demand in the page heading: "Bring back Louis Barabbas & The Bedlam Six." 
 
+THe wireframes do not show the quotes because this was a decision made later (once I got to grips with animations / transitions). It also fills up the vertical space in a pleasing way. 
+
 As the page loads, 2 quotes slide in from the left and two from the right. The font color fades from light to dark and a background appears. I have attempted to capture this effect in the images below:
 
 ![Early fade in](documents/readme-images/quotes-early-fade.png)
@@ -202,6 +204,7 @@ Fewer quotes display on narrower screens, 3 quotes display on most tablets and 2
 
 ![Screen with 2 quotes](documents/readme-images/2quotes.png)
 
+The layout differs slightly from the wireframes above as it became clear that the second heading looked out of place at the bottom of the home page. I opted to move it to the top of the second home page section and make it the section heading. 
 
 When you scroll down the home page it snaps to the section below (on devices narrower than 768px, the snap feature has been disabled).
 
@@ -213,7 +216,7 @@ Below the heading there is an embedded Bandcamp player on the left of the screen
 
 ![Home page image 2](documents/readme-images/home-page2-ss.png)
 
-When the user hovers over the bandcamp player or the band members, the background color of the container changes to show it is in focus:
+When the user hovers over the Bandcamp player or the band members, the background color of the container changes to show it is in focus:
 
 ![Bandcamp player in focus](documents/readme-images/home-page-bandcamp-focus.png)
 
@@ -348,9 +351,13 @@ HTML, CSS
 
 ### Frameworks, Libraries & Programs
 
-* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+* [Am I Responsive?](http://ami.responsivedesign.is/) To test site responsiveness on different screen sizes.
+
+* [Be Funky](https://www.befunky.com/features/resize-image/) to resize images.
 
 * [Bootstrap](https://getbootstrap.com/) - For the layout of most pages.
+
+* [Cloud Convert](https://cloudconvert.com/) - To convert images to webp format.
 
 * [Favicon.io](https://favicon.io/) To create favicon.
 
@@ -364,7 +371,7 @@ HTML, CSS
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-* [TinyPNG](https://tinypng.com/) To compress home page images.
+* [TinyPNG](https://tinypng.com/) To compress images.
 
 * [Visual Studio Code](https://code.visualstudio.com/) The IDE used to create this site.
 
