@@ -347,7 +347,7 @@
     transition: background-color 500ms ease-in-out;
     -webkit-transition: background-color 500ms ease-in-out;
     -moz-transition: background-color 500ms ease-in-out;
-    -o-transition: background-color 500ms ease-in-out; 
+    -o-transition: background-color 500ms ease-in-out;
 }
 
 #bandcamp-player {
@@ -380,8 +380,8 @@
     background-color: var(--bg-dark);
     transition: background-color 500ms ease-in-out;
     -webkit-transition: background-color 500ms ease-in-out;
-    -moz-transition: background-color 500ms ease-in-out; 
-    -o-transition: background-color 500ms ease-in-out; 
+    -moz-transition: background-color 500ms ease-in-out;
+    -o-transition: background-color 500ms ease-in-out;
 }
 
 #member-wrapper {
@@ -497,6 +497,7 @@ footer {
     color: var(--nav-text);
     transition: color 250ms ease-in-out;
 }
+
 .footer-menu-link:hover {
     color: var(--red);
 }
@@ -543,11 +544,12 @@ footer {
 .social-links:hover {
     color: var(--red)
 }
+
 .social li {
     margin-right: 0px;
 }
 
-.active:hover{
+.active:hover {
     animation: activeLinkColorIn 250ms ease-in-out forwards;
 }
 
@@ -802,7 +804,7 @@ textarea {
     .image-wrapper:nth-of-type(8) {
         order: 2;
     }
-    
+
     .image-wrapper:nth-of-type(9) {
         order: 2;
     }
@@ -962,19 +964,23 @@ textarea {
         flex-wrap: wrap;
     }
 
-    .image-wrapper:nth-of-type(8) { 
-        order: 1; 
+    .image-wrapper:nth-of-type(8) {
+        order: 1;
     }
-    .image-wrapper:nth-of-type(9) { 
-        order: 2; 
+
+    .image-wrapper:nth-of-type(9) {
+        order: 2;
     }
-    .image-wrapper:nth-of-type(10) { 
-        order: 1; 
+
+    .image-wrapper:nth-of-type(10) {
+        order: 1;
     }
-    .image-wrapper:nth-of-type(11) { 
-        order: 1; 
+
+    .image-wrapper:nth-of-type(11) {
+        order: 1;
     }
-    .image-wrapper:nth-of-type(12) { 
-        order: 2; 
+
+    .image-wrapper:nth-of-type(12) {
+        order: 2;
     }
 }
