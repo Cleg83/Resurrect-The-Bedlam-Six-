@@ -55,6 +55,8 @@ Due to recent changes to Google's third party cookie policy, the best practices 
 
 There is no way of improving this unless the embedded players are removed (not an option in this case) or a third party script is added but as this project is only HTML and CSS, that was also not an option.
 
+The submit response page has an SEO score of 82 but this is only a page designed to direct users back to the home page. 
+
 
 ## Manual testing
 
