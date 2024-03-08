@@ -117,7 +117,6 @@
     }
 }
 
-
 /* Animation to change text color and top-padding of band member info */
 
 @keyframes textIn {
@@ -272,12 +271,6 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     animation-delay: 300ms;
-    -webkit-animation-name: quoteBackground;
-    -webkit-animation-duration: 400ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 300ms;
     padding-top: 1rem;
     border: 0px solid transparent;
     border-radius: 10px;
